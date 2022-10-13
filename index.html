@@ -1,692 +1,2205 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <meta name="renderer" content="webkit">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="google-site-verification" content="">
-  <meta name="baidu-site-verification" content="">
-  <meta name="description" content="Home / 首页 - ">
-  <meta name="keywords" content="home, 首页, null">
-  <meta name="author" content="John Doe">
-  <meta name="layout-parts" content="[&#34;hitokoto&#34;,&#34;recentposts&#34;]">
-  <link rel="shortcut icon" type="image/png" href="/asset/img/icon.small.png">
-  <link rel="apple-touch-icon" type="image/png" href="/asset/img/author.medium.png">
-  <link rel="manifest" href="/manifest.json">
-  <title>Home / 首页 - Hexo</title>
-  
-  <script nomodule async src="/asset/js/nomodule.js?t=1665648812213"></script>
-  
-  <link rel="stylesheet" href="/asset/css/style.css?t=1665648812212">
-  <script type="module" src="/asset/js/main.js?t=1665648812213"></script>
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<body>
-  <canvas class="m-evanyou-canvas"></canvas>
-  <div class="m-launch"></div>
-  <div class="m-spinner">
-    <div class="m-spinner-ring"></div>
-  </div>
-  <div class="m-progress">
-    <div class="m-progress-current"></div>
-  </div>
-  <!-- Outside App -->
-  <div class="m-app">
-    <div class="m-closeDrawer"></div>
-    <div class="m-app-inner">
-      <div class="m-header">
-        <div class="p-xdrawer HIDE">
-  <i class="fas fa-bars"></i>
-</div>
-        <div class="p-xsearch HIDE">
-  <i class="fas fa-search"></i>
-  <i class="fas fa-times"></i>
-</div>
-        <div class="p-sitename HIDE">
-  <img class="p-sitename-icon" src="/asset/img/icon.medium.png">
-  <span class="p-sitename-text" data-lang="sitename"></span>
-</div>
-        <!-- END header -->
-      </div>
-      <div class="m-center">
-        <div class="m-drawer">
-          <div class="p-brand HIDE">
-  <div class="p-brand-head">
-    <img class="p-brand-avatar" src="/asset/img/author.large.png">
-  </div>
-  <div class="p-brand-detail">
-    <div class="p-brand-name" data-lang="brand.name"></div>
-    <div class="p-brand-slogan" data-lang="brand.slogan"></div>
-  </div>
-  <div class="p-brand-counts">
-    <span class="p-brand-posts" data-lang="brand.posts" data-lang-titled>
-      <i class="fas fa-archive fa-fw"></i>
-      <span class="p-brand-posts-count"></span>
-    </span><span class="p-brand-categories" data-lang="brand.categories" data-lang-titled>
-      <i class="fas fa-folder-open fa-fw"></i>
-      <span class="p-brand-categories-count"></span>
-    </span><span class="p-brand-tags" data-lang="brand.tags" data-lang-titled>
-      <i class="fas fa-tags fa-fw"></i>
-      <span class="p-brand-tags-count"></span>
-    </span>
-  </div>
-  <div class="p-brand-contacts">
-    
-    <a href="//github.com/jinyaoMa" target="_blank" data-lang="brand.github" data-lang-titled><i class="fab fa-github fa-fw"></i></a>
-    
-    <a href="mailto://jinyao.ma@outlook.com" target="_blank" data-lang="brand.email" data-lang-titled><i class="fas fa-envelope fa-fw"></i></a>
-    
-    <a href="tencent://Message/?uin=907881445" target="_blank" data-lang="brand.qq" data-lang-titled><i class="fab fa-qq fa-fw"></i></a>
-    
-  </div>
-</div>
-          <div class="p-menus HIDE">
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-sitemap fa-fw"></i>
-      <span data-lang="menus.main.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="home" href="/">
-        <i class="fas fa-home fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.home"></span>
-      </a>
-      
-      <a data-menu-key="archive" href="/archives/">
-        <i class="fas fa-archive fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.archive"></span>
-      </a>
-      
-      <a data-menu-key="about" href="/about/">
-        <i class="fas fa-user fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.main.items.about"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-briefcase fa-fw"></i>
-      <span data-lang="menus.job.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="resume" href="/resume/">
-        <i class="fas fa-paper-plane fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.job.items.resume"></span>
-      </a>
-      
-      <a data-menu-key="letter" href="/letter/">
-        <i class="fas fa-file-contract fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.job.items.letter"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-  <div class="p-menu">
-    <div class="p-menu-caption">
-      <i class="fas fa-ellipsis-h fa-fw"></i>
-      <span data-lang="menus.others.caption"></span>
-    </div>
-    <div class="p-menu-items">
-      
-      <a data-menu-key="library" href="/library/">
-        <i class="fas fa-box fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.library"></span>
-      </a>
-      
-      <a data-menu-key="icons" href="/icons/">
-        <i class="fas fa-icons fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.icons"></span>
-      </a>
-      
-      <a data-menu-key="records" href="/records/">
-        <i class="fas fa-edit fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.records"></span>
-      </a>
-      
-      <a data-menu-key="gallery" href="/gallery/">
-        <i class="fas fa-images fa-fw"></i>
-        <span class="p-menu-items-name" data-lang="menus.others.items.gallery"></span>
-      </a>
-      
-    </div>
-  </div>
-  
-</div>
-          <div class="p-skin HIDE">
-  <div class="p-skin-caption">
-    <i class="fas fa-tshirt fa-fw"></i> 
-    <span data-lang="skin.caption"></span>
-  </div>
-  <div class="p-skin-items">
-    
-      <div data-skin-key="default" data-skin-color="#000000" data-lang="skin.items.default" data-lang-titled></div>
-    
-      <div data-skin-key="gray" data-skin-color="#999999" data-lang="skin.items.gray" data-lang-titled></div>
-    
-      <div data-skin-key="colorful" data-skin-color="linear-gradient(to bottom right,#ff3333 ,#66cc66 , #0099cc)" data-lang="skin.items.colorful" data-lang-titled></div>
-    
-  </div>
-</div>
-          <div class="p-settings HIDE">
-  <div class="p-settings-caption">
-    <i class="fas fa-cog fa-fw"></i>
-    <span data-lang="settings.caption"></span>
-  </div>
-  <div class="p-settings-items">
-    
-    <div data-settings-key="langshift">
-      <i class="fas fa-globe-asia fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.langshift"></span>
-    </div>
-    
-    <div data-settings-key="night">
-      <i class="fas fa-adjust fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.night"></span>
-    </div>
-    
-    <div data-settings-key="transfigure">
-      <i class="fas fa-robot fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.transfigure"></span>
-    </div>
-    
-    <div data-settings-key="lyride">
-      <i class="fas fa-eye-slash fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.lyride"></span>
-    </div>
-    
-    <div data-settings-key="autoplay">
-      <i class="fas fa-play-circle fa-fw"></i>
-      <div class="p-settings-items-switch"></div>
-      <span class="p-settings-items-name" data-lang="settings.items.autoplay"></span>
-    </div>
-    
-  </div>
-</div>
-          <div class="m-drawer-mark"></div>
-          <!-- END drawer -->
-        </div>
-        <div class="m-frame">
-          <div class="m-main">
-            <div class="m-heaper">
-              <div class="p-xaside HIDE">
-  <i class="fas fa-chevron-right"></i>
-</div>
-              <div class="p-pather HIDE">
-  <div class="p-pather-home">
-    <i class="fas fa-home fa-fw"></i> 
-  </div>
-  <div class="p-pather-queue"></div>
-</div>
-              <!-- END heaper -->
-            </div>
-            <div class="p-translater HIDE">
-  <div class="p-translater-bar">
-    <span class="p-translater-bar-copy" data-lang="translater.copy"></span>
-    <span class="p-translater-bar-to" data-lang="translater.to"></span>
-    <span class="p-translater-bar-zh" data-lang="translater.zh"></span>
-    <span class="p-translater-bar-split">|</span>
-    <span class="p-translater-bar-en" data-lang="translater.en"></span>
-    <span class="p-translater-bar-split">|</span>
-    <span class="p-translater-bar-jp" data-lang="translater.jp"></span>
-  </div>
-  <div class="p-translater-result"></div>
-</div>
-            <div class="m-content">
-              <div class="p-hitokoto HIDE" data-api="//v1.hitokoto.cn" data-type="i">
-  <div class="p-hitokoto-caption">
-    <i class="fas fa-circle-notch fa-fw"></i>
-    <span data-lang="hitokoto"></span data-lang="hitokoto">
-  </div>
-  <div class="p-hitokoto-word">
-    <span class="p-hitokoto-content">感谢一言网(Hitokoto.cn)提供一句话服务</span>
-  </div>
-  <div class="p-hitokoto-from">
-    <span class="p-hitokoto-name">jinyaoMa</span>
-  </div>
-  <img src="/asset/img/qf3cu.huaji.png">
-</div>
-              <div class="p-recentposts HIDE">
-  <div class="p-recentposts-caption">
-    <i class="fas fa-clock fa-fw"></i>
-    <span data-lang="recentposts.caption"></span>
-  </div>
-  <div class="p-recentposts-items">
-    <div class="p-recentpost">
-      <div class="p-recentpost-cover">
-        <div><span></span></div>
-      </div>
-      <div class="p-recentpost-title">
-        <a class="p-recentpost-title-link"></a>
-      </div>
-      <div class="p-recentpost-meta">
-        <div class="p-recentpost-date">
-          <i class="fas fa-calendar-alt fa-fw"></i>
-          <span data-lang="recentposts.date" data-lang-titled></span>
-        </div>
-        <div class="p-recentpost-updated">
-          <i class="fas fa-calendar-check fa-fw"></i>
-          <span data-lang="recentposts.updated" data-lang-titled></span>
-        </div>
-        <div class="p-recentpost-categories">
-          <i class="fas fa-folder-open fa-fw"></i>
-          <span data-lang="recentposts.categories" data-lang-titled></span>
-        </div>
-      </div>
-      <div class="p-recentpost-excerpt markdown-body"></div>
-    </div>
-  </div>
-  <div class="p-recentposts-more" data-lang="recentposts.more"></div>
-</div>
-              <div class="p-timeline HIDE">
-  <div class="p-timeline-caption">
-    <i class="fas fa-history fa-fw"></i>
-    <span data-lang="timeline.caption"></span>
-  </div>
-  <div class="p-timeline-items">
-    <div class="p-timeline-item">
-      <div class="p-timeline-head">
-        <div class="p-timeline-year"></div>
-        <div class="p-timeline-count" data-lang="timeline.count" data-lang-params></div>
-      </div>
-      <div class="p-timeline-row">
-        <div class="p-timeline-date"></div>
-        <div class="p-timeline-content">
-          <div class="p-timeline-title"></div>
-          <div class="p-timeline-excerpt markdown-body"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-              <div class="p-post HIDE">
-  <div class="p-post-caption">
-    <i class="fas fa-file fa-fw"></i>
-    <span data-lang="post.caption"></span>
-  </div>
-  <div class="p-post-main">
-    <div class="p-post-readmode"><i class="fas fa-book-open fa-fw"></i></div>
-    <div class="p-post-title"></div>
-    <div class="p-post-meta">
-      <div class="p-post-date" data-lang="post.date" data-lang-titled>
-        <i class="fas fa-calendar-alt fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-updated" data-lang="post.updated" data-lang-titled>
-        <i class="fas fa-calendar-check fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-categories" data-lang="post.categories" data-lang-titled>
-        <i class="fas fa-folder-open fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-wordcount" data-lang="post.wordcount" data-lang-titled>
-        <i class="fas fa-file-word fa-fw"></i>
-        <span></span>
-      </div>
-      <div class="p-post-min2read" data-lang="post.min2readt" data-lang-titled>
-        <i class="fas fa-stopwatch fa-fw"></i>
-        <span data-lang="post.min2read" data-lang-params></span>
-      </div>
-      <div class="p-post-viewcount" data-lang="post.viewcount" data-lang-titled>
-        <i class="fas fa-eye fa-fw"></i>
-        <span class="leancloud_visitors" data-flag-title><i class="leancloud-visitors-count">∞</i></span>
-      </div>
-    </div>
-    <div class="p-post-content markdown-body"></div>
-    <div class="p-post-ending">
-      <span data-lang="post.ending.head"></span>
-      <i class="far fa-dot-circle fa-fw"></i>
-      <span data-lang="post.ending.tail"></span>
-    </div>
-    <div class="p-post-friend">
-      <div class="p-post-friend-text" data-lang="post.friend.text"></div>
-      <div class="p-post-friend-button" data-lang="post.friend.button"></div>
-      <div class="p-post-friend-qrcode">
-        <div class="p-post-friend-qrcode-qq">
-          <img src="/asset/img/qq.png">
-          <div data-lang="post.friend.qq"></div>
-        </div>
-        <div class="p-post-friend-qrcode-wechat">
-          <img src="/asset/img/wechat.png">
-          <div data-lang="post.friend.wechat"></div>
-        </div>
-      </div>
-    </div>
-    <div class="p-post-share"></div>
-    <div class="p-post-license">
-      <div class="p-post-license-author">
-        <span class="label" data-lang="post.license.labels.author"></span>
-        <span class="p-post-license-author-text">John Doe</span>
-      </div>
-      <div class="p-post-license-link">
-        <span class="label" data-lang="post.license.labels.link"></span>
-        <span class="p-post-license-link-text"></span>
-      </div>
-      <div class="p-post-license-notice">
-        <span class="label" data-lang="post.license.labels.notice"></span>
-        <span class="p-post-license-notice-text" data-lang="post.license.text" data-lang-params="%3Ca%20target=%22_blank%22%20href=%22//creativecommons.org/licenses/by-nc-sa/4.0/%22%20title=%22BY-NC-SA%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class=%22fab%20fa-creative-commons%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBY-NC-SA%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/a%3E" data-lang-encoded></span>
-      </div>
-    </div>
-    <div class="p-post-tags"></div>
-    <div class="p-post-navigator">
-      <div class="p-post-navigator-prev"></div>
-      <div class="p-post-navigator-next"></div>
-      <div class="p-post-navigator-clear"></div>
-    </div>
-  </div>
-</div>
-              <div class="p-page HIDE">
-  <div class="p-page-caption">
-    <i class="fas fa-file-alt fa-fw"></i>
-    <span data-lang="page.caption"></span>
-  </div>
-  <div class="p-page-title"></div>
-  <div class="p-page-main markdown-body"></div>
-</div>
-              <div class="p-codelib HIDE">
-  <div class="p-codelib-caption">
-    <i class="fab fa-readme fa-fw"></i>
-    <span data-lang="codelib.captions.log"></span>
-  </div>
-  <div class="p-codelib-readme">
-    <div class="p-codelib-more">
-      <span class="codelib-more" data-lang="codelib.more"></span>
-      <span class="codelib-less" data-lang="codelib.less"></span>
-    </div>
-  </div>
-  <div class="p-codelib-caption">
-    <i class="fas fa-layer-group fa-fw"></i>
-    <span data-lang="codelib.captions.stack"></span>
-  </div>
-  <ul class="p-codelib-list"></ul>
-</div>
-              <div class="p-records HIDE">
-  <div class="p-record">
-    <div class="p-record-caption">
-      <i class="fas fa-save fa-fw"></i>
-      <span data-lang="records.caption"></span>_<span class="p-record-date">N/A</span>
-    </div>
-    <div class="p-record-frame">
-      <div class="p-record-main">
-        <div class="p-record-cover">
-          <img src="/asset/img/qf3cu.temp.png">
-        </div>
-        <div class="p-record-content">
-          <div class="p-record-title">
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-type">
-            <span class="p-record-label" data-lang="records.labels.type"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-source">
-            <span class="p-record-label" data-lang="records.labels.source"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-author">
-            <span class="p-record-label" data-lang="records.labels.author"></span>
-            <span class="p-record-inner">N/A</span>
-          </div>
-          <div class="p-record-progress">
-            <span class="p-record-label" data-lang="records.labels.progress"></span>
-            <div class="p-record-inner">
-              <div class="p-record-progress-current">N/A</div>
-            </div>
-          </div>
-          <div class="p-record-summary">
-            <span class="p-record-label" data-lang="records.labels.summary"></span>
-            <div class="p-record-inner">N/A</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-              <div class="p-gallery HIDE">
-  <div class="p-gallery-item">
-    <div class="p-gallery-caption">
-      <i class="fas fa-image fa-fw"></i>
-      <span></span>
-    </div>
-    <div class="p-gallery-image">
-      <a target="_blank"><img></a>
-    </div>
-  </div>
-</div>
-              <div class="p-iconlib HIDE">
-  <div class="p-iconlib-caption">
-    <i class="fab fa-readme fa-fw"></i>
-    <span data-lang="iconlib.captions.log"></span>
-  </div>
-  <div class="p-iconlib-readme">
-    <div class="p-iconlib-more">
-      <span class="iconlib-more" data-lang="iconlib.more"></span>
-      <span class="iconlib-less" data-lang="iconlib.less"></span>
-    </div>
-  </div>
-  <div class="p-iconlib-caption">
-    <i class="fas fa-grip-horizontal fa-fw"></i>
-    <span data-lang="iconlib.captions.stack"></span>
-  </div>
-  <iframe class="p-iconlib-iframe" sandbox="allow-same-origin" frameBorder="0" marginheight="0px"
-    marginwidth="0px"></iframe>
-</div>
-              <!-- END content -->
-            </div>
-            <div class="p-comment HIDE">
-  <div class="p-comment-caption">
-    <i class="fas fa-comments fa-fw"></i>
-    <span data-lang="comment.caption"></span>
-  </div>
-  <div class="p-comment-valine"></div>
-</div>
-            <div class="p-empty HIDE">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-  <img src="/asset/img/empty.min.png">
-  
-</div>
-            <!-- END main -->
-          </div>
-          <div class="m-aside">
-            <div class="p-panels HIDE">
-  
-    <div class="p-panel" data-key="categories">
-      <div class="p-panel-caption">
-        <i class="fas fa-folder-open fa-fw"></i>
-        <span data-lang="panels.categories"></span>
-      </div>
-      <div class="p-panel-items"></div>
-    </div>
-  
-    <div class="p-panel" data-key="tags">
-      <div class="p-panel-caption">
-        <i class="fas fa-tags fa-fw"></i>
-        <span data-lang="panels.tags"></span>
-      </div>
-      <div class="p-panel-items"></div>
-    </div>
-  
-</div>
+<link rel="stylesheet" href="/css/main.css">
 
-            <div class="p-audioplayer HIDE">
-  <div class="p-audioplayer-caption">
-    <i class="fas fa-music fa-fw"></i>
-    <span data-lang="audioplayer" data-lang-encoded
-      data-lang-params="%3Ci%20class=%22fas%20fa-plus%20fa-fw%22%3E%3C/i%3E"></span>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
-  <div class="p-audioplayer-player">
-    <meting-js server="netease" type="playlist" id="4989572738"
-      theme="#ff3300" list-max-height="297px"></meting-js>
-  </div>
-</div>
-            
-            <div class="p-toc HIDE">
-  <div class="p-toc-caption">
-    <i class="fas fa-bookmark fa-fw"></i>
-    <span data-lang="toc.caption"></span>
-  </div>
-  <div class="p-toc-main">
-    <div class="p-toc-message" data-lang="toc.noheadings"></div>
-    <div class="p-toc-list"></div>
-  </div>
-</div>
-            <div class="m-aside-mark"></div>
-            <!-- END aside -->
-          </div>
-        </div>
-      </div>
-      <div class="m-footer">
-        <div class="p-footer HIDE">
-  <div class="p-footer-copyright">
-    <span class="p-footer-copyright-year">&copy; 2019 - 2022</span>
-    <span class="p-footer-copyright-author">John Doe</span>
-  </div>
-  <div class="p-footer-powered" data-lang="footer.powered" data-lang-params="%3Ca%20target=%22_blank%22%20href=%22//hexo.io%22%3EHexo%206.3.0%3C/a%3E" data-lang-encoded></div>
-  <div class="p-footer-theme" data-lang="footer.theme" data-lang-params="%5B%22%253Ca%2520target=%2522_blank%2522%2520href=%2522//github.com/jinyaoMa/hexo-theme-mustom%2522%253EMustom%253C/a%253E%22,%22%253Ca%2520target=%2522_blank%2522%2520href=%2522/%2522%253EjinyaoMa%253C/a%2520target=%2522_blank%2522%253E%22%5D" data-lang-encoded></div>
-  <div class="p-footer-count">
-    <i class="fas fa-eye fa-fw"></i>
-    <span class="p-footer-pv">∞</span>
-    <i class="fas fa-user-tie fa-fw"></i>
-    <span class="p-footer-uv">∞</span>
-    <i class="fas fa-file-word fa-fw"></i>
-    <span class="p-footer-wd">∞</span>
-  </div>
-  <div class="p-footer-license">
-    <a target="_blank" rel="noopener" href="//creativecommons.org/licenses/by-nc-sa/4.0/" data-lang="footer.license" data-lang-titled>
-      <img src="/asset/img/by-nc-sa.svg">
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-</div>
-        <!-- END footer -->
-      </div>
-      <div class="p-xcanvas HIDE">
-  <i class="fas fa-video"></i>
-  <i class="fas fa-video-slash"></i>
-</div>
-      <div class="p-goingto HIDE">
-  <div class="p-goingto-top">
-    <i class="fas fa-arrow-up"></i> 
-  </div>
-  <div class="p-goingto-bottom">
-    <i class="fas fa-arrow-down"></i> 
-  </div>
-</div>
-      <div class="p-extension HIDE">
-  <div class="p-extension-frame">
-    <div class="p-extension-scroll">
-      <div class="p-extension-content"></div>
-    </div>
-  </div>
-  <div class="p-extension-button">
-    <img class="p-extension-front" src="/asset/img/start.png">
-    <img class="p-extension-back" src="/asset/img/start.reverse.png">
-  </div>
-</div>
-      <div class="p-adframe HIDE close">
-  <div class="p-adframe-qrcode"><i class="fas fa-qrcode"></i></div>
-  <div class="p-adframe-close"><i class="fas fa-times-circle"></i></div>
-  <div class="p-adframe-content">
-    <img src="/ad.png">
-  </div>
-</div>
-      <div class="p-search HIDE">
-  <div class="p-search-dialog">
-    <div class="p-search-dialog-bar">
-      <div class="p-search-dialog-button" data-lang="search.button"></div>
-      <input class="p-search-dialog-input" type="text" data-lang="search.placeholder" data-lang-placeholdered>
-    </div>
-    <div class="p-search-dialog-result"></div>
-  </div>
-</div>
-      <div class="p-notification HIDE">
-  <div class="p-notification-message">
-    <i class="fas fa-info-circle"></i>
-    <span class="p-notification-text"></span>
-  </div>
-</div>
-      <!-- END app -->
-    </div>
-  </div>
-  
-</body>
 
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/13/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/13/hello-world/" class="post-title-link" itemprop="url">cell code map</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-13 16:51:43" itemprop="dateCreated datePublished" datetime="2022-10-13T16:51:43+08:00">2022-10-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-28 12:28:31" itemprop="dateModified" datetime="2022-09-28T12:28:31+08:00">2022-09-28</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"细胞生化","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"胞内物质与代谢","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"代谢总论","children":[{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"新陈代谢的基本原理"},{"type":"heading","depth":3,"payload":{"lines":[4,5]},"content":"主要反应机制"},{"type":"heading","depth":3,"payload":{"lines":[5,6]},"content":"研究方法"}]},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"生物能学","children":[{"type":"heading","depth":3,"payload":{"lines":[7,8]},"content":"生物能学与热力学"},{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"自由能的变化"},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"ATP与磷酰基转移"}]},{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"氧化磷酸化","children":[{"type":"heading","depth":3,"payload":{"lines":[11,12]},"content":"氧化还原电势"},{"type":"heading","depth":3,"payload":{"lines":[12,13]},"content":"电子传递与呼吸链"},{"type":"heading","depth":3,"payload":{"lines":[13,14]},"content":"氧化磷酸化作用与意义"}]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"光合作用","children":[{"type":"heading","depth":3,"payload":{"lines":[15,16]},"content":"概况"},{"type":"heading","depth":3,"payload":{"lines":[16,17]},"content":"反应过程","children":[{"type":"heading","depth":4,"payload":{"lines":[17,18]},"content":"光吸收"},{"type":"heading","depth":4,"payload":{"lines":[18,19]},"content":"中心光化学事件"},{"type":"heading","depth":4,"payload":{"lines":[19,20]},"content":"光合磷酸化"},{"type":"heading","depth":4,"payload":{"lines":[20,21]},"content":"暗反应"},{"type":"heading","depth":4,"payload":{"lines":[21,22]},"content":"光呼吸与C4途径"}]}]},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"氨基酸；肽；蛋白质；酶","children":[{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"氨基酸"},{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"肽"},{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"蛋白质","children":[{"type":"heading","depth":4,"payload":{"lines":[26,27]},"content":"结构组成"},{"type":"heading","depth":4,"payload":{"lines":[27,28]},"content":"生物学功能"},{"type":"heading","depth":4,"payload":{"lines":[28,29]},"content":"功能"},{"type":"heading","depth":4,"payload":{"lines":[29,30]},"content":"特定蛋白质","children":[{"type":"heading","depth":5,"payload":{"lines":[30,31]},"content":"纤维状蛋白质"},{"type":"heading","depth":5,"payload":{"lines":[31,32]},"content":"膜蛋白质"},{"type":"heading","depth":5,"payload":{"lines":[32,33]},"content":"肌红蛋白"},{"type":"heading","depth":5,"payload":{"lines":[33,34]},"content":"血红蛋白"},{"type":"heading","depth":5,"payload":{"lines":[34,35]},"content":"肌动蛋白，肌球蛋白，分子马达"},{"type":"heading","depth":5,"payload":{"lines":[35,36]},"content":"免疫系统和免疫球蛋白"}]},{"type":"heading","depth":4,"payload":{"lines":[36,37]},"content":"蛋白质变性折叠结构预测"},{"type":"heading","depth":4,"payload":{"lines":[37,38]},"content":"蛋白质组学","children":[{"type":"heading","depth":5,"payload":{"lines":[38,39]},"content":"二维电泳技术高通量分析蛋白质"},{"type":"heading","depth":5,"payload":{"lines":[39,40]},"content":"质谱对蛋白质的高通量鉴定"},{"type":"heading","depth":5,"payload":{"lines":[40,41]},"content":"蛋白-蛋白互作网络分析"},{"type":"heading","depth":5,"payload":{"lines":[41,42]},"content":"蛋白翻译修饰后的高通量测定"},{"type":"heading","depth":5,"payload":{"lines":[42,43]},"content":"人类蛋白质工程"},{"type":"heading","depth":5,"payload":{"lines":[43,44]},"content":"系统生物学"}]}]},{"type":"heading","depth":3,"payload":{"lines":[44,45]},"content":"酶","children":[{"type":"heading","depth":4,"payload":{"lines":[45,46]},"content":"酶学","children":[{"type":"heading","depth":5,"payload":{"lines":[46,47]},"content":"催化作用"},{"type":"heading","depth":5,"payload":{"lines":[47,48]},"content":"化学本质"},{"type":"heading","depth":5,"payload":{"lines":[48,49]},"content":"命名和分类"},{"type":"heading","depth":5,"payload":{"lines":[49,50]},"content":"专一性"},{"type":"heading","depth":5,"payload":{"lines":[50,51]},"content":"核酶"},{"type":"heading","depth":5,"payload":{"lines":[51,52]},"content":"抗酶体"}]},{"type":"heading","depth":4,"payload":{"lines":[52,53]},"content":"作用机制和活性调节","children":[{"type":"heading","depth":5,"payload":{"lines":[53,54]},"content":"活性部位"},{"type":"heading","depth":5,"payload":{"lines":[54,55]},"content":"酶促反应的特性与机制"},{"type":"heading","depth":5,"payload":{"lines":[55,56]},"content":"活性的别构调节"},{"type":"heading","depth":5,"payload":{"lines":[56,57]},"content":"酶修饰"},{"type":"heading","depth":5,"payload":{"lines":[57,58]},"content":"同工酶"},{"type":"heading","depth":5,"payload":{"lines":[58,59]},"content":"酶促反应实例"}]},{"type":"heading","depth":4,"payload":{"lines":[59,60]},"content":"酶动力学","children":[{"type":"heading","depth":5,"payload":{"lines":[60,61]},"content":"化学动力学基础"},{"type":"heading","depth":5,"payload":{"lines":[61,62]},"content":"速率活性测定"},{"type":"heading","depth":5,"payload":{"lines":[62,63]},"content":"反应级数及其特征"}]},{"type":"heading","depth":4,"payload":{"lines":[63,64]},"content":"底物浓度与酶促反应","children":[{"type":"heading","depth":5,"payload":{"lines":[64,65]},"content":"中间复合体假说"},{"type":"heading","depth":5,"payload":{"lines":[65,66]},"content":"反应动力学方程"},{"type":"heading","depth":5,"payload":{"lines":[66,67]},"content":"多底物酶促反应动力学"},{"type":"heading","depth":5,"payload":{"lines":[67,68]},"content":"温度，激活剂，pH对酶活性的影响"},{"type":"heading","depth":5,"payload":{"lines":[68,69]},"content":"酶的抑制"}]},{"type":"heading","depth":4,"payload":{"lines":[69,70]},"content":"辅酶","children":[{"type":"heading","depth":5,"payload":{"lines":[70,71]},"content":"作为辅酶的金属离子"}]}]},{"type":"heading","depth":3,"payload":{"lines":[71,72]},"content":"蛋白质降解和氨基酸分解代谢","children":[{"type":"heading","depth":4,"payload":{"lines":[72,73]},"content":"代谢","children":[{"type":"heading","depth":5,"payload":{"lines":[73,74]},"content":"蛋白质的降解"},{"type":"heading","depth":5,"payload":{"lines":[74,75]},"content":"氨基酸的降解"},{"type":"heading","depth":5,"payload":{"lines":[75,76]},"content":"氨基酸碳骨架的氧化"},{"type":"heading","depth":5,"payload":{"lines":[76,77]},"content":"尿素的形成"}]},{"type":"heading","depth":4,"payload":{"lines":[77,78]},"content":"氨基酸的重要衍生物","children":[{"type":"heading","depth":5,"payload":{"lines":[78,79]},"content":"生糖氨基酸和生酮氨基酸"},{"type":"heading","depth":5,"payload":{"lines":[79,80]},"content":"一碳单位"},{"type":"heading","depth":5,"payload":{"lines":[80,81]},"content":"生物活性物质"}]},{"type":"heading","depth":4,"payload":{"lines":[81,82]},"content":"氨基酸的生物合成","children":[{"type":"heading","depth":5,"payload":{"lines":[82,83]},"content":"生物固氮"},{"type":"heading","depth":5,"payload":{"lines":[83,84]},"content":"氨的同化作用"},{"type":"heading","depth":5,"payload":{"lines":[84,85]},"content":"氨基酸的合成"},{"type":"heading","depth":5,"payload":{"lines":[85,86]},"content":"氨基酸的转化"},{"type":"heading","depth":5,"payload":{"lines":[86,87]},"content":"调节"}]}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[88,89]},"content":"糖类","children":[{"type":"heading","depth":2,"payload":{"lines":[89,90]},"content":"化学本质"},{"type":"heading","depth":2,"payload":{"lines":[90,91]},"content":"旋光异构"},{"type":"heading","depth":2,"payload":{"lines":[91,92]},"content":"命名"},{"type":"heading","depth":2,"payload":{"lines":[92,93]},"content":"糖密码"},{"type":"heading","depth":2,"payload":{"lines":[93,94]},"content":"分类","children":[{"type":"heading","depth":3,"payload":{"lines":[94,95]},"content":"单糖及其衍生物","children":[{"type":"heading","depth":4,"payload":{"lines":[95,96]},"content":"结构"},{"type":"heading","depth":4,"payload":{"lines":[96,97]},"content":"性质"},{"type":"heading","depth":4,"payload":{"lines":[97,98]},"content":"衍生物"}]},{"type":"heading","depth":3,"payload":{"lines":[98,99]},"content":"寡糖","children":[{"type":"heading","depth":4,"payload":{"lines":[99,100]},"content":"结构"},{"type":"heading","depth":4,"payload":{"lines":[100,101]},"content":"常见二糖"},{"type":"heading","depth":4,"payload":{"lines":[101,102]},"content":"简单寡糖"},{"type":"heading","depth":4,"payload":{"lines":[102,103]},"content":"环糊精"}]},{"type":"heading","depth":3,"payload":{"lines":[103,104]},"content":"多糖","children":[{"type":"heading","depth":4,"payload":{"lines":[104,105]},"content":"储存形式的同多糖"},{"type":"heading","depth":4,"payload":{"lines":[105,106]},"content":"结构作用的同多糖"},{"type":"heading","depth":4,"payload":{"lines":[106,107]},"content":"多糖的折叠"},{"type":"heading","depth":4,"payload":{"lines":[107,108]},"content":"生物对多糖的利用","children":[{"type":"heading","depth":5,"payload":{"lines":[108,109]},"content":"植物细胞壁的基质杂多糖"},{"type":"heading","depth":5,"payload":{"lines":[109,110]},"content":"细菌细胞壁的结构杂多糖"},{"type":"heading","depth":5,"payload":{"lines":[110,111]},"content":"脊椎动物胞外基质的结构杂多糖"}]}]},{"type":"heading","depth":3,"payload":{"lines":[111,112]},"content":"糖缀合物","children":[{"type":"heading","depth":4,"payload":{"lines":[112,113]},"content":"蛋白聚糖"},{"type":"heading","depth":4,"payload":{"lines":[113,114]},"content":"糖蛋白"},{"type":"heading","depth":4,"payload":{"lines":[114,115]},"content":"糖脂与脂多糖"}]},{"type":"heading","depth":3,"payload":{"lines":[115,116]},"content":"聚糖","children":[{"type":"heading","depth":4,"payload":{"lines":[116,117]},"content":"结构分析"}]}]},{"type":"heading","depth":2,"payload":{"lines":[117,118]},"content":"糖代谢与糖异生","children":[{"type":"heading","depth":3,"payload":{"lines":[118,119]},"content":"糖酵解","children":[{"type":"heading","depth":4,"payload":{"lines":[119,120]},"content":"葡萄糖的糖酵解"},{"type":"heading","depth":4,"payload":{"lines":[120,121]},"content":"丙酮酸去路","children":[{"type":"heading","depth":5,"payload":{"lines":[121,122]},"content":"生成乳酸"},{"type":"heading","depth":5,"payload":{"lines":[122,123]},"content":"生成乙醇"}]},{"type":"heading","depth":4,"payload":{"lines":[123,124]},"content":"柠檬酸循环","children":[{"type":"heading","depth":5,"payload":{"lines":[124,125]},"content":"过程"},{"type":"heading","depth":5,"payload":{"lines":[125,126]},"content":"调控"},{"type":"heading","depth":5,"payload":{"lines":[126,127]},"content":"作用"}]},{"type":"heading","depth":4,"payload":{"lines":[127,128]},"content":"乙醛酸途径"},{"type":"heading","depth":4,"payload":{"lines":[128,129]},"content":"能量估算"},{"type":"heading","depth":4,"payload":{"lines":[129,130]},"content":"果糖的糖酵解"},{"type":"heading","depth":4,"payload":{"lines":[130,131]},"content":"甘露糖的糖酵解"},{"type":"heading","depth":4,"payload":{"lines":[131,132]},"content":"糖酵解的调节"}]},{"type":"heading","depth":3,"payload":{"lines":[132,133]},"content":"酒精发酵"},{"type":"heading","depth":3,"payload":{"lines":[133,134]},"content":"戊糖磷酸途径","children":[{"type":"heading","depth":4,"payload":{"lines":[134,135]},"content":"反应过程"},{"type":"heading","depth":4,"payload":{"lines":[135,136]},"content":"速率调控"},{"type":"heading","depth":4,"payload":{"lines":[136,137]},"content":"生物学意义"}]},{"type":"heading","depth":3,"payload":{"lines":[137,138]},"content":"糖异生","children":[{"type":"heading","depth":4,"payload":{"lines":[138,139]},"content":"作用途径"},{"type":"heading","depth":4,"payload":{"lines":[139,140]},"content":"能量消耗及意义"},{"type":"heading","depth":4,"payload":{"lines":[140,141]},"content":"调节"},{"type":"heading","depth":4,"payload":{"lines":[141,142]},"content":"葡萄糖的转运"},{"type":"heading","depth":4,"payload":{"lines":[142,143]},"content":"乙醛酸途径"},{"type":"heading","depth":4,"payload":{"lines":[143,144]},"content":"寡糖类生物合成和分解","children":[{"type":"heading","depth":5,"payload":{"lines":[144,145]},"content":"乳糖"},{"type":"heading","depth":5,"payload":{"lines":[145,146]},"content":"糖蛋白"}]}]},{"type":"heading","depth":3,"payload":{"lines":[146,147]},"content":"糖原","children":[{"type":"heading","depth":4,"payload":{"lines":[147,148]},"content":"降解"},{"type":"heading","depth":4,"payload":{"lines":[148,149]},"content":"合成"},{"type":"heading","depth":4,"payload":{"lines":[149,150]},"content":"调控"},{"type":"heading","depth":4,"payload":{"lines":[150,151]},"content":"生物学意义"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[152,153]},"content":"脂质与生物膜","children":[{"type":"heading","depth":2,"payload":{"lines":[153,154]},"content":"贮存脂质","children":[{"type":"heading","depth":3,"payload":{"lines":[154,155]},"content":"三酰甘油"},{"type":"heading","depth":3,"payload":{"lines":[155,156]},"content":"蜡"}]},{"type":"heading","depth":2,"payload":{"lines":[156,157]},"content":"活性脂质"},{"type":"heading","depth":2,"payload":{"lines":[157,158]},"content":"血浆脂蛋白","children":[{"type":"heading","depth":3,"payload":{"lines":[158,159]},"content":"分类"},{"type":"heading","depth":3,"payload":{"lines":[159,160]},"content":"结构与功能"}]},{"type":"heading","depth":2,"payload":{"lines":[160,161]},"content":"膜结构脂质","children":[{"type":"heading","depth":3,"payload":{"lines":[161,162]},"content":"生物膜","children":[{"type":"heading","depth":4,"payload":{"lines":[162,163]},"content":"组成与结构","children":[{"type":"heading","depth":5,"payload":{"lines":[163,164]},"content":"糖脂"},{"type":"heading","depth":5,"payload":{"lines":[164,165]},"content":"磷脂"},{"type":"heading","depth":5,"payload":{"lines":[165,166]},"content":"胆固醇"}]},{"type":"heading","depth":4,"payload":{"lines":[166,167]},"content":"细胞质膜"}]}]},{"type":"heading","depth":2,"payload":{"lines":[167,168]},"content":"脂质的提取与分离"},{"type":"heading","depth":2,"payload":{"lines":[168,169]},"content":"脂质代谢","children":[{"type":"heading","depth":3,"payload":{"lines":[169,170]},"content":"分解","children":[{"type":"heading","depth":4,"payload":{"lines":[170,171]},"content":"三酰甘油"},{"type":"heading","depth":4,"payload":{"lines":[171,172]},"content":"脂肪酸"},{"type":"heading","depth":4,"payload":{"lines":[172,173]},"content":"酮体"}]},{"type":"heading","depth":3,"payload":{"lines":[173,174]},"content":"合成","children":[{"type":"heading","depth":4,"payload":{"lines":[174,175]},"content":"脂肪的储存"},{"type":"heading","depth":4,"payload":{"lines":[175,176]},"content":"脂肪酸"},{"type":"heading","depth":4,"payload":{"lines":[176,177]},"content":"脂酰甘油"},{"type":"heading","depth":4,"payload":{"lines":[177,178]},"content":"磷脂"},{"type":"heading","depth":4,"payload":{"lines":[178,179]},"content":"鞘磷脂，鞘糖脂"},{"type":"heading","depth":4,"payload":{"lines":[179,180]},"content":"类十二烷酸"},{"type":"heading","depth":4,"payload":{"lines":[180,181]},"content":"胆固醇"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[181,182]},"content":"核酸","children":[{"type":"heading","depth":2,"payload":{"lines":[182,183]},"content":"分类与分布"},{"type":"heading","depth":2,"payload":{"lines":[183,184]},"content":"物理化学性质","children":[{"type":"heading","depth":3,"payload":{"lines":[184,185]},"content":"水解"},{"type":"heading","depth":3,"payload":{"lines":[185,186]},"content":"酸碱性质"},{"type":"heading","depth":3,"payload":{"lines":[186,187]},"content":"紫外吸收"},{"type":"heading","depth":3,"payload":{"lines":[187,188]},"content":"变性，复性，杂交"},{"type":"heading","depth":3,"payload":{"lines":[188,189]},"content":"化学合成"}]},{"type":"heading","depth":2,"payload":{"lines":[189,190]},"content":"化学组成","children":[{"type":"heading","depth":3,"payload":{"lines":[190,191]},"content":"碱基"},{"type":"heading","depth":3,"payload":{"lines":[191,192]},"content":"核苷"},{"type":"heading","depth":3,"payload":{"lines":[192,193]},"content":"核苷酸","children":[{"type":"heading","depth":4,"payload":{"lines":[193,194]},"content":"核苷酸"},{"type":"heading","depth":4,"payload":{"lines":[194,195]},"content":"核苷酸衍生物"},{"type":"heading","depth":4,"payload":{"lines":[195,196]},"content":"核苷酸聚合物"}]}]},{"type":"heading","depth":2,"payload":{"lines":[196,197]},"content":"DNA的结构与功能"},{"type":"heading","depth":2,"payload":{"lines":[197,198]},"content":"RNA的结构与功能"},{"type":"heading","depth":2,"payload":{"lines":[198,199]},"content":"核酸的降解与核苷酸代谢","children":[{"type":"heading","depth":3,"payload":{"lines":[199,200]},"content":"核酸和核苷酸的分解","children":[{"type":"heading","depth":4,"payload":{"lines":[200,201]},"content":"核酸的降解"},{"type":"heading","depth":4,"payload":{"lines":[201,202]},"content":"核苷酸的分解"},{"type":"heading","depth":4,"payload":{"lines":[202,203]},"content":"嘌呤碱的分解"},{"type":"heading","depth":4,"payload":{"lines":[203,204]},"content":"嘧啶碱的分解"}]},{"type":"heading","depth":3,"payload":{"lines":[204,205]},"content":"核苷酸的合成","children":[{"type":"heading","depth":4,"payload":{"lines":[205,206]},"content":"嘌呤核糖核苷酸的合成"},{"type":"heading","depth":4,"payload":{"lines":[206,207]},"content":"嘧啶核糖核苷酸的合成"},{"type":"heading","depth":4,"payload":{"lines":[207,208]},"content":"核苷一磷酸转变为核苷三磷酸"},{"type":"heading","depth":4,"payload":{"lines":[208,209]},"content":"脱氧核糖核苷酸合成"}]},{"type":"heading","depth":3,"payload":{"lines":[209,210]},"content":"辅酶核苷酸的合成","children":[{"type":"heading","depth":4,"payload":{"lines":[210,211]},"content":"烟酰胺核苷酸合成"},{"type":"heading","depth":4,"payload":{"lines":[211,212]},"content":"黄素核苷酸合成"},{"type":"heading","depth":4,"payload":{"lines":[212,213]},"content":"辅酶A合成"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[213,214]},"content":"维生素","children":[{"type":"heading","depth":2,"payload":{"lines":[214,215]},"content":"维生素分类","children":[{"type":"heading","depth":3,"payload":{"lines":[215,216]},"content":"脂溶性维生素"},{"type":"heading","depth":3,"payload":{"lines":[216,217]},"content":"水溶性维生素"},{"type":"heading","depth":3,"payload":{"lines":[217,218]},"content":"作为辅酶的金属离子"}]}]},{"type":"heading","depth":1,"payload":{"lines":[218,219]},"content":"激素","children":[{"type":"heading","depth":2,"payload":{"lines":[219,220]},"content":"激素通论","children":[{"type":"heading","depth":3,"payload":{"lines":[220,221]},"content":"激素和其他化学信号"},{"type":"heading","depth":3,"payload":{"lines":[221,222]},"content":"分类"},{"type":"heading","depth":3,"payload":{"lines":[222,223]},"content":"内分泌腺及其分泌的激素"},{"type":"heading","depth":3,"payload":{"lines":[223,224]},"content":"激素释放的调控"},{"type":"heading","depth":3,"payload":{"lines":[224,225]},"content":"激素的作用"}]},{"type":"heading","depth":2,"payload":{"lines":[225,226]},"content":"动物激素","children":[{"type":"heading","depth":3,"payload":{"lines":[226,227]},"content":"肽激素"},{"type":"heading","depth":3,"payload":{"lines":[227,228]},"content":"儿茶酚胺激素"},{"type":"heading","depth":3,"payload":{"lines":[228,229]},"content":"类十二烷酸激素"},{"type":"heading","depth":3,"payload":{"lines":[229,230]},"content":"类固醇激素"},{"type":"heading","depth":3,"payload":{"lines":[230,231]},"content":"维生素D激素"},{"type":"heading","depth":3,"payload":{"lines":[231,232]},"content":"类视黄醇激素"},{"type":"heading","depth":3,"payload":{"lines":[232,233]},"content":"甲状腺激素"},{"type":"heading","depth":3,"payload":{"lines":[233,234]},"content":"氧化氮"}]},{"type":"heading","depth":2,"payload":{"lines":[234,235]},"content":"昆虫激素","children":[{"type":"heading","depth":3,"payload":{"lines":[235,236]},"content":"内激素"},{"type":"heading","depth":3,"payload":{"lines":[236,237]},"content":"外激素"},{"type":"heading","depth":3,"payload":{"lines":[237,238]},"content":"植物激素"},{"type":"heading","depth":3,"payload":{"lines":[238,239]},"content":"生长素"},{"type":"heading","depth":3,"payload":{"lines":[239,240]},"content":"细胞分裂素"},{"type":"heading","depth":3,"payload":{"lines":[240,241]},"content":"赤霉素"},{"type":"heading","depth":3,"payload":{"lines":[241,242]},"content":"脱落酸"},{"type":"heading","depth":3,"payload":{"lines":[242,243]},"content":"乙烯"}]}]},{"type":"heading","depth":1,"payload":{"lines":[243,244]},"content":"新陈代谢的调控机制","children":[{"type":"heading","depth":2,"payload":{"lines":[244,245]},"content":"代谢控制基本原理"},{"type":"heading","depth":2,"payload":{"lines":[245,246]},"content":"酶活性和酶量调节"},{"type":"heading","depth":2,"payload":{"lines":[246,247]},"content":"代谢途径的分隔与控制"},{"type":"heading","depth":2,"payload":{"lines":[247,248]},"content":"整体水平的代谢调节控制"}]},{"type":"heading","depth":1,"payload":{"lines":[248,249]},"content":"细胞结构与功能","children":[{"type":"heading","depth":2,"payload":{"lines":[249,250]},"content":"病毒"},{"type":"heading","depth":2,"payload":{"lines":[250,251]},"content":"细胞生命","children":[{"type":"heading","depth":3,"payload":{"lines":[251,252]},"content":"真核与原核的比较"},{"type":"heading","depth":3,"payload":{"lines":[252,253]},"content":"真核","children":[{"type":"heading","depth":4,"payload":{"lines":[253,254]},"content":"细胞的生理环境及作用"},{"type":"heading","depth":4,"payload":{"lines":[254,255]},"content":"细胞器","children":[{"type":"heading","depth":5,"payload":{"lines":[255,256]},"content":"核糖体"},{"type":"heading","depth":5,"payload":{"lines":[256,257]},"content":"内质网"},{"type":"heading","depth":5,"payload":{"lines":[257,258]},"content":"高尔基体"},{"type":"heading","depth":5,"payload":{"lines":[258,259]},"content":"溶酶体"},{"type":"heading","depth":5,"payload":{"lines":[259,260]},"content":"线粒体"},{"type":"heading","depth":5,"payload":{"lines":[260,261]},"content":"叶绿体"},{"type":"heading","depth":5,"payload":{"lines":[261,262]},"content":"内共生学说"},{"type":"heading","depth":5,"payload":{"lines":[262,263]},"content":"细胞骨架"}]},{"type":"heading","depth":4,"payload":{"lines":[263,264]},"content":"细胞膜","children":[{"type":"heading","depth":5,"payload":{"lines":[264,265]},"content":"结构"},{"type":"heading","depth":5,"payload":{"lines":[265,266]},"content":"功能"},{"type":"heading","depth":5,"payload":{"lines":[266,267]},"content":"特征"},{"type":"heading","depth":5,"payload":{"lines":[267,268]},"content":"膜电位与离子跨膜转运"}]},{"type":"heading","depth":4,"payload":{"lines":[268,269]},"content":"细胞基质","children":[{"type":"heading","depth":5,"payload":{"lines":[269,270]},"content":"结构"},{"type":"heading","depth":5,"payload":{"lines":[270,271]},"content":"功能"}]}]},{"type":"heading","depth":3,"payload":{"lines":[271,272]},"content":"原核"}]}]},{"type":"heading","depth":1,"payload":{"lines":[272,273]},"content":"细胞核与基因","children":[{"type":"heading","depth":2,"payload":{"lines":[273,274]},"content":"细胞核","children":[{"type":"heading","depth":3,"payload":{"lines":[274,275]},"content":"结构","children":[{"type":"heading","depth":4,"payload":{"lines":[275,276]},"content":"核被膜","children":[{"type":"heading","depth":5,"payload":{"lines":[276,277]},"content":"核膜"},{"type":"heading","depth":5,"payload":{"lines":[277,278]},"content":"核孔复合体"},{"type":"heading","depth":5,"payload":{"lines":[278,279]},"content":"核纤层"}]},{"type":"heading","depth":4,"payload":{"lines":[279,280]},"content":"染色质"},{"type":"heading","depth":4,"payload":{"lines":[280,281]},"content":"核仁","children":[{"type":"heading","depth":5,"payload":{"lines":[281,282]},"content":"结构"},{"type":"heading","depth":5,"payload":{"lines":[282,283]},"content":"功能"},{"type":"heading","depth":5,"payload":{"lines":[283,284]},"content":"周期变化"}]},{"type":"heading","depth":4,"payload":{"lines":[284,285]},"content":"核体"},{"type":"heading","depth":4,"payload":{"lines":[285,286]},"content":"核基质"}]}]},{"type":"heading","depth":2,"payload":{"lines":[286,287]},"content":"基因与染色体","children":[{"type":"heading","depth":3,"payload":{"lines":[287,288]},"content":"染色质","children":[{"type":"heading","depth":4,"payload":{"lines":[288,289]},"content":"染色质结构","children":[{"type":"heading","depth":5,"payload":{"lines":[289,290]},"content":"染色质DNA"},{"type":"heading","depth":5,"payload":{"lines":[290,291]},"content":"染色质蛋白与核小体"},{"type":"heading","depth":5,"payload":{"lines":[291,292]},"content":"染色质组装与类型"}]},{"type":"heading","depth":4,"payload":{"lines":[292,293]},"content":"染色质的复制表达","children":[{"type":"heading","depth":5,"payload":{"lines":[293,294]},"content":"复制与修复"},{"type":"heading","depth":5,"payload":{"lines":[294,295]},"content":"激活与失活"},{"type":"heading","depth":5,"payload":{"lines":[295,296]},"content":"基因表达调控"}]}]},{"type":"heading","depth":3,"payload":{"lines":[296,297]},"content":"染色体","children":[{"type":"heading","depth":4,"payload":{"lines":[297,298]},"content":"形态结构"},{"type":"heading","depth":4,"payload":{"lines":[298,299]},"content":"功能元件"},{"type":"heading","depth":4,"payload":{"lines":[299,300]},"content":"带型"},{"type":"heading","depth":4,"payload":{"lines":[300,301]},"content":"染色质重塑","children":[{"type":"heading","depth":5,"payload":{"lines":[301,302]},"content":"组蛋白变异与修饰"},{"type":"heading","depth":5,"payload":{"lines":[302,303]},"content":"DNA修饰"},{"type":"heading","depth":5,"payload":{"lines":[303,304]},"content":"重塑与基因表达调控"}]},{"type":"heading","depth":4,"payload":{"lines":[304,305]},"content":"染色体重塑","children":[{"type":"heading","depth":5,"payload":{"lines":[305,306]},"content":"组蛋白变异与修饰"},{"type":"heading","depth":5,"payload":{"lines":[306,307]},"content":"DNA修饰"},{"type":"heading","depth":5,"payload":{"lines":[307,308]},"content":"重塑与基因表达"}]},{"type":"heading","depth":4,"payload":{"lines":[308,309]},"content":"细菌拟核结构"},{"type":"heading","depth":4,"payload":{"lines":[309,310]},"content":"真核生物染色体结构"},{"type":"heading","depth":4,"payload":{"lines":[310,311]},"content":"特殊染色体"}]},{"type":"heading","depth":3,"payload":{"lines":[311,312]},"content":"基因","children":[{"type":"heading","depth":4,"payload":{"lines":[312,313]},"content":"基因和基因组的结构","children":[{"type":"heading","depth":5,"payload":{"lines":[313,314]},"content":"原核生物"},{"type":"heading","depth":5,"payload":{"lines":[314,315]},"content":"真核生物"}]},{"type":"heading","depth":4,"payload":{"lines":[315,316]},"content":"基因进化"}]},{"type":"heading","depth":3,"payload":{"lines":[316,317]},"content":"基因调节表达","children":[{"type":"heading","depth":4,"payload":{"lines":[317,318]},"content":"表达调节的基本原理"},{"type":"heading","depth":4,"payload":{"lines":[318,319]},"content":"原核生物的表达调节"},{"type":"heading","depth":4,"payload":{"lines":[319,320]},"content":"真核生物的表达调节"}]}]},{"type":"heading","depth":2,"payload":{"lines":[320,321]},"content":"DNA的复制与修复","children":[{"type":"heading","depth":3,"payload":{"lines":[321,322]},"content":"复制","children":[{"type":"heading","depth":4,"payload":{"lines":[322,323]},"content":"相关酶"},{"type":"heading","depth":4,"payload":{"lines":[323,324]},"content":"复制","children":[{"type":"heading","depth":5,"payload":{"lines":[324,325]},"content":"半保留复制"},{"type":"heading","depth":5,"payload":{"lines":[325,326]},"content":"半不连续复制"},{"type":"heading","depth":5,"payload":{"lines":[326,327]},"content":"复制过程"},{"type":"heading","depth":5,"payload":{"lines":[327,328]},"content":"复制的拓扑性质"}]}]},{"type":"heading","depth":3,"payload":{"lines":[328,329]},"content":"损伤修复","children":[{"type":"heading","depth":4,"payload":{"lines":[329,330]},"content":"错配修复"},{"type":"heading","depth":4,"payload":{"lines":[330,331]},"content":"直接修复"},{"type":"heading","depth":4,"payload":{"lines":[331,332]},"content":"切除修复"},{"type":"heading","depth":4,"payload":{"lines":[332,333]},"content":"重组修复"},{"type":"heading","depth":4,"payload":{"lines":[333,334]},"content":"应急反应和易错修复"}]},{"type":"heading","depth":3,"payload":{"lines":[334,335]},"content":"DNA突变","children":[{"type":"heading","depth":4,"payload":{"lines":[335,336]},"content":"类型"},{"type":"heading","depth":4,"payload":{"lines":[336,337]},"content":"诱变剂及其检测"}]}]},{"type":"heading","depth":2,"payload":{"lines":[337,338]},"content":"DNA重组","children":[{"type":"heading","depth":3,"payload":{"lines":[338,339]},"content":"同源重组"},{"type":"heading","depth":3,"payload":{"lines":[339,340]},"content":"特异位点重组"},{"type":"heading","depth":3,"payload":{"lines":[340,341]},"content":"转座重组"}]},{"type":"heading","depth":2,"payload":{"lines":[341,342]},"content":"RNA","children":[{"type":"heading","depth":3,"payload":{"lines":[342,343]},"content":"DNA指导下的RNA合成"},{"type":"heading","depth":3,"payload":{"lines":[343,344]},"content":"RNA的转录后加工"},{"type":"heading","depth":3,"payload":{"lines":[344,345]},"content":"RNA指导下RNA和DNA合成"}]},{"type":"heading","depth":2,"payload":{"lines":[345,346]},"content":"蛋白质合成加工和定位","children":[{"type":"heading","depth":3,"payload":{"lines":[346,347]},"content":"遗传密码"},{"type":"heading","depth":3,"payload":{"lines":[347,348]},"content":"蛋白质合成相关装置"},{"type":"heading","depth":3,"payload":{"lines":[348,349]},"content":"合成步骤"},{"type":"heading","depth":3,"payload":{"lines":[349,350]},"content":"合成的忠诚性"},{"type":"heading","depth":3,"payload":{"lines":[350,351]},"content":"定位"},{"type":"heading","depth":3,"payload":{"lines":[351,352]},"content":"抑制"}]},{"type":"heading","depth":2,"payload":{"lines":[352,353]},"content":"基因组学","children":[{"type":"heading","depth":3,"payload":{"lines":[353,354]},"content":"全基因组测序和注释"},{"type":"heading","depth":3,"payload":{"lines":[354,355]},"content":"功能基因组学","children":[{"type":"heading","depth":4,"payload":{"lines":[355,356]},"content":"转录普分析"},{"type":"heading","depth":4,"payload":{"lines":[356,357]},"content":"基因敲除"},{"type":"heading","depth":4,"payload":{"lines":[357,358]},"content":"基因敲低"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[358,359]},"content":"细胞通信与联系","children":[{"type":"heading","depth":2,"payload":{"lines":[359,360]},"content":"物质跨膜运输","children":[{"type":"heading","depth":3,"payload":{"lines":[360,361]},"content":"膜转运蛋白"},{"type":"heading","depth":3,"payload":{"lines":[361,362]},"content":"小分子和离子的跨膜运输","children":[{"type":"heading","depth":4,"payload":{"lines":[362,363]},"content":"被动运输","children":[{"type":"heading","depth":5,"payload":{"lines":[363,364]},"content":"简单扩散"},{"type":"heading","depth":5,"payload":{"lines":[364,365]},"content":"协助扩散"}]},{"type":"heading","depth":4,"payload":{"lines":[365,366]},"content":"主动运输","children":[{"type":"heading","depth":5,"payload":{"lines":[366,367]},"content":"ATP驱动泵（P型泵，钠钾泵，钙离子泵，其他P型泵，V，F型质子泵，ABC超家族）"},{"type":"heading","depth":5,"payload":{"lines":[367,368]},"content":"协同转运蛋白"},{"type":"heading","depth":5,"payload":{"lines":[368,369]},"content":"光驱动泵"}]}]},{"type":"heading","depth":3,"payload":{"lines":[369,370]},"content":"大分子与颗粒的跨膜运输","children":[{"type":"heading","depth":4,"payload":{"lines":[370,371]},"content":"胞吞","children":[{"type":"heading","depth":5,"payload":{"lines":[371,372]},"content":"类型"},{"type":"heading","depth":5,"payload":{"lines":[372,373]},"content":"信号转导"}]},{"type":"heading","depth":4,"payload":{"lines":[373,374]},"content":"胞吐"}]}]},{"type":"heading","depth":2,"payload":{"lines":[374,375]},"content":"细胞内膜系统"},{"type":"heading","depth":2,"payload":{"lines":[375,376]},"content":"蛋白质分选","children":[{"type":"heading","depth":3,"payload":{"lines":[376,377]},"content":"信号假说"},{"type":"heading","depth":3,"payload":{"lines":[377,378]},"content":"蛋白质分选信号"},{"type":"heading","depth":3,"payload":{"lines":[378,379]},"content":"蛋白质向叶绿体，线粒体分选"}]},{"type":"heading","depth":2,"payload":{"lines":[379,380]},"content":"膜泡运输","children":[{"type":"heading","depth":3,"payload":{"lines":[380,381]},"content":"COP I与COP II的装配运输"},{"type":"heading","depth":3,"payload":{"lines":[381,382]},"content":"网格蛋白包被膜泡的装配运输"},{"type":"heading","depth":3,"payload":{"lines":[382,383]},"content":"转运膜泡与靶膜的锚定与融合"}]},{"type":"heading","depth":2,"payload":{"lines":[383,384]},"content":"信号转导与细胞通信","children":[{"type":"heading","depth":3,"payload":{"lines":[384,385]},"content":"信号分子与受体"},{"type":"heading","depth":3,"payload":{"lines":[385,386]},"content":"细胞通信"},{"type":"heading","depth":3,"payload":{"lines":[386,387]},"content":"信号转导","children":[{"type":"heading","depth":4,"payload":{"lines":[387,388]},"content":"信号转导的共同特点"},{"type":"heading","depth":4,"payload":{"lines":[388,389]},"content":"转导系统及其特性"},{"type":"heading","depth":4,"payload":{"lines":[389,390]},"content":"基本过程与类型"},{"type":"heading","depth":4,"payload":{"lines":[390,391]},"content":"G蛋白偶联受体与第二信使"},{"type":"heading","depth":4,"payload":{"lines":[391,392]},"content":"受体酪氨酸激酶"},{"type":"heading","depth":4,"payload":{"lines":[392,393]},"content":"受体鸟苷酸环化酶，cGMP和蛋白激酶G"},{"type":"heading","depth":4,"payload":{"lines":[393,394]},"content":"门控离子通道"}]},{"type":"heading","depth":3,"payload":{"lines":[394,395]},"content":"介导并调控细胞基因表达的受体及其信号"},{"type":"heading","depth":3,"payload":{"lines":[395,396]},"content":"细胞信号转导的整合与控制"}]},{"type":"heading","depth":2,"payload":{"lines":[396,397]},"content":"细胞的社会联系","children":[{"type":"heading","depth":3,"payload":{"lines":[397,398]},"content":"细胞连接","children":[{"type":"heading","depth":4,"payload":{"lines":[398,399]},"content":"封闭连接"},{"type":"heading","depth":4,"payload":{"lines":[399,400]},"content":"锚定连接"}]},{"type":"heading","depth":3,"payload":{"lines":[400,401]},"content":"细胞黏着及其分子基础","children":[{"type":"heading","depth":4,"payload":{"lines":[401,402]},"content":"钙黏蛋白"},{"type":"heading","depth":4,"payload":{"lines":[402,403]},"content":"选择素"},{"type":"heading","depth":4,"payload":{"lines":[403,404]},"content":"免疫球蛋白"},{"type":"heading","depth":4,"payload":{"lines":[404,405]},"content":"整理联蛋白"}]},{"type":"heading","depth":3,"payload":{"lines":[405,406]},"content":"细胞外基质","children":[{"type":"heading","depth":4,"payload":{"lines":[406,407]},"content":"胶原"},{"type":"heading","depth":4,"payload":{"lines":[407,408]},"content":"弹性蛋白"},{"type":"heading","depth":4,"payload":{"lines":[408,409]},"content":"糖胺聚糖和蛋白聚糖"},{"type":"heading","depth":4,"payload":{"lines":[409,410]},"content":"纤连蛋白和层粘连蛋白"},{"type":"heading","depth":4,"payload":{"lines":[410,411]},"content":"基膜与细胞外被"},{"type":"heading","depth":4,"payload":{"lines":[411,412]},"content":"植物细胞壁"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[412,413]},"content":"细胞生长分化衰亡","children":[{"type":"heading","depth":2,"payload":{"lines":[413,414]},"content":"细胞周期","children":[{"type":"heading","depth":3,"payload":{"lines":[414,415]},"content":"概述"},{"type":"heading","depth":3,"payload":{"lines":[415,416]},"content":"周期时相与主要事件"},{"type":"heading","depth":3,"payload":{"lines":[416,417]},"content":"细胞周期同步化"},{"type":"heading","depth":3,"payload":{"lines":[417,418]},"content":"增殖调控","children":[{"type":"heading","depth":4,"payload":{"lines":[418,419]},"content":"MPF"},{"type":"heading","depth":4,"payload":{"lines":[419,420]},"content":"p34（Cdc4）激酶与MPF"},{"type":"heading","depth":4,"payload":{"lines":[420,421]},"content":"周期蛋白"},{"type":"heading","depth":4,"payload":{"lines":[421,422]},"content":"CDK与CDK抑制因子"},{"type":"heading","depth":4,"payload":{"lines":[422,423]},"content":"其他细胞周期调控因素"}]}]},{"type":"heading","depth":2,"payload":{"lines":[423,424]},"content":"细胞分裂","children":[{"type":"heading","depth":3,"payload":{"lines":[424,425]},"content":"有丝分裂"},{"type":"heading","depth":3,"payload":{"lines":[425,426]},"content":"减数分裂"}]},{"type":"heading","depth":2,"payload":{"lines":[426,427]},"content":"分化与干细胞","children":[{"type":"heading","depth":3,"payload":{"lines":[427,428]},"content":"分化","children":[{"type":"heading","depth":4,"payload":{"lines":[428,429]},"content":"概念"},{"type":"heading","depth":4,"payload":{"lines":[429,430]},"content":"影响分化因素"}]},{"type":"heading","depth":3,"payload":{"lines":[430,431]},"content":"干细胞","children":[{"type":"heading","depth":4,"payload":{"lines":[431,432]},"content":"概念"},{"type":"heading","depth":4,"payload":{"lines":[432,433]},"content":"分类","children":[{"type":"heading","depth":5,"payload":{"lines":[433,434]},"content":"根据潜能（全能干细胞，多潜能干细胞，多能干细胞，单能干细胞，终末分化）"},{"type":"heading","depth":5,"payload":{"lines":[434,435]},"content":"根据来源（胚胎干细胞，成体干细胞）"}]},{"type":"heading","depth":4,"payload":{"lines":[435,436]},"content":"重编程与诱导性多潜能干细胞"},{"type":"heading","depth":4,"payload":{"lines":[436,437]},"content":"谱系重编程"},{"type":"heading","depth":4,"payload":{"lines":[437,438]},"content":"干细胞应用"}]}]},{"type":"heading","depth":2,"payload":{"lines":[438,439]},"content":"癌变","children":[{"type":"heading","depth":3,"payload":{"lines":[439,440]},"content":"基本特征"},{"type":"heading","depth":3,"payload":{"lines":[440,441]},"content":"癌基因与抑癌基因"},{"type":"heading","depth":3,"payload":{"lines":[441,442]},"content":"肿瘤干细胞"}]},{"type":"heading","depth":2,"payload":{"lines":[442,443]},"content":"衰老与死亡","children":[{"type":"heading","depth":3,"payload":{"lines":[443,444]},"content":"细胞衰老","children":[{"type":"heading","depth":4,"payload":{"lines":[444,445]},"content":"概念"},{"type":"heading","depth":4,"payload":{"lines":[445,446]},"content":"特征"},{"type":"heading","depth":4,"payload":{"lines":[446,447]},"content":"机制"},{"type":"heading","depth":4,"payload":{"lines":[447,448]},"content":"个体衰老与细胞衰老"}]},{"type":"heading","depth":3,"payload":{"lines":[448,449]},"content":"程序性死亡","children":[{"type":"heading","depth":4,"payload":{"lines":[449,450]},"content":"死亡形式以及意义"},{"type":"heading","depth":4,"payload":{"lines":[450,451]},"content":"凋亡过程与分子机制"},{"type":"heading","depth":4,"payload":{"lines":[451,452]},"content":"程序性坏死的分子机制"},{"type":"heading","depth":4,"payload":{"lines":[452,453]},"content":"植物细胞凋亡的分子机制"}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[454,455]},"content":"操作技术","children":[{"type":"heading","depth":2,"payload":{"lines":[455,456]},"content":"细胞","children":[{"type":"heading","depth":3,"payload":{"lines":[456,457]},"content":"形态观察","children":[{"type":"heading","depth":4,"payload":{"lines":[457,458]},"content":"光学显微镜"},{"type":"heading","depth":4,"payload":{"lines":[458,459]},"content":"电子显微镜"},{"type":"heading","depth":4,"payload":{"lines":[459,460]},"content":"扫描隧道显微镜"}]},{"type":"heading","depth":3,"payload":{"lines":[460,461]},"content":"组分分析","children":[{"type":"heading","depth":4,"payload":{"lines":[461,462]},"content":"超离心技术"},{"type":"heading","depth":4,"payload":{"lines":[462,463]},"content":"特异蛋白抗原定位与定性"},{"type":"heading","depth":4,"payload":{"lines":[463,464]},"content":"特异核酸定位与定性"},{"type":"heading","depth":4,"payload":{"lines":[464,465]},"content":"细胞成分分析与细胞分选技术"}]},{"type":"heading","depth":3,"payload":{"lines":[465,466]},"content":"细胞培养与细胞工程"},{"type":"heading","depth":3,"payload":{"lines":[466,467]},"content":"生物大分子动态观察","children":[{"type":"heading","depth":4,"payload":{"lines":[467,468]},"content":"荧光漂白恢复技术"},{"type":"heading","depth":4,"payload":{"lines":[468,469]},"content":"酵母双杂交技术"},{"type":"heading","depth":4,"payload":{"lines":[469,470]},"content":"荧光共振能量转移技术"},{"type":"heading","depth":4,"payload":{"lines":[470,471]},"content":"放射自显影技术"},{"type":"heading","depth":4,"payload":{"lines":[471,472]},"content":"模式生物与功能基因组的研究"}]}]},{"type":"heading","depth":2,"payload":{"lines":[472,473]},"content":"生化","children":[{"type":"heading","depth":3,"payload":{"lines":[473,474]},"content":"氨基酸的分析分离","children":[{"type":"heading","depth":4,"payload":{"lines":[474,475]},"content":"分配层析"},{"type":"heading","depth":4,"payload":{"lines":[475,476]},"content":"离子交换层析"}]},{"type":"heading","depth":3,"payload":{"lines":[476,477]},"content":"蛋白质","children":[{"type":"heading","depth":4,"payload":{"lines":[477,478]},"content":"化学测序策略"},{"type":"heading","depth":4,"payload":{"lines":[478,479]},"content":"一级结构测序方法"},{"type":"heading","depth":4,"payload":{"lines":[479,480]},"content":"三维结构","children":[{"type":"heading","depth":5,"payload":{"lines":[480,481]},"content":"X衍射测定蛋白晶体结构"},{"type":"heading","depth":5,"payload":{"lines":[481,482]},"content":"核磁共振测定生物大分子动态结构"}]},{"type":"heading","depth":4,"payload":{"lines":[482,483]},"content":"蛋白质分离纯化","children":[{"type":"heading","depth":5,"payload":{"lines":[483,484]},"content":"依据"},{"type":"heading","depth":5,"payload":{"lines":[484,485]},"content":"等电点沉淀，盐析"},{"type":"heading","depth":5,"payload":{"lines":[485,486]},"content":"有机溶剂分级分离"},{"type":"heading","depth":5,"payload":{"lines":[486,487]},"content":"透析超滤"},{"type":"heading","depth":5,"payload":{"lines":[487,488]},"content":"密度梯度超速离心"},{"type":"heading","depth":5,"payload":{"lines":[488,489]},"content":"凝胶过滤"},{"type":"heading","depth":5,"payload":{"lines":[489,490]},"content":"凝胶电泳"},{"type":"heading","depth":5,"payload":{"lines":[490,491]},"content":"等电点聚焦，双向电泳"},{"type":"heading","depth":5,"payload":{"lines":[491,492]},"content":"离子交换层析"},{"type":"heading","depth":5,"payload":{"lines":[492,493]},"content":"疏水相互作用"},{"type":"heading","depth":5,"payload":{"lines":[493,494]},"content":"亲和层析"},{"type":"heading","depth":5,"payload":{"lines":[494,495]},"content":"高效液相色谱"}]},{"type":"heading","depth":4,"payload":{"lines":[495,496]},"content":"相对分子质量测定","children":[{"type":"heading","depth":5,"payload":{"lines":[496,497]},"content":"凝胶过滤法"},{"type":"heading","depth":5,"payload":{"lines":[497,498]},"content":"SDS-PAGE法"},{"type":"heading","depth":5,"payload":{"lines":[498,499]},"content":"沉降速度法"},{"type":"heading","depth":5,"payload":{"lines":[499,500]},"content":"质谱法"}]},{"type":"heading","depth":4,"payload":{"lines":[500,501]},"content":"含量纯度测定","children":[{"type":"heading","depth":5,"payload":{"lines":[501,502]},"content":"总含量测定"},{"type":"heading","depth":5,"payload":{"lines":[502,503]},"content":"特定蛋白含量测定"},{"type":"heading","depth":5,"payload":{"lines":[503,504]},"content":"纯度测定"}]}]},{"type":"heading","depth":3,"payload":{"lines":[504,505]},"content":"酶","children":[{"type":"heading","depth":4,"payload":{"lines":[505,506]},"content":"分离纯化"}]},{"type":"heading","depth":3,"payload":{"lines":[506,507]},"content":"核酸","children":[{"type":"heading","depth":4,"payload":{"lines":[507,508]},"content":"分离纯化","children":[{"type":"heading","depth":5,"payload":{"lines":[508,509]},"content":"超速离心"},{"type":"heading","depth":5,"payload":{"lines":[509,510]},"content":"凝胶电泳"},{"type":"heading","depth":5,"payload":{"lines":[510,511]},"content":"柱层析"}]},{"type":"heading","depth":4,"payload":{"lines":[511,512]},"content":"序列测定","children":[{"type":"heading","depth":5,"payload":{"lines":[512,513]},"content":"第一代测序"},{"type":"heading","depth":5,"payload":{"lines":[513,514]},"content":"第二代测序"},{"type":"heading","depth":5,"payload":{"lines":[514,515]},"content":"第三代测序"}]},{"type":"heading","depth":4,"payload":{"lines":[515,516]},"content":"DNA微阵列技术","children":[{"type":"heading","depth":5,"payload":{"lines":[516,517]},"content":"DNA芯片类型"},{"type":"heading","depth":5,"payload":{"lines":[517,518]},"content":"芯片制作"},{"type":"heading","depth":5,"payload":{"lines":[518,519]},"content":"核酸杂交检测"},{"type":"heading","depth":5,"payload":{"lines":[519,520]},"content":"芯片应用"}]},{"type":"heading","depth":4,"payload":{"lines":[520,521]},"content":"核酸的化学合成"},{"type":"heading","depth":4,"payload":{"lines":[521,522]},"content":"基因工程","children":[{"type":"heading","depth":5,"payload":{"lines":[522,523]},"content":"克隆的基本原理"},{"type":"heading","depth":5,"payload":{"lines":[523,524]},"content":"基因的分离合成测序"},{"type":"heading","depth":5,"payload":{"lines":[524,525]},"content":"克隆的表达"},{"type":"heading","depth":5,"payload":{"lines":[525,526]},"content":"转基因"},{"type":"heading","depth":5,"payload":{"lines":[526,527]},"content":"展望"}]},{"type":"heading","depth":4,"payload":{"lines":[527,528]},"content":"蛋白质工程","children":[{"type":"heading","depth":5,"payload":{"lines":[528,529]},"content":"分子设计"},{"type":"heading","depth":5,"payload":{"lines":[529,530]},"content":"实验进化"},{"type":"heading","depth":5,"payload":{"lines":[530,531]},"content":"展望"}]}]}]}]},{"type":"heading","depth":1,"payload":{"lines":[531,532]},"content":"物质索引"}]},{})</script>
+
+
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cywilyopP',
+conf: 'prod_7cbd406dc356f59bfec086c44707a653'
+});
+</script>
+
+
+</body>
+</html>
+
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/28/Lipids-and-Metabolism/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/28/Lipids-and-Metabolism/" class="post-title-link" itemprop="url">Lipids and Metabolism</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-28 16:19:37" itemprop="dateCreated datePublished" datetime="2022-09-28T16:19:37+08:00">2022-09-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-13 10:49:06" itemprop="dateModified" datetime="2022-10-13T10:49:06+08:00">2022-10-13</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="脂质物质介绍"><a href="#脂质物质介绍" class="headerlink" title="脂质物质介绍"></a>脂质物质介绍</h1><blockquote>
+<p>脂质的定义<br/></p>
+<blockquote>
+<p>指不溶于水，易溶于有机溶剂的各类生物分子。<br/><br>共同特征是以长链或稠环脂肪烃分子为母体。脂类分子中没有极性基团的称为非极性脂；有极性基团的称为极性脂。极性脂的主体是脂溶性的，其中的部分结构是水溶性的。<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>脂质的生物学功能<br/></p>
+<blockquote>
+<ol>
+<li>生物膜的结构组分(甘油磷脂和鞘磷脂，胆固醇、糖脂)<br/></li>
+<li>能量贮存形式(动物、油料种子的甘油三酯)<br/></li>
+<li>激素、维生素和色素的前体(萜类、固醇类)<br/></li>
+<li>生长因子；⑤抗氧化剂<br/></li>
+<li>化学信号(如   )<br/></li>
+<li>参与信号识别和免疫（糖脂）<br/></li>
+<li>动物的脂肪组织有保温，防机械压力等保护功能，植物的蜡质可以防止水分的蒸发<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>脂质的分类</p>
+<blockquote>
+<p>按化学组成分类</p>
+<blockquote>
+<ul>
+<li>单纯脂：脂肪酸与醇类形成的酯，甘油酯、鞘脂、蜡</li>
+<li>复合脂：甘油磷脂、鞘磷脂。</li>
+<li>萜类和甾类及其衍生物：不含脂肪酸，都是异戊二烯的衍生物。</li>
+<li>衍生脂：上述脂类的水解产物，包括脂肪酸及其衍生物、甘油、鞘氨醇等。</li>
+<li>结合脂类：糖脂、脂蛋白</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>按极性分</p>
+<blockquote>
+<ul>
+<li>非极性脂质</li>
+<li>I类极性脂质</li>
+<li>II类极性脂质（磷脂和鞘糖脂）</li>
+<li>III类极性脂质（去污剂）</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>按生物学功能分</p>
+<blockquote>
+<ul>
+<li>储存脂质</li>
+<li>结构脂质</li>
+<li>活性脂质</li>
+<li>血浆脂蛋白</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>其他脂类，尽管存在的数量相对较少，但作为酶的辅助因子、电子载体、吸光色素、蛋白质的疏水锚、帮助膜蛋白折叠的 “伴侣”、消化道的乳化剂、激素和细胞内信使，发挥着关键作用。</p>
+<h2 id="贮存脂质（storage-lipids）"><a href="#贮存脂质（storage-lipids）" class="headerlink" title="贮存脂质（storage lipids）"></a>贮存脂质（storage lipids）</h2><h3 id="脂肪酸"><a href="#脂肪酸" class="headerlink" title="脂肪酸"></a>脂肪酸</h3><blockquote>
+<p>绝大多数的脂肪酸含有偶数个碳原子，形成长而不分支的链(也有分支的或含环的脂肪酸)。<br/><br>不饱和脂肪酸有顺式和反式两种异物体。但生物体内大多数是顺式结构。<br/><br>不饱和脂肪酸中，反式双键会造成脂肪酸链弯曲，分子间没有饱和脂肪酸链那样结合紧密。因此，不饱和脂肪酸的熔点低。<br/><br>脂肪酸可以与蛋白质共价相连，形成脂酰蛋白(acyloted protein)，脂酰基团能促进膜蛋白与疏水环境间的相互作用。<br/></p>
+</blockquote>
+<ol>
+<li><p>特点： <br/></p>
+<blockquote>
+<p>天然脂肪酸通常偶数碳原子，一般12-22个碳。<br/><br>脂肪酸有饱和、单不饱和和多不饱和。不饱和双键一个处于C9-C10之间，且为顺式（cis），为反式必须加t（trans）。<br/><br>植物和细菌可以利用乙酰CoA合成所需的全部脂肪酸。<br/><br>哺乳动物既可以从食物中获得大部分脂肪酸，也可以合成饱和脂肪酸和一些单不饱和脂肪酸。<br>但是，哺乳动物不能合成多不饱和脂肪酸（如亚油酸和亚麻酸），称为必需脂肪酸。<br/><br>亚油酸和亚麻酸必须从植物中获取。花生四烯酸可由亚油酸在体内合成。<br/><br>动植物中的脂肪酸比较简单，都是直链的，可含有多至六个双键，而细菌的脂肪酸最多只有一个双键。细菌的脂肪酸比较复杂，可有支链或含有环丙烷环，如结核酸就是饱和支链脂肪酸。植物中可能含有三键、环氧基及环丙烯基等。<br/></p>
+<blockquote>
+<p>人体及高等动物体内的脂肪酸有以下特点：</p>
+<ol>
+<li>是由偶数碳原子构成的一元酸，最多见的是C16、C18、C22等长链脂肪酸。<br/></li>
+<li>碳链无分支。<br/></li>
+<li>分为饱和脂肪酸和不饱和脂肪酸。不饱和脂肪酸的双键都呈顺式构型，有多个双键的脂肪酸称为高度不饱和脂肪酸或多不饱和脂肪酸。相邻双键之间都插入亚甲基，不构成共轭体系。<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+</li>
+<li><p>分类和命名</p>
+<blockquote>
+<ul>
+<li>脂肪酸的俗名、系统名和缩写<br/><blockquote>
+<p>脂肪酸的俗名主要反映其来源和特点。系统名反映其碳原子数目、双键数和位置。如：硬脂酸的系统名是十八烷酸，用18：0表示，其中“18”表示碳链长度，“0”表示无双键；油酸是十八碳烯酸，用18：1表示，“1”表示有一个双键。反油酸用18：1Δ9,trans表示。<br/></p>
+</blockquote>
+</li>
+<li>双键的定位<blockquote>
+<p>Δ编号系统，按碳原子的系统序数（从羧基端数起），用双键羧基侧碳原子的序数给双键定位。<br/><br>ω或(n)编号系统。采用碳原子的倒数序数（从甲基端数起），用双键甲基侧碳原子的（倒数）序数给双键定位。这样可将脂肪酸分为代谢相关的4组，即ω3、ω6、ω7、ω9，在哺乳动物体内脂肪酸只能由该族母体衍生而来，各族母体分别是软油酸（16：1，ω7）、油酸（18：1，ω9）、亚油酸（18：2，ω6）和α亚麻酸（18：3，ω3）</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>脂肪酸常见的反应有两个：<br/></p>
+<blockquote>
+<p>活化硫酰化，生成脂酰辅酶A。这是脂肪酸的活性形式。<br/><br>不饱和脂肪酸的双键可以氧化，生成过氧化物，最后产生自由基。对人体有害。</p>
+</blockquote>
+</li>
+<li><p>脂肪酸盐的乳化作用</p>
+<blockquote>
+<p>脂肪酸盐具有亲水基和疏水基，两亲化合物，是一种离子型去污剂。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="三酰甘油"><a href="#三酰甘油" class="headerlink" title="三酰甘油"></a>三酰甘油</h3><ol>
+<li><p>简介：<br/></p>
+<blockquote>
+<p>动物植物油脂的化学本质是酰基甘油，主要为三酰甘油（甘油脂肪）。统称为油脂或脂肪，中性脂肪<br/></p>
+</blockquote>
+</li>
+<li><p>结构：<br/></p>
+<blockquote>
+<p>由一个甘油和三个脂肪酸形成的三脂。<br/><br>脂肪酸链相同时，称简单三酰甘油；反之为混合三酰甘油<br/><br>二酰甘油与一酰甘油：常是三酰甘油的中间物，常用作乳化剂<br/></p>
+</blockquote>
+</li>
+<li><p>物理化学性质：<br/></p>
+<blockquote>
+<p>不溶于水，略溶于低级醇，易溶于乙醚，氯仿，苯，石油醚等</p>
+<ul>
+<li>酸败：<br/><br>原因：脂质中的不饱和脂肪酸的双键发生<strong>自动氧化</strong>（空气中的分子氧在常温下对化合物的直接作用，导致氧化发生）<br>也称脂质的过氧化。<br/>脂质过氧化对机体的损伤和抗氧化的保护作用。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>功能<br/></p>
+<blockquote>
+<ul>
+<li>三酰甘油可以提供储能和保温：<br/><br>三酰甘油在含水的细胞溶胶中形成微小油滴分离相，作为代谢燃料的储库<br/><br>酯酶催化脂质水解，释放脂肪酸，以运输至需要燃料的地方<br/></li>
+<li>三酰甘油的贮存优势：<br/></li>
+</ul>
+</blockquote>
+<ul>
+<li>脂肪酸的碳原子比单糖的碳原子还原性高。<br/></li>
+<li>三酰甘油是疏水的，不必额外携带结合水（贮存多糖需要结合水）</li>
+</ul>
+</li>
+</ol>
+<h3 id="蜡"><a href="#蜡" class="headerlink" title="蜡"></a>蜡</h3><blockquote>
+<p>由长链脂肪酸和长链一元醇的化合物。<br/><br>具有储能和防水的作用。<br/></p>
+</blockquote>
+<h3 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h3><blockquote>
+<ol>
+<li>皂化值（评估油的质量）<br>完全皂化1克油脂所需KOH的毫克数，称皂化值（价），用来评估油脂的质量，即三酰甘油（TG）的平均相对分子质量。<br>   TG平均Mr&#x3D;﹙3×56×1000﹚／皂化值</li>
+<li>酸值（酸败程度）<br>中和1克油脂中的游离脂肪酸所消耗的KOH毫克数。</li>
+<li>碘值（不饱和键的多少）<br>指100克油脂卤化时所能吸收碘的克数。</li>
+<li>乙酰值（羟化程度）<br>指中和从1g乙酰化产物中释放的乙酸所需的KOH的mg数。</li>
+</ol>
+</blockquote>
+<h2 id="结构脂质"><a href="#结构脂质" class="headerlink" title="结构脂质"></a>结构脂质</h2><h3 id="磷脂"><a href="#磷脂" class="headerlink" title="磷脂"></a>磷脂</h3><blockquote>
+<p>磷脂是重要的两亲物质，它们是生物膜的重要组分、乳化剂和表面活性剂(表面活性剂是能降低液体，通常是水的，表面张力，沿水表面扩散的物质)。<br/><br>磷脂有两类：甘油磷脂和鞘磷脂。<br/></p>
+<blockquote>
+<p>甘油磷脂由甘油、脂肪酸、磷酸和一分子氨基醇(如胆碱、乙醇胺、丝氨酸或肌醇)组成。<br/><br>鞘氨醇磷脂只是以鞘氨醇代替了甘油。<br/><br>鞘脂：鞘糖脂与鞘磷脂</p>
+</blockquote>
+</blockquote>
+<details>
+ <summary> 1. 甘油磷脂:(<font color="red">天然存在的甘油磷脂都是L—构型</font>)<br/></summary>
+  - sn命名<br/>
+ （1）甘油结构用Fisher投影式表示，C2的-OH写在左边。<br/>
+ （2）三个碳原子顺序编号1.2.3（立体专一编号）用sn写在化合物名称前面<br/>
+  - 甘油磷脂一般性质：
+   （1）纯品为白色蜡状固体，溶于大多数含水非极性溶剂，难溶于无水丙酮。<br/>
+   （2）属于两亲物质，可成膜。P81  图2-1画出脂质几种常见结构单分子层、双分子层、微团、微囊。
+   （3）被磷脂酶专一水解。<br/>
+     磷脂酶A1，A2，C，D作用甘油磷脂不同位置（P105），如磷脂酶A1，A2，分别专一除去sn-1位和sn-2位上的脂肪酸。<br/>
+   （4）由两个非极性尾部与极性头部组成
+    
+<ul>
+<li>分类<br/><br>  （1）磷脂酰胆碱（卵磷脂）（PC）<br/><br> HO—CH2CH2N+（CH3）3（胆碱）<br/><br> 1，2-二酰基-sn-甘油-3-磷酰胆碱，又称卵磷脂，3-sn-磷脂酰胆碱，为细胞膜中最丰富的脂质。头基胆碱，代谢中一种甲基供体，可归为B族维生素。卵磷脂和胆碱可防止脂肪肝，一般从大豆油和蛋黄中提取。<br/><br> 植物：大豆等<br/><br> 动物：脑、精液、肾上腺、红细胞，蛋卵黄（8-10%）。<br/><br> 作用：控制肝脂代谢，防止脂肪肝的形成。<br/><br> （2）磷脂酰乙醇胺（脑磷脂）（PE）<br/><br> HO—CH2CH2—N+H3（乙醇胺）<br/><br> 参与血液凝结。又称脑磷脂，头基为乙醇胺，又称胆胺。为细胞膜中另一种最丰富的脂质。<br/><br> （3）磷脂酰丝氨酸（PS）<br/><br> 头基丝氨酸。分子净电荷-1，（PC、PE均为0）。可引起损伤表面凝血酶活化。PC，PE，PS之间在体内可互相转化。<br/><br> （4）磷脂酰肌醇（PI）<br/><br>   PIP2磷脂酰肌醇-4，5-双磷酸，可将许多细胞外信号转化为细胞内信号。<br/><br> （5）磷脂酰甘油（PG）<br/><br> 头基为甘油，且常与Lys相连。在细菌细胞膜中常见。<br/><br> （6）双磷脂酰甘油（心磷脂）<br/><br> 由两个磷脂酰甘油的磷酸部分通过一个甘油分子共价连接<br/><br> 最早从心机肌线粒体膜和细菌细胞膜中找到<br/></li>
+<li>甘油醚酯：甘油骨架的脂肪链中有一个以醚键相连与骨架<br/></details></li>
+</ul>
+<details>
+ <summary> 2. 鞘脂<br/></summary><!--不包含糖脂，糖脂与硫酯放一块 -->
+
+</detail>
+
+
+
+<h3 id="糖脂"><a href="#糖脂" class="headerlink" title="糖脂"></a>糖脂</h3><h3 id="萜和类固醇"><a href="#萜和类固醇" class="headerlink" title="萜和类固醇"></a>萜和类固醇</h3><h3 id="脂蛋白"><a href="#脂蛋白" class="headerlink" title="脂蛋白"></a>脂蛋白</h3><h3 id="脂质的氧化与过氧化"><a href="#脂质的氧化与过氧化" class="headerlink" title="脂质的氧化与过氧化"></a>脂质的氧化与过氧化</h3><h1 id="脂肪的代谢"><a href="#脂肪的代谢" class="headerlink" title="脂肪的代谢"></a>脂肪的代谢</h1><h1 id="脂肪的提取与分析"><a href="#脂肪的提取与分析" class="headerlink" title="脂肪的提取与分析"></a>脂肪的提取与分析</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/27/sugar-and-replace/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/27/sugar-and-replace/" class="post-title-link" itemprop="url">sugar and replace</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-27 08:33:21" itemprop="dateCreated datePublished" datetime="2022-09-27T08:33:21+08:00">2022-09-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-13 10:40:48" itemprop="dateModified" datetime="2022-10-13T10:40:48+08:00">2022-10-13</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="TOC"><a href="#TOC" class="headerlink" title="[TOC]"></a>[TOC]</h2><h1 id="糖类物质介绍"><a href="#糖类物质介绍" class="headerlink" title=" 糖类物质介绍 "></a><font size=5> 糖类物质介绍 <font size=5></h1><h2 id="旋光异构"><a href="#旋光异构" class="headerlink" title="旋光异构"></a>旋光异构</h2><h3 id="概念："><a href="#概念：" class="headerlink" title="概念："></a>概念：</h3><table>
+<thead>
+<tr>
+<th align="center">异构现象</th>
+<th align="center">指存在两个或多个具有相同数目和种类的的原子并因而具有相同分子质量的化合物的现象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">旋光性</td>
+<td align="center">指物质具有使通过的偏振光旋转一定角度的能力</td>
+</tr>
+<tr>
+<td align="center">不对称碳原子</td>
+<td align="center">指由于四个不同的原子或原子基团共价连接使得碳原子失去对称性</td>
+</tr>
+<tr>
+<td align="center">构型</td>
+<td align="center">指不对称碳原子的四个取代基在空间的相对取向</td>
+</tr>
+</tbody></table>
+<hr>
+<p>异构现象的分类：</p>
+<table>
+<thead>
+<tr>
+<th align="center">结构异构</th>
+<th align="left">由于分子中原子连接的次序不同造成的，包括碳骨架异构体，位置异构体，功能异构体</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">立体异构</td>
+<td align="left">具有相同的结构式但原子的空间分布不同</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="left">几何异构：又称顺反异构，由于分子中的双键或环的存在或者其他原因，限制了原子间的自由旋转</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="left">旋光异构：由分子的手性引起</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="Fischer投影式"><a href="#Fischer投影式" class="headerlink" title="Fischer投影式"></a>Fischer投影式</h3><h3 id="构象的RS表示法"><a href="#构象的RS表示法" class="headerlink" title="构象的RS表示法"></a>构象的RS表示法</h3><h2 id="糖类概况"><a href="#糖类概况" class="headerlink" title="糖类概况"></a>糖类概况</h2><h3 id="生物学作用"><a href="#生物学作用" class="headerlink" title="生物学作用"></a>生物学作用</h3><ol>
+<li>作为生物的结构成分</li>
+<li>作为生物体内的主要能量来源</li>
+<li>在生物体内转变为其他物质</li>
+<li>作为生物信息分子</li>
+</ol>
+<h3 id="糖的化学本质"><a href="#糖的化学本质" class="headerlink" title="糖的化学本质"></a>糖的化学本质</h3><pre><code>一类多羟基醛或多羟基酮，及其衍生物或水解时产生此类化合物的多聚体。
+</code></pre>
+<h3 id="命名与分类"><a href="#命名与分类" class="headerlink" title="命名与分类"></a>命名与分类</h3><blockquote>
+<p>以聚合度分类<br></p>
+<blockquote>
+<ol>
+<li><a href="#%E5%8D%95%E7%B3%96">单糖</a></li>
+<li><a href="#%E5%AF%A1%E7%B3%96">寡糖</a></li>
+<li><a href="#%E5%A4%9A%E7%B3%96">多糖</a></li>
+<li><a href="#%E7%B3%96%E7%BC%80%E7%89%A9">糖缀物</a></li>
+</ol>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="单糖-monosaccharide"><a href="#单糖-monosaccharide" class="headerlink" title="单糖(monosaccharide)"></a><span id="单糖">单糖(monosaccharide)</span></h2><p>一类单一的多羟基醛或多羟基酮</p>
+<h3 id="单糖的立体结构与系别"><a href="#单糖的立体结构与系别" class="headerlink" title="单糖的立体结构与系别"></a>单糖的立体结构与系别</h3><blockquote>
+<p>单糖的链状结构：</p>
+<blockquote>
+<p>链状结构的两个家系</p>
+<ol>
+<li>醛糖:羰基在碳链末端（醛基形式)</li>
+<li>酮糖:羰基在任一其他位置<br></li>
+</ol>
+</blockquote>
+</blockquote>
+<hr>
+<blockquote>
+<p>单糖的环状结构：</p>
+<blockquote>
+<ol>
+<li>在水溶液中，丁醛糖和所有5及以上碳的糖以环状结构为优势构象存在</li>
+<li>变旋现象：许多单糖的新配制溶液的旋光度发生变化</li>
+<li>环状半缩醛：醇与醛或酮可以发生快速可逆的亲核加成，形成半缩醛（C（OH）OR）糖分子中如果同时存在羟基和羰基，可导致环状半缩醛。<em><strong>Schiff(品红-亚硫酸)试剂不与发生半缩醛的糖反应</strong></em>（葡萄糖有半缩醛结构）</li>
+<li>吡喃糖和呋喃糖：<blockquote>
+<p>当第1碳醛基和第5碳的羟基缩合，第1 碳和第5碳通过氧桥相连，一个环状结构便形成了，这样由5个C和一个O组成的环称为吡喃环。<br>呋喃是一种含有一个由四个碳原子和一个氧原子的五元芳环的杂环有机物。含有这样的环的化合物通常是呋喃的同系物。</p>
+</blockquote>
+</li>
+<li>α和β异头物<br><br/>差向异构体：单糖由直链变成环状后，羰基碳原子成为新的手性中心，导致C1差向立构化，形成两种非对映立构体。称之为异头物<br><br><br/>在环状结构中，半缩醛碳原子也称为异头碳原子或异头中心<br><br>α异头物:异头碳的羟基与最末端的手性碳原子的羟基取向相同<br><br>β异头物:异头碳的羟基与最末端的手性碳原子的羟基取向相反</li>
+</ol>
+</blockquote>
+</blockquote>
+<hr>
+<h3 id="单糖的性质"><a href="#单糖的性质" class="headerlink" title="单糖的性质"></a>单糖的性质</h3><ol>
+<li>物理性质：<blockquote>
+<p>旋光性：鉴定糖的重要指标<br/><br>甜度：常以蔗糖作比较<br/><br>溶解度：单糖分子有多个羟基，除了甘油醛微溶于水，其他单糖易溶于水；单糖微溶于乙醇，不溶于丙酮，乙醚。<br/></p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<ol start="2">
+<li>化学性质：<br/><br>涉及基团性质包括：醛基、伯醇基被氧化成羧基；羰基被还原成醇基等<br/><br>成糖脎反应。<br/><blockquote>
+<p><strong>异构化</strong>（弱碱作用）<br/><br>糖于稀酸中稳定，在弱碱中可发生分子内氧化，还原以及异构化。<br/><br>室温下碱催化的烯醇化作用完成异构化。在碱性溶液中，糖分子重排，通过中间产物<strong>烯二醇</strong>互相转化，即<strong>酮-烯醇互变异构</strong><br/><br/><br><strong>单糖的氧化</strong><br/></p>
+<ul>
+<li>氧化成醛糖酸<br><br> 只发生在开链形式的糖上。<br/><br> 醛糖，酮糖以溴水鉴别；能使菲林试剂（酒石酸钾钠，NaOH，CuSO<sub>4</sub>)变色的糖称还原糖。<br> 醛糖的游离醛基具有较好的还原性，碱性溶液中的重金属离子可使醛基氧化为羧基，形成醛糖酸。<br> 所有醛糖、大部分酮糖为还原糖<br/></li>
+<li>氧化成醛糖二酸<br/><br> 单糖氧化成糖二酸并测旋光性（是否消旋）对推定单糖的手性碳原子构型有重要意义。</li>
+<li>氧化成糖醛酸<br/><br> 只伯醇基氧化而保留醛基<br/><br/><br><strong>单糖的还原</strong><br/><br> 单糖的醛基在适当条件下（硼氢化钠）则被还原为多元醇，称为<em>糖醇</em><br/><br/><br><strong>形成糖脎</strong><br/><br> 单糖在加热条件下与过量的苯肼反应时的产物叫糖脎，含有相邻的两个羰基或α-羟基醛及α-羟基酮类化合物与过量苯肼缩水后的衍生物。是一种结晶化合物，便于将制成的化合物提纯并再分解得回纯的糖，亦可用于鉴别糖。苯肼只和糖的C-1和C-2成脎后，分子内氢键使其形成较为稳定的六元环结构，从而糖的其他碳原子不再成脎。<em>稳定且不溶于水，热水中以黄色晶体析出</em><br/><br/><br><strong>形成糖酯与糖醚</strong><br/></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>成酯：<br/><br> 在碱催化下用酰氯或酸酐进行所有羟基都可被酯化。<br/></li>
+<li>成醚：<br/><br> 在甲基亚磺酰甲基钠（SMSM）存在下用碘甲烷或在碱性条件下用硫酸二甲酯处理糖或糖苷得到甲醚衍生物(也称糖的甲基化)，在环状结构与寡糖和多糖的结构分析中起重要作用。<br/><blockquote>
+<p><strong>形成糖苷</strong><br/><br>环状单糖的半缩醛（半缩酮）羟基与另一化合物发生缩合反应，形成的缩醛（缩酮）称为糖苷<br/><br>与之缩合的非糖部分称为糖苷配基<br/><br> 糖苷键：与 O N S C 相连。<br><strong>单糖脱水</strong><br/></p>
+<ul>
+<li>糖醛反应：戊糖与12%盐酸共热，脱水生成糠醛（呋喃糠醛）<br/><br>不同糠醛和多元酚作用产生特有的颜色：</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">糠醛</th>
+<th align="center">多元酚</th>
+<th align="center">颜色</th>
+<th align="center">类别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">羟甲糠醛</td>
+<td align="center">间苯二酚</td>
+<td align="center">红色</td>
+<td align="center">鉴定酮糖</td>
+</tr>
+<tr>
+<td align="center">戊糖糠醛</td>
+<td align="center">间苯三酚</td>
+<td align="center">朱红色</td>
+<td align="center">间苯三酚</td>
+</tr>
+<tr>
+<td align="center">戊糖糠醛</td>
+<td align="center">地衣酚</td>
+<td align="center">蓝绿色或者橄榄绿</td>
+<td align="center">Bial实验</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>糖的高碘酸氧化</strong><br/><br> 高碘酸盐可以定量氧化断裂邻二羟基，α羟基醛的c-c键并使碳原子氧化态升高，生成羰基化产物。<br/><br><strong>单糖链的延长与缩短</strong><br/><br/></p>
+</blockquote>
+<h3 id="重要单糖及其衍生物"><a href="#重要单糖及其衍生物" class="headerlink" title="重要单糖及其衍生物"></a>重要单糖及其衍生物</h3><blockquote>
+<p>单糖</p>
+<blockquote>
+<ol>
+<li><a href="#%E4%B8%99%E7%B3%96">丙糖</a></li>
+<li><a href="#%E4%B8%81%E7%B3%96">丁糖</a></li>
+<li><a href="#%E6%88%8A%E7%B3%96">戊糖</a></li>
+<li><a href="#%E5%B7%B1%E7%B3%96">己糖</a></li>
+<li><a href="#%E5%BA%9A%E7%B3%96%E5%92%8C%E8%BE%9B%E7%B3%96">庚糖和辛糖</a></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><a href="#%E5%8D%95%E7%B3%96%E7%A3%B7%E9%85%B8%E9%85%AF">单糖磷酸酯</a></p>
+</blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E9%86%87">糖醇</a></p>
+</blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E9%85%B8">糖酸</a></p>
+</blockquote>
+<blockquote>
+<p><a href="#%E8%84%B1%E6%B0%A7%E7%B3%96">脱氧糖</a></p>
+</blockquote>
+<blockquote>
+<p><a href="#%E6%B0%A8%E5%9F%BA%E7%B3%96">氨基糖</a></p>
+</blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E8%8B%B7">糖苷</a><br/></p>
+</blockquote>
+ <br/>
+
+<blockquote>
+<ol>
+<li><span id="丙糖">丙糖</span><br/><br> 以D-甘油醛（有光学活性的最简单单糖，确定D构型的标准物），二羟丙酮（无光学活性）为代表。</li>
+<li><span id="丁糖">丁糖</span><br/><br> 以D-赤藓糖，D-赤藓酮糖为代表，常见于藻类、地衣等低等植物。</li>
+<li><span id="戊糖">戊糖</span><br/><blockquote>
+<p>3.1 D-核糖和2-脱氧-D-核糖：分别为RNA和DNA的组成成分，成苷时以β&#x3D;呋喃糖的形式参与<br/><br>3.2 D-木糖：多以戊聚糖的形式存在于植物和细菌细胞壁中。是树胶和半纤维的组分还原后得D-木糖醇<br/><br>3.3 D-阿拉伯糖： 存在于某些植物和结核杆菌中参与植物糖苷和细胞壁的组成。<br/><br>3.4 L-阿拉伯糖：也称果胶，广泛存在于植物细菌细胞壁，是果胶物质、半纤维素、树胶、植物糖蛋白的重要成分。<br/><br>3.5 芹菜糖：支链戊糖，以D-赤藓呋喃糖的形式存在。<br/><br>3.6 D-核酮糖和D-木酮糖：存在于植物动物细胞中。<br/></p>
+</blockquote>
+</li>
+<li><span id="己糖">己糖</span><blockquote>
+<p>4.1 D-葡萄糖:又称右旋糖，是人体和动物的<font color="red"><em><strong>代谢重要能源</strong></em></font><br/><br>4.2 D-果糖：又称左旋糖，是自然界最丰富的酮糖。<br/><br>4.3 D-半乳糖：是乳糖、蜜二糖、棉子糖等的组成部分，是某些糖苷，脑苷脂和神经节苷脂的组成部分；以半乳聚糖存在于植物细胞壁。<br/><br>4.4 L-半乳糖：作为构件分子存在于琼脂和其他多糖中。<br/><br>4.5 D-甘露糖：主要以甘露聚糖的形式存在于植物细胞壁中。<br/><br>4.6 L-山梨糖：存在于被细菌发酵的山梨中。<br/></p>
+</blockquote>
+</li>
+<li><span id="庚糖和辛糖">庚糖和辛糖</span><blockquote>
+<p>5.1 D-景天酮糖：也称阿卓庚酮糖，大量存在于景天科植物中。<br/><br>5.2 D-甘露庚酮糖：还原生成D-鳄梨醇。<br/><br>5.3 L-甘油-D-甘露庚糖：七碳醛糖，存在于沙门氏杆菌细胞壁外层脂多糖结构中。<br/><br>5.4 D-甘油-D-甘露辛酮糖：八碳酮糖，是沙门氏杆菌脂多糖的成分。<br/><br/></p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<p><span id="单糖磷酸酯">单糖磷酸酯</span><br/><br>又称磷酸化单糖，广泛存在于细胞中，是各个代谢途径的主要参与者。磷酸化单糖的酸性比正磷酸（H<sub>3</sub>PO<sub>4</sub>)强，使得单糖磷酸酯只能以电荷形式存在，无法穿越细胞膜（带电物质无法经过细胞膜扩散），防止单糖磷酸酯扩散。<br/></p>
+</blockquote>
+<blockquote>
+<p><span id="糖醇">糖醇</span><br/><br>一类由糖分子内的羰基（醛基和酮基）还原为羟基形成糖醇。</p>
+<blockquote>
+<ol>
+<li>山梨醇：也称D-葡萄糖醇<br/></li>
+<li>D-甘露醇：可治疗急性肾衰竭等<br/></li>
+<li>半乳糖醇：半乳糖的还原产物</li>
+<li>木糖醇<br/></li>
+<li>核糖还原产物，参与核黄素（V<sub>B<sub>2</sub></sub>)的生成<br/></li>
+<li>肌醇：又称环己六醇，六羟环己烷，一种环多醇。<br>其9个立体异构体中，只有肌肌醇具有活性，又称肌醇，从心机提取液中获得。在动物界广泛存在。<br/><br>肌肌醇的磷酸酯形式：肌醇-1，4，5-三磷酸（InsP<sub>3</sub>):作为第二信使存在。</li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><span id="糖酸">糖酸</span><br/><br>根据氧化条件不同可分为：<br/></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">醛糖酸</th>
+<th align="center">醛基被氧化，只发生在开链糖</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">糖二酸</td>
+<td align="center">头尾两个醛基氧化</td>
+</tr>
+<tr>
+<td align="center">糖醛酸</td>
+<td align="center">只有伯醇基被氧化</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><span id="脱氧唐">脱氧唐</span><br/><br>deoxy sugar：指分子的一个或多个羟基被氢原子取代的单糖。</p>
+<blockquote>
+<ol>
+<li>L-鼠李糖：最常见的天然脱氧唐。<br/></li>
+<li>L-岩藻糖<br/></li>
+<li>D(+)-毛地黄毒素糖<br/></li>
+<li>泊雷糖：革兰氏阴性细菌细胞壁的抗原性物质<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><span id="氨基糖">氨基糖</span><br/><br>amino sugar：分子中一个羟基被氨基取代的糖，自然界最常见的是C<sub>2</sub>上的羟基被取代的糖。氨基糖的氨基有游离的，但多数以乙酰氨基的形式存在。<br/></p>
+</blockquote>
+<blockquote>
+<p><span id="糖苷">糖苷</span><br/></p>
+<blockquote>
+<ol>
+<li>苦杏仁苷借β糖苷键与糖基相连（2分子葡萄糖形成龙胆二糖基，与（HCN和苯甲醛缩合产物）相连。<br/></li>
+<li>毛地黄毒苷：强心苷一类</li>
+<li>乌本苷：—</li>
+<li>黑介子硫苷酸钾：存在于十字花科植物，是部分植物辣味的来源。</li>
+<li>花色素苷：花和果实的着色物质。可与金属离子螯合呈色。</li>
+<li>橘皮苷和芸香苷：维生素P，可维持血管正常功能。</li>
+<li>根皮苷：可阻断肾小管对葡萄糖的重吸收。</li>
+<li>皂苷：以固醇类和多环三萜为配基，寡糖为糖基组成的糖苷。</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="寡糖"><a href="#寡糖" class="headerlink" title="寡糖"></a><span id="寡糖">寡糖</span><br/></h2><blockquote>
+<p>结构与性质：</p>
+<ol>
+<li>组成单位：<br/><br>由相同或不同的单糖组成的糖链</li>
+<li>成键（糖苷键）的位置<br/><br>1 $\leftrightarrow$ 1(海藻糖)<br/><br>1 $\leftrightarrow$ 2(蔗糖)<br/><br>1 $\leftrightarrow$ 4(纤维二糖)<br/>1 $\leftrightarrow$ 6(龙胆二糖)<br/></li>
+<li>异头定向<br/><br>α型：麦芽糖、蔗糖、海藻糖<br/><br>β型：纤维二糖等<br/><br>异头碳的构型对分子形状影响很大，决定能否被酶识别。</li>
+<li>单糖单位的次序</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>常见二糖：</p>
+<blockquote>
+<p>蔗糖：<br/><br>组成：[Glc（α1 $\rightarrow$ β1）Fru] D-葡萄糖和D-果糖组成。<br/><br>性质：不含半缩醛，无还原性，不能成脎，无变旋现象。<br/><br>乳糖:<br/><br>组成：[Glcβ(1 $\rightarrow$ 4）Gal] D-半乳糖和D-葡萄糖组成。<br/>性质：有还原性，能成脎，有变旋现象，含有半缩醛羟基。<br/><br>麦芽糖:<br/><br>组成：[Glcα(1 $\rightarrow$ 4)Glc]有2分子葡萄糖组成。<br/><br>性质：含有半缩醛羟基，有还原性，有变旋现象。<br/><br>α，α-海藻糖：<br/><br>组成：[Glc{(α1 $\rightarrow$ α1)Glc}]<br/>性质：有还原性，初生寡糖<br/><br>纤维二糖：<br/><br>组成：[Glcβ(1 $\rightarrow$ 4)Glc]<br/><br>性质：次生寡糖<br/><br>龙胆二糖:<br/><br>组成：[Glcβ(1 $\rightarrow$ 6)Glc]<br/><br>性质：有还原性，有变旋现象<br/><br>环糊精：<br/><br>组成：由6-8个葡萄糖通过1，4糖苷键连接，分别称：α- β- γ-环糊精。<br/><br>性质：无还原性，无异头游离羟基。<br/></p>
+</blockquote>
+</blockquote>
+<h2 id="多糖"><a href="#多糖" class="headerlink" title="多糖"></a><span id="多糖">多糖</span><br/></h2><p>一般性质：属于非还原糖，无变旋现象，无甜味，一般不结晶。<br/><br>分类：<br/></p>
+<blockquote>
+<p>同多糖</p>
+<blockquote>
+<p><a href="#%E6%B7%80%E7%B2%89">淀粉</a><br/><br><a href="#%E7%B3%96%E5%8E%9F">糖原</a><br/><br><a href="#%E5%8F%B3%E6%97%8B%E7%B3%96%E9%85%90">右旋糖酐</a><br/><br><a href="#%E7%BA%A4%E7%BB%B4%E7%B4%A0">纤维素</a><br/><br><a href="#%E5%A3%B3%E5%A4%9A%E7%B3%96">壳多糖</a><br/></p>
+</blockquote>
+</blockquote>
+<h3 id="贮存多糖"><a href="#贮存多糖" class="headerlink" title="贮存多糖"></a>贮存多糖</h3><ol>
+<li><span id="淀粉">淀粉</span><br/></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">连接</th>
+<th align="center">性质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">直链淀粉</td>
+<td align="center">[Glcα(1 $\rightarrow$ 4)Glc]</td>
+<td align="center">仅少量溶于水，遇碘显蓝色，水解产物包括麦芽糖和葡萄糖</td>
+</tr>
+<tr>
+<td align="center">支链淀粉</td>
+<td align="center">[分支<sup>[Glcα(1 $\rightarrow$ 6)Glc]</sup>]</td>
+<td align="center">易溶于水形成稳定胶体，在直链基础上形成分支，有一个还原端，多个非还原端</td>
+</tr>
+<tr>
+<td align="center"><em><strong><em>糊精</em></strong></em></td>
+<td align="center">由淀粉水解作用下生成的长短不一的中间物</td>
+<td align="center">由分子量不同与碘反应呈：蓝色，紫色，红褐色，无色等</td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li><span id="糖原">糖原</span><br/><br>又称动物淀粉，是动物细胞主要的<font color="red"><em><strong><em>贮存多糖</em></strong></em></font>；<br/><br>有α[Glcα(1 $\rightarrow$ 4)Glc]为主，并有[Glcα(1 $\rightarrow$ 6)Glc]的分支<br/><br>糖原分支程度高，分支链短，比淀粉更密集。<br/></li>
+<li><span id="右旋糖酐">右旋糖酐</span><br/><br>又称葡聚糖：一类为酵母，细菌的贮存多糖，也作用细胞外的黏着物质；<br/><br>由[Glcα(1 $\rightarrow$ 6)Glc]连接，并有[Glcα(1 $\rightarrow$ 3)Glc] [Glcα(1 $\rightarrow$ 2)Glc] [Glcα(1 $\rightarrow$ 4)Glc]的分支。<br/><br/><br>在表氯醇的作用下可发生交联，用于生化分离</li>
+</ol>
+<h3 id="结构多糖"><a href="#结构多糖" class="headerlink" title="结构多糖"></a>结构多糖</h3><ol>
+<li><span id="纤维素">纤维素</span><br/><br>β-D葡萄糖[Glcβ(1 $\rightarrow$ 4)Glc]构成；<br/></li>
+<li>微纤维：<br/><br>由若干纤维素分子并排排列形成类晶体分子束；<br/></li>
+<li><span id="壳多糖">壳多糖</span><br/><br>又称几丁质，甲壳质；<br/><br>由N-乙酰-β-D-葡萄糖胺的线性同多糖；<br/><br>与纤维素的区别：C<sub>2</sub>碳上的羟基被乙酰化的氨基取代。<br/></li>
+</ol>
+<blockquote>
+<p>杂多糖</p>
+<blockquote>
+<p><a href="#%E6%9E%9C%E8%83%B6%E7%89%A9%E8%B4%A8">果胶物质</a><br/><br><a href="#%E5%8D%8A%E7%BA%A4%E7%BB%B4%E7%B4%A0">半纤维素</a><br/><br><a href="#%E7%90%BC%E8%84%82">琼脂</a><br/><br><a href="#%E8%A7%92%E5%8F%89%E8%81%9A%E7%B3%96">角叉聚糖</a><br/><br><a href="#%E6%A0%91%E8%83%B6%E7%89%A9%E8%B4%A8%E6%88%96%E8%A7%92%E8%B4%A8">树胶或角质</a><br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li><span id="果胶物质">果胶物质</span><br/><br>主要存在：植物初生细胞壁和细胞间中层。，是细胞壁的基质多糖。<br/><br>组成：主链由聚半乳糖醛酸组成，侧链为中性聚糖。<br/><br>衍生物：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">衍生物</th>
+<th align="center">形成</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">果胶</td>
+<td align="center">羧基不同程度被甲酯化的果胶物质</td>
+</tr>
+<tr>
+<td align="center">果胶酸</td>
+<td align="center">果胶完全去甲酯化</td>
+</tr>
+<tr>
+<td align="center">果胶酯酸</td>
+<td align="center">羧基大部分被甲酯化</td>
+</tr>
+<tr>
+<td align="center">原果酸</td>
+<td align="center">与纤维素和半纤维素结合形成的不溶性物质</td>
+</tr>
+</tbody></table>
+<hr>
+<ol start="2">
+<li><span id="半纤维素">半纤维素</span><br/><br>定义：碱溶性的植物细胞壁多糖。<br/></li>
+<li><span id="琼脂">琼脂</span><br/><br>以琼脂糖为主要成分，主体为平行链的左手双螺旋。</li>
+<li><span id="角叉聚糖">角叉聚糖</span><br/><br>又称卡拉胶，是琼脂的良好替代。<br/></li>
+</ol>
+<blockquote>
+<p>细菌杂多糖</p>
+<blockquote>
+<p>细胞壁结构组成<br/></p>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">种类</th>
+<th align="left">细胞壁结构</th>
+<th align="left">性质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">革兰氏阳性菌</td>
+<td align="left">由多层网格结构的肽聚糖（10-20nm）组成<br/>由磷壁酸相连</td>
+<td align="left">可被革兰氏染色</td>
+</tr>
+<tr>
+<td align="center">革兰氏阴性菌</td>
+<td align="left">由单层或少数几层肽聚糖组成<br/>无磷壁酸<br/>在外覆盖有脂双层或脂外膜</td>
+<td align="left">不能被革兰氏染色</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<blockquote>
+<p><a href="#%E8%82%BD%E8%81%9A%E7%B3%96">肽聚糖</a><br/><br><a href="#%E7%A3%B7%E5%A3%81%E9%85%B8">磷壁酸</a><br/><br><a href="#%E8%84%82%E5%A4%9A%E7%B3%96">脂多糖</a><br/><br><a href="#%E8%8D%9A%E8%86%9C%E5%A4%9A%E7%B3%96">荚膜多糖</a><br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li><p><span id="肽聚糖">肽聚糖</span><br/><br>组成：N-乙酰葡糖胺和N-乙酰胞壁酸[GlcNAc β(1 $\rightarrow$ 4)Mur NAc]交替组成主链；<br/><br>溶菌酶通过水解 β(1 $\rightarrow$ 4)杀死细菌；<br/><br>青霉素通过干扰肽聚糖中多糖链间肽交联桥的形成，使细菌失去抗渗透能力。<br/></p>
+</li>
+<li><p><span id="磷壁酸">磷壁酸</span><br/><br>主链由醇和磷酸分子交替连接形成。<br/><br>侧链由单个的D-Ala或&#x2F;和β-D-葡萄糖以酯键或糖苷键与醇成分相连。<br/></p>
+</li>
+<li><p><span id="脂多糖">脂多糖</span><br/><br>由脊椎动物免疫系统应答细菌侵染时产生的抗体的原型靶子;<br/><br>是细菌菌株血清型的重要决定因子。<br/><br>对人与动物有毒。<br/></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">脂多糖的组成部分</th>
+<th align="center">结构与性质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">脂质A</td>
+<td align="center">有一个 β(1 $\rightarrow$ 6）连接的D-葡糖胺二聚物，并在C<sub>1</sub> ,C<sub>4</sub>位置各有一个磷酸基团。<br/>以此为重复单位，由C<sub>1</sub> ,C<sub>4</sub>间的焦磷酸桥（磷酸二脂键）将多个脂多糖分子相连</td>
+</tr>
+<tr>
+<td align="center">核心寡糖</td>
+<td align="center">由 3-去氧-D-甘露-2-辛酮糖酸（Kdo）、L-甘油-D-甘露庚糖（Hep）和若干己糖组成。<br/>一端与脂质A连接，一端与O-特异链相连<br/>是脂多糖 的内毒素，作为特异噬菌体的受体和抗原</td>
+</tr>
+<tr>
+<td align="center">O-特异链</td>
+<td align="center">由几十个相同的寡糖组成，有抗原性<br/>是脂多糖的最外层，又称O-抗原</td>
+</tr>
+</tbody></table>
+<ol start="4">
+<li><span id="荚膜多糖">荚膜多糖</span><br/> <blockquote>
+<p>荚膜多糖类分子量为10<sup>5</sup>-10<sup>6</sup>的抗原。</p>
+<blockquote>
+<p>由于易被接近可产生显著的抗体，应答是病原菌有毒性的重要原因，并可保护病原菌免遭宿主反噬的保护层。<br>一般有几百个重复寡糖单位组成，每个重复含1-6个单糖残基。<br>最简单的荚膜多糖为同多糖。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>脊椎动物胞外基质的结构杂多糖</p>
+<blockquote>
+<p>胞外基质：可将细胞结合并提供多孔性通道，有利于营养和营养的扩散。<br>糖胺聚糖：是动物和细菌特有的植物中不存在。有一类重复二糖单位构成的线性杂多糖。</p>
+</blockquote>
+</blockquote>
+<h2 id="糖缀物"><a href="#糖缀物" class="headerlink" title="糖缀物"></a><span id="糖缀物">糖缀物</span><br/></h2><blockquote>
+<p><a href="#%E7%B3%96%E8%9B%8B%E7%99%BD%E4%B8%8E%E7%B3%96%E9%93%BE">糖蛋白与糖链</a></p>
+<blockquote>
+<p><a href="#%E7%B3%96%E8%90%BC">糖萼</a><br/></p>
+<blockquote>
+<p>与质膜成分相连的的专一寡糖链形成的糖层。作为一个细胞面向环境而富含信息的表面。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E7%BC%80%E5%90%88%E7%89%A9">糖缀合物</a><br/></p>
+<blockquote>
+<p>信息聚糖与蛋白质或脂质共价连接而成，是生物活性分子，包括蛋白聚糖，糖蛋白，糖脂。<br/><br/></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>蛋白聚糖：</p>
+<blockquote>
+<p>一类细胞表面的或胞外基质的大分子。有一个或多个硫酸化的糖胺聚糖与一个膜蛋白成分或分泌性蛋白质共价连接而成。<br/><br>蛋白聚糖是所有胞外基质的主要成分<br/><br>按质量算，糖含量占95%且糖部分常为蛋白聚糖生物活性的主要部分。生物活性是只提供与其他蛋白进行非公价交互做得位点或机会。<br/></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>蛋白聚糖基本结构：<br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li>有一个核心蛋白和一个或多个与之共价连接的糖胺聚糖组成</li>
+<li>多数核心蛋白的糖链连接点在序列-Ser-Gly-X-Gly中的Ser残基。</li>
+<li>糖胺聚糖通过一个四糖接口连接与核心蛋白的ser残基。<br/><blockquote>
+<blockquote>
+<p>蛋白聚糖聚集体：<br/></p>
+<blockquote>
+<p>聚集蛋白聚糖能以一个透明质酸分子为骨架形成一个巨大的典型超分子集装体，称蛋白聚糖聚集体。<br/><br/><br>聚集蛋白的聚蛋核心含约100个硫酸软骨链和约50个硫酸角质素链。<br/><br/><br>糖链以三糖接头与核心蛋白的ser残基相连并发布在核心蛋白的不同区域。<br/><br/><br>每个核心蛋白与透明质酸分子的二糖序列（五个二糖单位）非共价结合，并有连接蛋白，使其结合稳定化。形成的聚集蛋白聚糖聚集体，含有百个或更多蛋白聚糖单体。<br/><br/><br>聚集蛋白聚糖是结缔组织的主要成分可通过非共价键与纤维状蛋白交织成一个交联网，给于结缔组织以抵抗张力和恢复能力.&lt;br<br/></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>糖蛋白：<br/></p>
+<blockquote>
+<p>一类有糖和蛋白质组成的共价缀合物。含一个或几个不同复杂度的寡糖链。与蛋白聚糖的糖胺聚糖相比，糖蛋白的聚糖分子量小结构多样化，多为膜蛋白，分泌蛋白存在于细胞膜外表面 ，以糖萼部分存在胞外基质和血液中。<br/><br/><br>糖蛋白的寡糖链部分，分布不均一富含信息形成高度专一性的识别为点，并被凝集素高度亲和.<br/><br/></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>糖蛋白寡糖链的结合方式:<br/></p>
+<blockquote>
+<ol>
+<li>o-糖苷键：<br/><br>由o-糖苷键与Ser或Thy在还原端相连<br/></li>
+<li>N-糖苷键：<br/><br>由N-糖苷键与Asn在还原端相连<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>两种连接方式的糖链，可以单独或共同存在于一种蛋白质中。<br/><br>所有N-连接的寡糖在还原端含有核心五塘，以还原端GlcNAc残基与肽链连接<br/><br>核心结构由进入糖蛋白的前体形式合成<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>黏蛋白：<br/></p>
+<blockquote>
+<p>一类分泌糖蛋白或膜蛋白个含大量的o-连接形式的o-连接型寡糖链。 存在于大多数的分泌液中。<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E5%AF%86%E7%A0%81">糖密码</a><br/><br>糖链的生物学功能的多样性<br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li>糖链与血液循环中的蛋白质寿命相关</li>
+<li>糖链与细胞细胞识别的今年相关</li>
+<li>寡糖链与淋巴细胞归巢相关</li>
+<li>糖链在糖蛋白新生肽链折叠与缔合起作用</li>
+<li>糖量影响糖蛋白的分泌和稳定性</li>
+<li>糖链与精卵识别相关</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>凝集素：（lectin）<BR/><br>一类专一且高亲和地与糖质非共价结合的蛋白质。含糖质识别域（CRD，CBD）<br>.<br/> 在CBD中，有若干关键性位置的成氢键基团与寡糖链的相应基因键合达到精识别相似寡糖链的功能。<br/><br>凝集素：｛植物凝集素、人凝集素、侵染者凝集素、血凝素｝<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Lectin与糖的互作:<br/><br>一般的互作：多糖极性较大一面与lectin的氢键相结合；极性较小一面与非极性氨基酸残基发生疏水作用，以此产生高亲和的结合，以及lectin对糖质的高度专一性。代表了胞内与胞间发生的许多过程中主要的信息传递方式。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>寡糖链是血型决定簇</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E9%93%BE%E7%9A%84%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90">糖链的结构分析</a><br/><br>聚糖的结构分析</p>
+</blockquote>
+</blockquote>
+<ol>
+<li>糖蛋白的分离纯化</li>
+<li>从糖蛋白中释放完整聚糖</li>
+<li>聚糖的纯化</li>
+<li>聚糖的纯度鉴定和分子量的測定</li>
+<li>聚糖好单糖组成测定</li>
+<li>聚糖的测序</li>
+</ol>
+<h1 id="糖类物质代谢"><a href="#糖类物质代谢" class="headerlink" title=" 糖类物质代谢 "></a><font size=5> 糖类物质代谢 <font size=5></h1><h2 id="糖的分解代谢"><a href="#糖的分解代谢" class="headerlink" title="糖的分解代谢"></a>糖的分解代谢</h2><blockquote>
+<p>[糖类代谢总过程]<br/></p>
+</blockquote>
+<blockquote>
+<img src="img\tjj.jpg" >
+<img src="img\TCA.jpg" >
+</blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E9%85%B5%E8%A7%A3">糖酵解</a><br/></p>
+</blockquote>
+<hr>
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=1007
+ style='width:755.3pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:25.7pt'>
+  <td width=1007 colspan=3 valign=top style='width:755.3pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:25.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:22.0pt;font-family:楷体'>糖酵解<span lang=EN-US><o:p></o:p></span></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:20.2pt'>
+  <td width=52 rowspan=5 valign=top style='width:38.85pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>第一阶段:耗能<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt'>
+  <p class=MsoNormal style='mso-pagination:widow-orphan'><span
+  style='font-size:15.0pt;font-family:楷体;color:black'>葡萄糖磷酸化<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.2pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体;color:black'>葡萄糖<span
+  lang=EN-US>+ATP--(</span>己糖激酶<span lang=EN-US>+Mg<sup>2+</sup>)--6-</span>磷酸葡糖<span
+  lang=EN-US>+ADP+H</span></span><span lang=EN-US style='font-size:15.0pt;
+  font-family:楷体'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:35.35pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:35.35pt'>
+  <p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+  style='font-size:15.0pt;font-family:楷体;color:black'>6-</span><span
+  style='font-size:15.0pt;font-family:楷体;color:black'>磷酸葡糖异构化<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:35.35pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体;
+  color:black'>6-</span><span style='font-size:15.0pt;font-family:楷体;
+  color:black'>磷酸葡糖<span lang=EN-US>--(</span>磷酸己糖异构酶<span lang=EN-US>)--6-</span>磷酸果糖</span><span
+  lang=EN-US style='font-size:15.0pt;font-family:楷体'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:20.95pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.95pt'>
+  <p class=MsoNormal style='mso-pagination:widow-orphan'><span lang=EN-US
+  style='font-size:15.0pt;font-family:楷体;color:black'>6-</span><span
+  style='font-size:15.0pt;font-family:楷体;color:black'>磷酸果糖磷酸化<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体;
+  color:black'>6-</span><span style='font-size:15.0pt;font-family:楷体;
+  color:black'>磷酸果糖<span lang=EN-US>--(</span>磷酸果糖激酶<span lang=EN-US>+Mg)--1,6-</span>二磷酸果糖</span><span
+  lang=EN-US style='font-size:15.0pt;font-family:楷体'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:26.95pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>1,6-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸果糖的转变<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>1,6-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸果糖<span lang=EN-US>--(</span>醛缩酶<span
+  lang=EN-US>)--</span>磷酸二羟丙酮<span lang=EN-US>+3-</span>磷酸甘油醛<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:55.25pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.25pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>磷酸二羟丙酮转变为<span
+  lang=EN-US>3-</span>磷酸甘油醛<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:55.25pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>磷酸二羟丙酮<span
+  lang=EN-US>--(</span><span class=GramE>磷酸丙糖异构酶</span><span lang=EN-US>)</span>—<span
+  lang=EN-US>3-</span>磷酸甘油醛<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:36.95pt'>
+  <td width=52 rowspan=5 valign=top style='width:38.85pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.95pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>第二阶段:产能<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:36.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油醛的氧化磷酸化<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:36.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油醛<span lang=EN-US>+<span
+  class=SpellE>NAD+Pi</span>--(3-</span>磷酸甘油醛脱氢酶<span lang=EN-US>)--1,3-</span>二磷酸甘油酸<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:53.95pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:53.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>1,3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>二磷酸甘油酸磷酸基团的转移<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:53.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>1,3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>二磷酸甘油酸<span lang=EN-US>+ADP--(</span>磷酸甘油酸激酶<span
+  lang=EN-US>+Mg)--3-</span>磷酸甘油酸<span lang=EN-US>+ATP<o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:26.95pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油酸转变<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.95pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>3-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油酸<span lang=EN-US>--(</span>磷酸甘油酸变位酶<span
+  lang=EN-US>)--2-</span>磷酸甘油酸<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:28.25pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>2-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油酸脱水<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:15.0pt;font-family:楷体'>2-</span><span
+  style='font-size:15.0pt;font-family:楷体'>磷酸甘油酸<span lang=EN-US>--(</span>烯醇化酶<span
+  lang=EN-US>)--</span>磷酸烯醇式丙酮酸<span lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes;height:29.35pt'>
+  <td width=257 valign=top style='width:193.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:29.35pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>丙酮酸的形成（非酶促反应）<span
+  lang=EN-US><o:p></o:p></span></span></p>
+  </td>
+  <td width=698 valign=top style='width:523.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:29.35pt'>
+  <p class=MsoNormal><span style='font-size:15.0pt;font-family:楷体'>磷酸烯醇式丙酮酸<span
+  lang=EN-US>+ADP--(</span>丙酮酸激酶<span lang=EN-US>)</span>—丙酮酸<span lang=EN-US>+ATP<o:p></o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+<hr>
+<blockquote>
+<p>糖酵解中酶的反应类型<br/></p>
+<blockquote>
+<p>氧化还原酶（1种）：3—磷酸甘油醛脱氢酶<br/><br>转移酶（4种）：己糖激酶、磷酸果糖激酶、磷酸甘油酸激酶、丙酮酸激酶<br/><br>裂合酶（1种）：醛缩酶<br/><br>异构酶（4种）：磷酸Glc异构酶、磷酸丙糖异构酶、磷酸甘油酸变位酶、烯醇化酶<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>己糖激酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>磷酸己糖异构酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>磷酸果糖激酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>醛缩酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>磷酸丙糖异构酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>3-磷酸甘油醛脱氢酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>磷酸甘油酸激酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>磷酸甘油酸变位酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>烯醇化酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>丙酮酸激酶</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E4%B8%99%E9%85%AE%E9%85%B8%E7%9A%84%E5%8E%BB%E8%B7%AF">丙酮酸的去路</a><br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li>生成乳酸（无氧）<br/><br>无氧条件下：<br/><br>丙酮酸+NADH+H<sup>+</sup>&#x3D;&#x3D;(乳酸脱氢酶)&#x3D;&#x3D;乳酸+NAD<sup>+</sup><br/><br>在厌氧酵解时（乳酸菌、剧烈运动的肌肉），丙酮酸接受了3—磷酸甘油醛脱氢酶生成的NADH上的氢，在乳酸脱氢酶催化下，生成乳酸。<br/><br>总反应：    Glc + 2ADP + 2Pi → 2乳酸 + 2ATP + 2H2O<br/><br>动物体内的乳酸循环 Cori 循环：<br/><br>肌肉收缩，糖酵解产生乳酸。乳酸透过细胞膜进入血液，在肝脏中异生为Glc，解除乳酸积累引起的中毒。<br/><br>Cori循环是一个耗能过程：2分子乳酸生成1分子Glc，消耗6个ATP。<br/></li>
+</ol>
+<p>Cori <br/></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 乳酸</span><br><span class="line">    participant 丙酮酸</span><br><span class="line">    participant 葡萄糖</span><br><span class="line">    loop</span><br><span class="line">     乳酸--&gt;&gt;丙酮酸:NADH+H---&gt;NAD&lt;肝脏&gt;</span><br><span class="line">    end</span><br><span class="line">        loop</span><br><span class="line">     丙酮酸--&gt;&gt;葡萄糖:糖异生&lt;肝脏&gt;</span><br><span class="line">    end</span><br><span class="line">    loop</span><br><span class="line">    葡萄糖--&gt;&gt;丙酮酸:  糖酵解&lt;肌肉&gt;</span><br><span class="line">    end</span><br><span class="line">    loop</span><br><span class="line">    丙酮酸--&gt;&gt;乳酸: 乳酸脱氢酶NAD---&gt;NADH+H&lt;肌肉&gt;</span><br><span class="line">    end</span><br></pre></td></tr></table></figure>
+
+
+
+
+<ol>
+<li><p>生成乙醇（无氧）</p>
+<blockquote>
+<ol>
+<li>丙酮酸脱羧形成乙醛<br/><br>酶：丙酮酸糖酸酶<br/><br>辅酶：硫胺素焦磷酸（TPP）<br/><br>酵母或其它微生物中，经糖酵解产生的丙酮酸，可以经丙酮酸脱羧酶催化，脱羧生成乙醛，在醇脱氢酶催化下，乙醛被NADH还原成乙醇。<br/><br>总反应：Glc+2pi+2ADP+2H+→2乙醇+2CO2+2ATP+2H20<br/><br>在厌氧条件下能产生乙醇的微生物，如果有氧存在时，则会通过乙醛的氧化生成乙酸，制醋。<br/></li>
+</ol>
+</blockquote>
+</li>
+<li><p>柠檬酸循环（有氧）</p>
+</li>
+<li><p>丙酮酸进行糖异生</p>
+<blockquote>
+<blockquote>
+<p><a href="#%E7%B3%96%E9%85%B5%E8%A7%A3%E7%9A%84%E8%B0%83%E8%8A%82">糖酵解的调节</a><br/></p>
+</blockquote>
+<ol>
+<li>磷酸果糖激酶（关键酶,限速酶）<br/><br>抑制剂：<br/>ATP、柠檬酸、脂肪酸和H+<br/><br>激活剂：<br/>AMP、F—26—2P<br/><br>ATP：<br/>细胞内含有丰富的ATP时，此酶几乎无活性。<br/><br>柠檬酸：<br/>高含量的柠檬酸是碳骨架过剩的信号。<br/><br>H+：<br/>可防止肌肉中形成过量乳酸而使血液酸中毒<br/></li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<p>催化不可逆反应，活性受变构效应物可逆结合以及酶共价修饰的调节。<br/></p>
+<blockquote>
+<p>受高浓度ATP的抑制<br/><br>糖酵解也为生物合成提供碳骨架，不仅仅是在缺氧条件下提供能量，碳骨架的需求情况也影响糖酵解的速度。<br/><br>细胞内的柠檬酸浓度较高时，意味着有丰富的生物合成前体存在，葡萄糖无需为供给前体而降解。柠檬酸通过加强ATP对磷酸果糖激酶的抑制作用，使得糖酵解变慢<br/><br>2. 果糖-2,6-二磷酸</p>
+<blockquote>
+<p>是磷酸果糖激酶的强力激动剂；<br/><br>在肝中可提高果糖激酶与6-磷酸果糖的亲和力，并降低ATP的抑制效应。<br/><br>为变构激活剂，可控制磷酸果糖激酶的构象转变与平衡。<br/><br/><br>前反馈作用：<br/><br>6-磷酸果糖可加速2,6-二磷酸果糖的合成，抑制其水解。故高浓度6-磷酸果糖可导致高浓度2,6-二磷酸果糖；2,6-二磷酸果糖可激活磷酸果糖激酶。<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>己糖激酶，丙酮酸激酶<blockquote>
+<ol>
+<li>已糖激酶调节<br/><br>别构抑制剂（负效应调节物）：<br/>G—6—P和ATP<br/><br>别构激活剂（正效应调节物）：<br/>ADP<br/></li>
+<li>丙酮酸激酶调节<br/><br>抑制剂：<br/>乙酰CoA、长链脂肪酸、Ala、ATP<br/><br>激活剂：<br/>F-1.6-P、<br/></li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E5%85%B6%E4%BB%96%E7%B3%96%E8%BF%9B%E5%85%A5%E7%B3%96%E9%85%B5%E8%A7%A3">其他糖进入糖酵解</a><br/><br><a href="#%E8%83%BD%E9%87%8F%E7%BB%93%E7%AE%97">能量结算</a><br/><br>糖酵解途径中ATP的生成<br/><br>无氧情况下：净产生2ATP（2分子NADH将2分子丙酮酸还原成乳酸）。<br/><br>有氧条件下：NADH可通过呼吸链间接地被氧化，生成更多的ATP。<br/><br>       1分子NADH→3ATP<br/><br>       1分子FAD  →2ATP<br/><br>因此，净产生8ATP（酵解2ATP，2分子NADH进入呼吸氧化，共生成6ATP）。<br/><br>但在肌肉系统组织和神经系统组织：一个Glc酵解，净产生6ATP（２+２*２）。<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>甘油磷酸穿梭：<br/><br>2分子NADH进入线粒体，经甘油磷酸穿梭系统，胞质中磷酸二羟丙酮被还原成3—磷酸甘油，进入线粒体重新氧化成磷酸二羟丙酮，但在线粒体中的3—磷酸甘油脱氢酶的辅基是FAD，因此只产生4分子ATP。<br/></p>
+<ol>
+<li>胞液中磷酸甘油脱氢酶。<br/></li>
+<li>线粒体磷酸甘油脱氢酶。<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>苹果酸穿梭机制：<br/><br>胞液中的NADH可经苹果酸脱氢酶催化，使草酰乙酸还原成苹果酸，再通过苹果酸—2—酮戊二酸载休转运，进入线粒体内，由线粒体内的苹果酸脱氢酶催化，生成NADH和草酰乙酸。<br/><br>而草酰乙酸经天冬氨酸转氨酶作用，消耗Glu而形成Asp。Asp经线粒体上的载体转运回胞液。在胞液中，Asp经胞液中的Asp转氨酶作用，再产生草酰乙酸。<br/><br>经苹果酸穿梭，胞液中NADH进入呼吸链氧化，产生3个ATP。<br/><br>苹果酸脱氢酶（胞液）<br/><br>α—酮戊二酸转位酶<br/><br>苹果酸脱氢酶（线粒体基质）<br/><br>谷—草转氨酶<br/><br>Glu—Asp转位酶<br/><br>谷—草转氨酶<br/><br>草酰乙酸：<br/><br>苹果酸：<br/><br>α—酮戊二酸：<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><a href="#%E6%9F%A0%E6%AA%AC%E9%85%B8%E5%BE%AA%E7%8E%AF">柠檬酸循环</a><br/><br>概况：<br/><br>三羧酸循环：乙酰CoA经一系列的氧化、脱羧，最终生成CO2、H2O、并释放能量的过程，又称柠檬酸循环、TCA循环。是一种两类代谢途径（提供能量、提供前体）。</p>
+</blockquote>
+<blockquote>
+<p>葡萄糖的有氧氧化包括四个阶段。</p>
+</blockquote>
+<ol>
+<li>糖酵解产生丙酮酸（2丙酮酸、 2ATP、2NADH）</li>
+<li>丙酮酸氧化脱羧生成乙酰CoA</li>
+<li>三羧酸循环（CO2、H2O、ATP、NADH）</li>
+<li>呼吸链氧化磷酸化（NADH—–ATP）<br/><br>原核生物：1<del>4阶段在胞质中<br/><br>真核生物：1在胞质中，2</del>4在线粒体中<br/></li>
+</ol>
+<blockquote>
+<p><a href="#%E5%8F%8D%E5%BA%94%E6%9C%BA%E5%88%B6">反应机制</a><br/></p>
+</blockquote>
+<h3 id="丙酮酸的转化"><a href="#丙酮酸的转化" class="headerlink" title="丙酮酸的转化"></a>丙酮酸的转化</h3><blockquote>
+<ol>
+<li>反应式：<img src=img\反应式.jpg>
+此反应在真核细胞的线粒体基质中进行，这是连接糖酵解与TCA的中心环节。<br/></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>丙酮酸脱氢酶系<br/><br>丙酮酸脱氢酶系是一个十分庞大的多酶体系，位于线粒体膜上，电镜下可见。<br>E.coli丙酮酸脱氢酶复合体：<br/><br>分子量：4.5×106，直径45nm，比核糖体稍大。</li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">酶</th>
+<th align="center">辅酶</th>
+<th align="center">亚基数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">丙酮酸脱羧酶（E1）</td>
+<td align="center">TPP</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">二氢硫辛酸转乙酰酶（E2）</td>
+<td align="center">硫辛酸</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">二氢硫辛酸脱氢酶（E3）</td>
+<td align="center">FAD、NAD+</td>
+<td align="center">12</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>此外，还需要CoA、Mg<sup>2+</sup>作为辅因子<br/><br>这些肽链以非共价键结合在一起，<br/><br>在碱性条件下，复合体可以<em><strong>解离</strong></em>成相应的亚单位，<br/><br>在中性时又可以重组为复合体。<br/><br>所有丙酮酸氧化脱羧的中间物均紧密结合在复合体上，活性中间物可以从一个酶活性位置转到另一个酶活性位置，因此，多酶复合体有利于高效催化反应及调节酶在反应中的活性。<br/></p>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>反应步骤<blockquote>
+<ol>
+<li>丙酮酸脱羧形成羟乙基-TPP</li>
+<li>二氢硫辛酸乙酰转移酶（E2）使羟乙基氧化成乙酰基</li>
+<li>E2将乙酰基转给CoA，生成乙酰-CoA</li>
+<li>E3氧化E2上的还原型二氢硫辛酸</li>
+<li>E3还原NAD+生成NADH<br/></li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>丙酮酸脱氢酶系的活性 <br/><br>从丙酮酸到乙酰CoA是代谢途径的分支点，此反应体系受到严密的调节控制，此酶系受两种机制调节:<br/><blockquote>
+<ol>
+<li>可逆磷酸化的共价调节<br/><br>丙酮酸脱氢酶激酶（EA）（可被ATP激活）<br/><br>丙酮酸脱氢酶磷酸酶（EB）<br/><br>磷酸化的丙酮酸脱氢酶（无活性）<br/><br>去磷酸化的丙酮酸脱氢酶（有活性）<br/></li>
+<li>别构调节<br>ATP、CoA、NADH是别构抑制剂<br/><br>ATP抑制E1<br/><br>CoA抑制E2<br/><br>NADH抑制E3<br/></li>
+</ol>
+</blockquote>
+</li>
+<li>能量 <br/><br>1分子丙酮酸生成1分子乙酰CoA，产生1分子NADH（3ATP）。</li>
+</ol>
+</blockquote>
+<h3 id="TCA循环过程"><a href="#TCA循环过程" class="headerlink" title="TCA循环过程"></a>TCA循环过程</h3><blockquote>
+<p>[柠檬酸循环]<br/></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>反应</th>
+<th>酶</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>草酰乙酸与乙酰辅酶A的缩合</td>
+<td>草酰乙酸+CoAch $\frac{柠檬酸合酶}{——————}$ 柠檬酸+辅酶A</td>
+<td>柠檬酸合酶</td>
+</tr>
+<tr>
+<td>柠檬酸异构化</td>
+<td>柠檬酸 $\frac{乌头酸酶，脱水}{————————}$ 顺乌头酸<br/>顺乌头酸 $\frac{乌头酸酶，加水}{————————}$ 异柠檬酸</td>
+<td>乌头酸酶</td>
+</tr>
+<tr>
+<td>异柠檬酸氧化</td>
+<td>异柠檬酸 $\frac{异柠檬酸脱氢酶}{————————}$ 草酰琥珀酸<br/>草酰琥珀酸 $\frac{-CO_2,+H^+}{——————}$ α-酮戊二酸</td>
+<td>异柠檬酸脱氢酶</td>
+</tr>
+<tr>
+<td>α-酮戊二酸脱羧</td>
+<td>α-酮戊二酸脱羧 $\frac{α-酮戊二酸}{脱氢酶复合体}$ 琥珀酰-CoA</td>
+<td>α-酮戊二酸脱氢酶复合体</td>
+</tr>
+<tr>
+<td>琥珀酰的转化</td>
+<td>琥珀酰-CoA $\frac{琥珀酰-CoA}{合成酶}$ 琥珀酸</td>
+<td>琥珀酰-CoA合成酶</td>
+</tr>
+<tr>
+<td>琥珀酸脱氢</td>
+<td>琥珀酸 $\frac{琥珀酸脱氢酶}{——————}$ 延胡索酸</td>
+<td>琥珀酸脱氢酶</td>
+</tr>
+<tr>
+<td>延胡索酸水合</td>
+<td>延胡索酸 $\frac{延胡索酸酶}{+H_2O}$ L-苹果酸</td>
+<td>延胡索酸酶</td>
+</tr>
+<tr>
+<td>草酰乙酸的形成</td>
+<td>L-苹果酸 $\frac{苹果酸}{脱氢酶}$ 草酰乙酸</td>
+<td>苹果酸脱氢酶</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>TCA循环小结<br/></p>
+<ol>
+<li>三羧酸循环示意图<ol start="2">
+<li><pre><code>总反应式：&lt;br/&gt;
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<p>丙酮酸 + 4NAD+ + FAD + GDP  $\frac{ BLANK}{BLANK }$  4NADH + FADH2 + GTP + 3CO2 + H2O<BR/><br>乙酰CoA + 3NAD+ + FAD + GDP   $\frac{ BLANK}{BLANK }$    3NADH + FADH2 + GTP + 2CO2 + H2O<br/></p>
+<blockquote>
+<ol start="3">
+<li><pre><code>一次底物水平的磷酸化、二次脱羧反应，三个调节位点，四次脱氢反应。&lt;br/&gt;
+</code></pre>
+3NADH、FADH2进入呼吸链</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>三羧酸循环中碳骨架的不对称反应同位素标记表明，乙酰CoA上的两个C原子在第一轮TCA上并没有被氧化。<br/><br>被标记的羰基碳在第二轮TCA中脱去。<br/><br>在第三轮TCA中，两次脱羧，可除去最初甲基碳的50%，以后每循环一次，脱去余下甲基碳的50%<br/></li>
+</ol>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><a href="#%E8%83%BD%E9%87%8F%E7%BB%93%E7%AE%97">能量结算</a><br/></p>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">反应</th>
+<th align="center">酶</th>
+<th align="center">ATP消耗</th>
+<th align="center">产生ATP方式</th>
+<th align="center">ATP数量</th>
+<th align="center">合计</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">糖酵解</td>
+<td align="center">已糖激酶<br/>磷酸果糖激酶<br/>磷酸甘油醛脱氢酶<br/>磷酸甘油酸激酶<br/>丙酮酸激酶</td>
+<td align="center">1<br/>1<br/> <br/>	<br/></td>
+<td align="center"><br/> <br/>NADH呼吸链氧化磷酸化<br/>底物水平磷酸化<br/>底物水平磷酸化</td>
+<td align="center">-1<br/> -1<br/> 2*3<br/> 2*1<br/>2*1</td>
+<td align="center"><br/><br/>8<br/><br/></td>
+</tr>
+<tr>
+<td align="center">TCA</td>
+<td align="center">丙酮酸脱氢酶复合物<br/>异柠檬酸脱氢酶<br/>α-酮戊二酸脱氢酶复合物<br/>琥珀酸脱氢酶<br/>苹果酸脱氢酶<br/>琥珀酰CoA合成酶</td>
+<td align="center"><br/><br/><br/><br/><br/></td>
+<td align="center">NADH<br/>NADH<br/>NADH<br/>FADH<sub>2</sub><br/>NADH<br/>底物水平磷酸化</td>
+<td align="center">2×3<br/>2×3<br/>2×3<br/>2×2<br/>2×3<br/>2×1</td>
+<td align="center"><br/><br/><br/>30<br/><br/></td>
+</tr>
+</tbody></table>
+<p>净产生：38ATP<br/><br>在骨骼肌、脑细胞中，净产生：36ATP<br/><br>甘油磷酸穿梭，1个NADH生成2个ATP<br/><br>苹果酸穿梭，1个NADH生成3个ATP<br/></p>
+<blockquote>
+<blockquote>
+<p><a href="#TCA%E7%9A%84%E4%BB%A3%E8%B0%A2%E8%B0%83%E8%8A%82">TCA的代谢调节</a><br/></p>
+</blockquote>
+</blockquote>
+<ol>
+<li>柠檬酸合酶（限速酶）<br/><br>受ATP、NADH、琥珀酰CoA及脂酰CoA抑制。<br/><br>受乙酰CoA、草酰乙酸激活<br/></li>
+<li>异柠檬酸脱氢酶<br/><br>NADH、ATP可抑制此酶<br/><br>ADP，Ca<sup>2+</sup>可活化此酶，当缺乏ADP时就失去活性。<br/></li>
+<li>α-酮戊二酸脱氢酶<br/><br>受NADH和琥珀酰CoA抑制。<br/><br>Ca<sup>2+</sup>可活化此酶.<br/></li>
+</ol>
+<blockquote>
+<blockquote>
+<p><a href="#%E5%8F%8C%E9%87%8D%E4%BD%9C%E7%94%A8">双重作用</a><br/></p>
+</blockquote>
+<ol>
+<li>TCA是物质代谢的枢纽<br/><br>一方面，TCA是糖、脂肪、氨基酸等彻底氧化分解的共同途径，<br/><br>另一方面，循环中生成的草酰乙酸、α-酮戊二酸、柠檬酸、琥珀酰CoA和延胡索酸等又是合成糖、氨基酸、脂肪酸、卟啉等的原料，因而TCA将各种有机物的代谢联系起来。<br/><br>TCA是联系体内三大物质代谢的中心环节，为合成其它物质提供C架。<br/></li>
+<li>TCA的回补反应<br/><br>三羧酸循环中间物的的回补<br/><br>在TCA循环中，有些中间产物是合成其它物质的前体，如卟啉的主要碳原子来自琥珀酰CoA，Glu、Asp可以从α-酮戊二酸和草酰乙酸衍生而成，一旦草酰乙酸浓度下降，则会影响TCA循环，因此这些中间产物必须不断补充，以维持TCA循环。<br/><br/><br>产生草酰乙酸的途径：<br/><br>（1）、	丙酮酸羧化酶催化丙酮酸生成草酰乙酸<br/><br/>
+丙酮酸羧化酶是一个调节酶，乙酰CoA可以增加其活性。<br/>
+需要生物素为辅酶<br/>
+（2）、	磷酸烯醇式丙酮酸羧化激酶催化磷酸烯醇式丙酮酸转化成草酰乙酸
+在脑、心脏中存在这个反应。<br/><br/>
+（3）、	Asp、Glu转氨可生成草酰乙酸和α-酮戊二酸
+Ile、Val、Thr、Met也会形成琥珀酰CoA，最后生成草酰乙酸。<br/></li>
+</ol>
+</blockquote>
+<blockquote>
+<p><a href="#%E4%B9%99%E9%86%9B%E9%85%B8%E9%80%94%E5%BE%84">乙醛酸途径</a><br/></p>
+<blockquote>
+<p>特有酶类:<em><strong>异柠檬酸裂解酶</strong></em><br/><br><img src=img\glyoxylatepathway.png><br><br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>三羧酸循环是所有生物共有的有氧化谢途径，某些植物和微生物除进行TCA外，还有一个乙醛酸循环，作为TCA的补充。<br/><br>循环途径：<br/><br>乙醛酸循环通过一分子乙酰CoA和草酰乙酸缩合成柠檬酸,经异柠檬酸，由异柠檬酸裂解酶裂解成乙醛酸和琥珀酸。<br/><br>琥珀酸经脱氢、水化、脱氢生成草酰乙酸，补偿开始消耗掉的草酰乙酸。<br/><br>乙醛酸缩与另一分子乙酰CoA合成苹果酸，脱氢生成草酰乙酸。<br/><br>过量的草酰乙酸可以糖异生成Glc，因此，乙醛酸循环可以使脂肪酸的降解产物乙酰CoA经草酰乙酸转化成Glc，供给种子萌发时对糖的需要。<br/><br>植物中，乙醛酸循环只存在于子苗期，而生长后期则无乙醛酸循环。<br/><br>哺乳动物及人体中，不存在乙醛酸循环，因此，乙酰CoA不能在体内生成糖和氨基酸。<br/><br>总反应：<br/><br>2乙酰CoA + NAD+ + 2H2O  →  琥珀酸 + 2CoA + NADH + 2H+<br/></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><a href="#%E6%88%8A%E7%B3%96%E7%A3%B7%E9%85%B8%E9%80%94%E5%BE%84">戊糖磷酸途径</a><br/><br>细胞内Glc的氧化分解，除通过糖酵解，三羧酸循环和发酵外，还能直接氧化分解。即反应开始，在G-6-P上的C2原子上直接氧化，通过一系列转化被分解，此为磷酸戊糖途径。<br/><br>1.	反应过程<br/><br>Glc经磷酸戊糖途径氧化分解可分为两个阶段。<br/><br>第一阶段：6-磷酸葡萄糖氧化脱羧生成5-磷酸核糖<br/><br>第二阶段：磷酸戊糖分子重排，产生不同碳链长度的磷酸单糖<br/></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">阶段</th>
+<th align="center">反应</th>
+<th align="center">化学反应式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">氧化阶段</td>
+<td align="center">6-磷酸葡糖脱氢酶<br/>内酯酶<br/>6-磷酸葡糖酸脱氢酶</td>
+<td align="center">6-磷酸葡糖$\frac{6-磷酸葡糖脱氢酶}{——————————}$ 6-磷酸葡糖酸-δ-内酯<br/>6-磷酸葡糖酸-δ-内酯 $\frac{内酯酶}{————}$ 6-磷酸葡糖酸<br/>6-磷酸葡糖酸 $\frac{6-磷酸葡糖酸脱氢酶}{————————}$ 5-磷酸核酮糖</td>
+</tr>
+<tr>
+<td align="center">非氧化阶段</td>
+<td align="center"><br/>5-磷酸核酮糖异构酶<br/>5-磷酸核酮糖差向异构酶<br/>转酮酶-TPP<br/>转醛酶<br/>转酮酶-TPP</td>
+<td align="center">6-磷酸葡糖酸$\frac{5-磷酸核酮糖异构酶}{——————————}$ 5-磷酸-D-核糖<br/>5-磷酸核酮糖 $\frac{5-磷酸核酮糖差向异构酶}{————————————}$ 5-磷酸木酮糖<br/> 5-磷酸木酮糖+5-磷酸核糖 $\frac{转酮酶-TPP}{——————}$ 3-磷酸甘油醛+7-磷酸景天庚酮糖<br/>3-磷酸甘油醛+7-磷酸景天庚酮糖 $\frac{转醛酶}{———}$ 4-磷酸赤藓糖+6-磷酸果糖<br/>4-磷酸赤藓糖+5-磷酸木酮糖 $\frac{转酮酶-TPP}{——————}$ 3-磷酸甘油醛+6-磷酸果糖</td>
+</tr>
+</tbody></table>
+<hr>
+<p><font color="blue">注：</font><br/>非氧化阶段的反应全部可逆。 <br/></p>
+<p>戊糖磷酸途径产生的6-磷酸果糖去向： 6 $6-磷酸果糖+6H_2O+12NADP^+ \frac{磷酸葡糖异构酶}{————————} 6CO_2+ 5 个 6-磷酸葡糖 +12NADPH+Pi$</p>
+<blockquote>
+<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a><font size=6>小结：</font></h3><ol>
+<li>通过此途径，可将G-6-P彻底氧化<br/></li>
+<li>转酮酶（TPP）、转醛酶催化的反应是可逆的<br/><br>它们转移的是酮，受体是醛。<br/><br>转酮酶转移的是二碳单位（羟乙酰基），转醛酶转移的是三碳单位（二羟丙酮基）。<br/></li>
+<li>磷酸戊糖途径的中间产物，可进入糖酵解途径的中间产物中，反之亦可。<br/><br>主要是6-磷酸果糖和3-磷酸甘油醛。<br/></li>
+<li>碳的释放<br/><br>磷酸戊糖途径释放 14C1<br/><br>在TCA循环中：先释放：C3、C4（丙酮酸脱羧）<br/><br>TCA第二轮后释放：C2、C5（乙酰CoA的羰基碳：CH3C*&#x3D;O-CoA，100%）<br/><br>TCA第三轮后释放：C1、C6（乙酰CoA的甲基碳：*CH3C&#x3D;O-CoA，每循环一轮释放50%））<br/></li>
+</ol>
+</blockquote>
+<blockquote>
+<h3 id="磷酸戊糖途径的生理意义"><a href="#磷酸戊糖途径的生理意义" class="headerlink" title="磷酸戊糖途径的生理意义"></a>磷酸戊糖途径的生理意义<br/></h3><blockquote>
+<ol>
+<li>产生大量的NADPH，为细胞的各种合成反应提供主要的还原力。<br/><br>NADPH作为主要的供氢体，为脂肪酸、固醇、四氢叶酸等的合成，非光合细胞中硝酸盐、亚硝酸盐的还原，及氨的同化等所必需。哺乳动物的脂肪细胞和红细胞中占50%，肝中占10﹪。<br/></li>
+<li>中间产物为许多化合物的合成提供原料<br/><br>产生的磷酸戊糖参加核酸代谢。<br/><br>4-磷酸赤藓糖与糖酵解中的磷酸烯醇式丙酮酸（PEP）可合成莽草酸，经莽草酸途径可合成芳香族a.a。<br/></li>
+<li>是植物光合作用中CO2合成Glc的部分途径<br/></li>
+<li>NADPH主要用于还原反应，其电子通常不经电子传递链传递，一般不用于ATP合成。<br/><br>如NADPH用于供能，需通过两个偶联反应，进行穿梭转运，将氢转移至线粒体NAD+上。<br/><br>胞液内：α-酮戊二酸+CO2+NADPH+H+&#x3D;异柠檬酸+NADP+<br/><br>异柠檬酸能自由通过线粒体膜，传递氢。<br/><br>线粒体内：异柠檬酸+NAD+&#x3D;α-酮戊二酸+CO2+NADH+H+<br/><br>一分子Glc经磷酸戊糖途径，完全氧化，产生12分子NADPH，可生成（36-1）&#x3D;35ATP<br/></li>
+</ol>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4 id="糖醛酸途径"><a href="#糖醛酸途径" class="headerlink" title="糖醛酸途径"></a>糖醛酸途径<br/></h4></blockquote>
+<p>从G-1-P或G-6-P开始，经UDP-葡萄糖醛酸生成糖醛酸的途径。</p>
+<blockquote>
+<ol>
+<li>糖醛酸的生理意义<br/></li>
+</ol>
+</blockquote>
+<ol>
+<li>在肝中糖醛酸与药物（含芳环的苯酚、苯甲酸）或含-OH、-COOH、-NH2、-SH基的异物结合成可溶于水的化合物，随尿、胆汁排出，起解毒作用。<br/></li>
+<li>UDP糖醛酸是糖醛酸基的供体，用于合成粘多糖（硫酸软骨素、透明质酸、肝素等）。<br/></li>
+<li>从糖醛酸可以转变成抗坏血酸（人及灵长动物不能，缺少L-古洛糖酸内酯氧化酶）<br/></li>
+<li>从糖醛酸可以生成5-磷酸木酮糖，可与磷酸戊糖途径连接。 <br/></li>
+</ol>
+<h2 id="糖的合成代谢"><a href="#糖的合成代谢" class="headerlink" title="糖的合成代谢"></a>糖的合成代谢</h2><h3 id="糖异生"><a href="#糖异生" class="headerlink" title="糖异生"></a>糖异生</h3><h4 id="糖异生途径："><a href="#糖异生途径：" class="headerlink" title="糖异生途径："></a>糖异生途径：<br/></h4><img src=img\糖异生.png>
+>糖异生的糖异生的途径：<br/>
+>1. 主要发生在肝脏骨骼肌<br/>
+有三步不是糖酵解的逆反应（对应糖酵解的三步不可逆反应）<br/>
+>1. 丙酮酸的羧化：<br/>
+- 丙酮酸在ATP参与下与$CO_2$结合形成活化形式
+$生物素-酶+HCO^-_3+ATP \frac{Mg^{2+},乙酰-CoA}{————————}N-1-羧化生物素酶+ADP+Pi$
+- 活化的羧基从生物素转移到烯醇式丙酮酸，形成草酰乙酸
+$烯醇式丙酮酸+活化酶 \frac{Mn^{2+}}{————}草酰乙酸+生物素-酶$ <br/>
+<font color="brown">总式</font>:<br/>
+$丙酮酸+CO_2+ATP+H_2O \frac{————}{}草酰乙酸+ADP+Pi+2H^+$
+
+<blockquote>
+<ol start="2">
+<li>草酰乙酸在磷酸烯醇式丙酮酸羧基酶催化下，消耗1GTP，形成磷酸烯醇式丙酮酸<br/><br>$丙酮酸+ATP+GTP+H_2O \frac{磷酸烯醇式丙酮酸羧基酶}{————————————}磷酸烯醇式丙酮酸+ADP+GDP+Pi+2H^+$<br/><br><font color="red">注</font>:<br/><br>草酰乙酸需要通过苹果酸途径（苹果酸穿梭）跨过线粒体膜，进入细胞溶胶（通过NAD<sup>+</sup>相连的苹果酸脱氢酶变回草酰乙酸消耗ATP</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>6-磷酸葡糖在6-磷酸葡糖磷酸酶催化下水解形成葡萄糖<br>$6-磷酸葡糖+H^2O \frac{6-磷酸葡糖磷酸酶}{————————}葡萄糖+Pi$<br><font color="red">注：</font>脑和肌肉中无6-磷酸葡糖磷酸酶，无法利用6-磷酸葡糖。  <br/></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>糖异生的能量消耗：<br/><br>丙酮酸合成葡萄糖总过程：<br/><br>$2丙酮酸+4ATP+2GTP+2NADH+6H_2O \frac{}{}葡萄糖+4ADP+2GDP+2NAD^++2H^+$</li>
+</ol>
+</blockquote>
+<h4 id="糖异生调节"><a href="#糖异生调节" class="headerlink" title="糖异生调节"></a>糖异生调节</h4><ol>
+<li><p>磷酸果糖激酶（PFK）和1,6-二磷酸果糖磷酸酶的调节<br/><br>磷酸果糖激酶激活剂：<br/><br>AMP。促进糖酵解<br/><br>磷酸果糖激酶抑制剂：<br/><br>ATP、柠檬酸。促进糖异生<br/><br>1,6-二磷酸果糖磷酸酶:<br/><br>作为信号分子，对磷酸果糖激酶（激活作用）和1,6二磷酸果糖磷酸酶（抑制作用）有协同作用</p>
+</li>
+<li><p>丙酮酸激酶、丙酮酸羧化酶、磷酸烯醇式丙酮酸羧激酶间的调节<br/><br>丙酮酸激酶：<br/><br>抑制剂：<br/>高浓度ATP、丙酮酸<br/><br>丙酮酸羧化酶：<br/>抑制剂：ADP<br/>激活剂：<br/>乙酰-CoA<br/><br>磷酸烯醇式丙酮酸羧激酶：<br/>抑制剂：ADP<br/></p>
+</li>
+</ol>
+<h3 id="糖原的分解合成"><a href="#糖原的分解合成" class="headerlink" title="糖原的分解合成"></a>糖原的分解合成</h3><blockquote>
+<ol>
+<li>糖原的合成</li>
+</ol>
+<ul>
+<li>在<font color="red">UDP-葡萄糖焦磷酸化酶</font>作用下，1-磷酸葡萄糖生成UDP-葡萄糖，消耗一个UTP，生成焦磷酸<br/> $1-磷酸葡萄糖+UTP\frac{UDP-葡萄糖焦磷酸化酶}{————————————}UDP-葡萄糖+PPi$</li>
+<li><font color="red">糖原合成酶</font>将UDP-葡萄糖的糖基加在糖原引物的非还原端葡萄糖的C4羟基上。引物至少要有4个糖基，由引发蛋白和糖原起始合成酶合成，将UDP-葡萄糖加在引发蛋白的酪氨酸羟基上。糖原合成酶a磷酸化后活性降低，称为b，其活性依赖别构效应物6-磷酸葡萄糖激活。<br/></li>
+<li><font color="red">分支酶</font>合成支链。从至少11个残基的链上将非还原端7个残基转移到较内部的位置，形成1，6键分支。新的分支必需与原有糖链有4个残基的距离。分支可加快代谢速度，增加溶解度。<br/></li>
+</ul>
+<ol start="2">
+<li>糖原的分解：<br>涉及酶类：<br/>糖原磷酸化酶；糖原脱支酶；磷酸葡萄糖变位酶。<br/></li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">分解作用</th>
+<th align="center">酶</th>
+<th align="left">作用</th>
+<th align="left">辅助因子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">磷酸解</td>
+<td align="center">糖原磷酸化酶</td>
+<td align="left">催化糖原非还原性末端(1–&gt;4)磷酸解&lt;</td>
+<td align="left">吡哆醛</td>
+</tr>
+<tr>
+<td align="center">水解</td>
+<td align="center">糖原脱支酶</td>
+<td align="left">将分支前的三个α(1-&gt;4)葡萄糖转移到另外分支的非还原性末端，催化水解α(1-&gt;6)</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center">磷酸葡糖变位酶</td>
+<td align="left">将以上水解产生的1-磷酸葡糖转变为6-磷酸葡糖</td>
+<td align="left">—</td>
+</tr>
+<tr>
+<td align="center">水解</td>
+<td align="center">6-磷酸葡糖磷酸酶</td>
+<td align="left">$6-磷酸葡糖+H_2O\frac{6-磷酸葡糖磷酸酶}{}葡萄糖+Pi$</td>
+<td align="left">存在于肝肾肠细胞的光面内质网</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="糖原的代谢调控"><a href="#糖原的代谢调控" class="headerlink" title="糖原的代谢调控"></a>糖原的代谢调控</h4><blockquote>
+<ol>
+<li>糖原代谢的调节<br/><blockquote>
+<p>其分解与合成主要由糖原磷酸化酶和糖原合成酶控制。二者都受可逆磷酸化调节，效果相反。激素通过cAMP促进磷酸化作用，使磷酸化酶成为a型（有活性），合成酶变成b型（无活性）。合成酶由蛋白激酶磷酸化。<br/></p>
+</blockquote>
+</li>
+<li>糖异生和酵解的协调<blockquote>
+<ol>
+<li>高浓度的6-磷酸葡萄糖抑制己糖激酶，促进异生。</li>
+<li>酵解和异生的控制点是6-磷酸果糖与1，6-二磷酸果糖的转化。ATP和柠檬酸促进异生，抑制酵解。2，6-二磷酸果糖相反，是重要调节物。</li>
+<li>丙酮酸与磷酸烯醇式丙酮酸的转化，丙酮酸羧化酶受乙酰辅酶A激活，ADP抑制；丙酮酸激酶被ATP、NADH和丙氨酸抑制。</li>
+<li>无效循环：由不同酶催化的两个相反代谢反应条件不同，一个需要ATP参加，另一个进行水解，结果只是消耗能量，反应物不变，称为无效循环。可用于产热。</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h3 id="寡糖类的生物合成与分解"><a href="#寡糖类的生物合成与分解" class="headerlink" title="寡糖类的生物合成与分解"></a>寡糖类的生物合成与分解</h3><p><font color="pink" size="6">乳糖</font><br/></p>
+<blockquote>
+<ol>
+<li>合成：<br/>{糖苷键[β-galactosyl-(1-4)-glucose] }<br/></li>
+</ol>
+</blockquote>
+<ul>
+<li>$UDP-葡萄糖+1-磷酸半乳糖 \frac{1-磷酸半乳糖尿苷酰转移酶}{}1-磷酸葡萄糖+UDP-半乳糖$（半乳糖的活化）<br/></li>
+<li>$UDP-半乳糖+N-乙酰-D-葡糖胺\frac{半乳糖基转移酶}{}D-半乳糖基-N-乙酰-D-葡糖胺+UDP$<br/></li>
+<li>$UDP-半乳糖+D-葡萄糖\frac{乳糖合酶}{}D-乳糖+UDP$(哺乳期乳腺内的乳糖)<br/><blockquote>
+<ol start="2">
+<li>分解：<br/></li>
+</ol>
+</blockquote>
+</li>
+<li>$乳糖\frac{+H_2O}{乳糖酶、β-半乳糖苷酶（微生物）}D-半乳糖+D-葡萄糖$<br/><blockquote>
+<ol start="3">
+<li>乳糖不耐受症：<br/><br>小肠细胞的乳糖酶消失或活性下降，导致人体不完全吸收<br/><br>乳糖的强渗透效应，导致流体向小肠内流<br/><br>乳糖在大肠细菌被转化为有毒物质，导致不适。<br/></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<p><font color="pink" size="6">糖蛋白</font><br/></p>
+<blockquote>
+<ol>
+<li>特点：<br/></li>
+</ol>
+<ul>
+<li>N-糖链的合成与肽链合成同时进行</li>
+<li>O-糖链的合成在肽链合成之后，在肽链修饰时将糖基逐个连接</li>
+<li>以糖基作为供体和受体，在<em><strong>糖基转移酶</strong></em>的催化下形成</li>
+<li>糖基供体的活化形式：核苷二磷酸形式（GDP- UDP-Glc）长醇焦磷酸形式（DPP-）</li>
+<li>第一个糖基的受体氨基酸残基一般是肽链特点位点的氨基酸残基</li>
+<li>可作为糖基受体的氨基酸：天冬酰胺、丝氨酸、苏氨酸、羟赖氨酸，酪氨酸。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>寡糖部分的连接类型</li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">连接类型</th>
+<th align="center">特点</th>
+<th align="left">连接序列</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">N-连接</td>
+<td align="center">一般由6-10个糖基连接<br>糖链形成分支<br/>糖基组成主要是N-乙酰氨基葡糖<br/>酸性N-糖基末端常是唾液酸（N-乙酰神经氨酸）<br/>寡糖中包含一个五糖核心（3个甘露糖残基和2个N-乙酰葡糖胺残基）</td>
+<td align="left">$Asn-X-Ser$ <br/> $Asn-X-Thr$</td>
+</tr>
+<tr>
+<td align="center">O-连接</td>
+<td align="center">通过α-Ο-糖苷键与肽链的丝氨酸或苏氨酸连接<br/>胶原蛋白上糖苷键与5-羟赖氨酸残基相连<br/>构成：核心、骨架、非还原性末端。</td>
+<td align="left">苏氨酸\丝氨酸</td>
+</tr>
+<tr>
+<td align="center">酰胺键连接</td>
+<td align="center">非还原性末端通过甘露糖磷酸乙醇胺间接地和多肽的末端羧基形成酰胺键进行结合<br/>寡糖链的还原端与磷脂酰肌醇的肌醇分子（$C_6$）相连<br/>磷脂酰肌醇的两天脂肪链嵌入细胞膜，起锚的作用<br/>有多种形式的糖链核心</td>
+<td align="left">多肽段的C端</td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<ol start="3">
+<li>寡糖链的生物合成</li>
+</ol>
+</blockquote>
+<ul>
+<li>N-连寡糖的生物合成<blockquote>
+<p>合成过程：<br/></p>
+<ol>
+<li>合成以酯键相连的寡糖前体<br/></li>
+<li>将前体转移到正在增长的肽链上<br/></li>
+<li>除去前体的某些糖单位<br/></li>
+<li>在剩余的寡糖核心加入其他糖分子<br/></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<p> 具体步骤：<br/></p>
+<ul>
+<li><p>锚定在内质网膜的长醇磷酸（磷酸基团在细胞基质侧）<br/>第一个活化的N-乙酰葡糖胺（UDP-GlcNAc）以1-磷酸形式加到长醇磷酸；第二个N-乙酰葡糖胺相继连接，形成长醇焦磷酸-N-乙酰葡糖胺$(长醇-PP-N-乙酰葡糖胺)_2$。<br/></p>
+</li>
+<li><p>5个GDP-甘露糖以甘露糖形式添加，形成$(长醇-PP-N-乙酰葡糖胺)_2-(甘露糖)_5$。</p>
+</li>
+<li><p>$(长醇-PP-N-乙酰葡糖胺)_2-(甘露糖)_5$通过翻转使得$(-PP-N-乙酰葡糖胺)_2-(甘露糖)_5$ 部分进入内质网腔。</p>
+</li>
+<li><p>其他长醇磷酸（磷酸基团在细胞基质侧）将活化的糖基以糖基形式相连后，形成长醇焦磷酸-糖基，通过翻转在内质网腔释放糖基。</p>
+</li>
+<li><p>由$(长醇-PP-N-乙酰葡糖胺)_2-(甘露糖)_5$接受上一步的糖基进行延长寡糖链。</p>
+</li>
+<li><p>$(长醇-PP-N-乙酰葡糖胺)_2-(甘露糖)_5$的糖基部分$-N-乙酰葡糖胺_2-(甘露糖)_5$与焦磷酸基团分离，连接于正在合成的肽链氨基酸残基上。</p>
+</li>
+<li><p>长醇焦磷酸失去寡糖链后再次翻转，使得焦磷酸基团位于细胞基质侧。</p>
+</li>
+<li><p>长醇焦磷酸脱去一个磷酸基团，形成长醇磷酸参与下次寡糖链合成。<br/><br>  <img src=img\zzzpp.png><br/><br>糖蛋白的加工位于高尔基体<br/></p>
+</li>
+<li><p>O-链寡糖的生物合成</p>
+<ul>
+<li>由蛋白质肽链合成后再合成寡糖链，属于翻译后加工。</li>
+<li>活化的N-乙酰半乳糖胺（UDP-GalNAc）在N-乙酰半乳糖胺转移酶的催化下以GalNAc的形式连接到多肽的丝氨酸或苏氨酸上。</li>
+<li>形成核心后再延长寡糖链。<blockquote>
+<ol start="4">
+<li>分解代谢</li>
+</ol>
+<ul>
+<li>在溶酶体进行，彻底水解需要蛋白水解酶和糖苷酶。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/25/protin-more/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/25/protin-more/" class="post-title-link" itemprop="url">protin more</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-25 10:11:37" itemprop="dateCreated datePublished" datetime="2022-09-25T10:11:37+08:00">2022-09-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-26 10:44:48" itemprop="dateModified" datetime="2022-09-26T10:44:48+08:00">2022-09-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="三．蛋白质"><a href="#三．蛋白质" class="headerlink" title="三．	蛋白质"></a>三．	蛋白质</h1><p>a)	化学组成与分类<br>化学组成：C H O N S I Cu Zn Mo Fe P 等 C占50% H占7% O占23%<br>蛋白质的平均含氮量为16% 蛋白质含量&#x3D;蛋白氮*1&#x2F;16%</p>
+<p>蛋白质由是否有除氨基酸外有其他成分作为永久性结构结合可分为：<br>    单纯蛋白：无其他永久性结构成分<br>如：清蛋白 球蛋白 谷蛋白 谷醇溶蛋白 组蛋白 鱼精蛋白 硬蛋白<br>    缀合蛋白：有其他永久性结构成分<br>非蛋白组分：辅基或配体（可通过共价和非共价结合）<br>剩下的蛋白组分：脱辅基蛋白质<br>整体称为全蛋白质<br>如：糖蛋白 脂蛋白 磷蛋白 血红素蛋白 黄素蛋白 金属蛋白</p>
+<p>通过蛋白质形状与溶解度可分为：<br>    纤维状蛋白 球状蛋白 膜蛋白<br>通过蛋白质生物学功能可分为：<br>    酶，调节蛋白，转运蛋白，结构蛋白<br>b)	分子大小与形状<br>蛋白作为氨基酸的高聚物，Mr600—10^6不等<br>单体蛋白：仅有一条多肽链构成 肌红蛋白<br>寡聚蛋白：每条多肽链称为亚基，由非共价键结合<br>多聚蛋白：—<br>c)	性质<br>蛋白质在生物体内结构功能多样，其依赖的结构基础为序列异构现象。<br>蛋白在生物体内的功能包括：催化，调节，转运，贮存，运动，结构成分，支架作用，防御与进攻，以及异常功能。<br>d)	结构层次<br>可分为：一至四级结构<br>一级结构：蛋白肽链的氨基酸残基序列，也称共价结构<br>一级结构决定蛋白质的功能<br>二级结构：肽链主链中局部肽链通过氢键形成周期性结构指在蛋白质折叠过程中，处于分子表面的主链极性基团相同，c&#x3D;o和N-H与溶剂水形成氢键，分子内部主链极性基团相互间以氢键结合，在能量平衡中，主链的折叠出现了由氢键稳定的有规律的构象（α螺旋 β折叠 转角等）<br>多肽链折叠的手性效应<br>由氨基酸（α碳）的手性对蛋白质结构产生很大影响，沿多肽链反向观察，β片层以右手方式扭曲，形成扭曲圆桶，称：单绕平行β桶；或形成大的缓慢扭曲片，称双绕平行β片。<br>α螺旋：属正规二级结构<br>二面角：φ &#x3D;-47,5  Φ&#x3D;-57<br>结构：在相邻的肽段内产生螺旋轴的细小弯曲或小节，<br>       是一个重复性的结构，每一个螺圈含 3.6个氨基酸残基，沿螺旋轴上升0.54nm 移螺距，直径为 0.54nm<br>        α螺旋中相邻螺圈间的氢键几乎与螺旋轴平行<br>特点：<br>    1 能最大的利用内部氢键，使α螺旋更易形成。<br>    2 通过链接在肽键负电性的氮原子和该肽键N端第四个氨基酸的负电性羰基氧原子间的氢键 得以稳定<br>    3α螺旋内部每一个肽键（除靠近螺旋每端肽键外）都有 2 中的氢键键合。<br>    4 每一连续的α螺旋都由3-4个氢键固定住相邻的罗圈，使结构稳固<br>    5 α螺旋每端总有3-4个酰胺基或酰胺羰基不参与氢键键合，该基团可暴露在溶剂周围，与水发生氢键键合，或由该蛋白其他组分提供氢键配偶体，给c&#x3D;o和N-H，即加帽。<br>手性：<br>右手螺旋为常见形式<br>氨基酸序列与α螺旋的稳定性：<br>1 氨基酸侧链的互作可以使螺旋稳定或去稳定<br>2 螺旋的扭转使得氨基酸残基的侧链可以与任一侧3-5个氨基酸远的残基侧链发生成键作用<br>3 正电荷氨基酸常出现在离负电荷氨基酸3个残基远的位置，并形成离子对<br>4 两个芳香族氨基酸常有类似间距，以增加疏水性<br>5 Gly Pro 形成螺旋的倾向最小，其存在会限制螺旋的形成。Pro中氮原子作为刚性环的一部分，不可绕肽键旋转，引入Pro可去除稳定的结节<br>等<br>影响α螺旋形成的因素<br>R基小，不带电荷的多聚丙氨酸在pH7溶液中自发形成α螺旋<br>pH12时，多聚赖氨酸自发形成α螺旋<br>多聚异亮氨酸由于在其α碳原子附近有较大R基，空间位阻大，不形成螺旋<br>多聚脯氨酸的肽键不具有酰胺氢，不形成链内氢键</p>
+<p>β构象：属正规二级构象<br>指一种更为伸展的多肽构象，其结构受一套特有的二面角排列的主链原子限定。多肽链骨架伸展成锯齿结构。<br>分类：由几段多肽链并排排列的方式可分为<br>    平行β片：相邻肽链方向相同。重复周期：0.65nm<br>        氢键明显弯折不成线<br>        比反平行更加规则<br>        一般为大结构（β片中股数较多）<br>        疏水侧链分布在折叠片两侧<br>α-碳的φ Φ比值比反平行小很多<br>    反平行β片：相邻肽链方向相反。重复周期：0.7nm<br>        股间氢键基本成线<br>α-碳的φ Φ比值比平行大很多<br>相对平行片，更不规则<br>可由较小的β股形成<br>疏水侧链在折叠片的一侧<br>在β片中，每一个肽链称β股，且大多数β片和β股有右手扭曲倾向，以缓解股间空间应力<br>β转角与Ω环<br>β转角：是多肽链180o回折部分形成的二级结构，常见于蛋白分子表面，转角中央两个残基可与水形成氢键，用以链接反平行β片中相邻的肽段，又称发卡结构。<br>涉及的氨基酸：<br>第一个残基（i）的C&#x3D;O与第四个残基（i+3）的N-H形成氢键，使β转角形成稳定结构<br>中间两个残基（i+1，i+2）不参与氢键形成。<br>β转角的分类：<br>I型β转角：中央肽键的羰基与第2，3个残基的α碳的R基相反<br>II型β转角：第三个氨基酸残基为Gly<br>β转角里的特殊氨基酸：<br>pro：自身亚氨氮的肽链易采取顺式构型，有利于转角形成<br>Gly：R基（H）小，柔性大，易调整相邻残基的空间位阻<br>Pro，Gly可以促进肽链自身回折，有助于反平行折叠片的形成<br>Ω环:属于部分正规的二级结构<br>形式上属于β转角的延伸<br>特征：环的长度不超过16个残基，一般6-8个，以8个居多<br>       可改变蛋白质肽链方向，使之变成首尾两个残基间距小于1nm的环<br>无规则卷曲：<br>无规则卷曲泛指不能或未能归入上述二级结构的肽段，是经常构成酶的活性部位和其他专一性功能的部位。<br>蛋白质的超二级结构与结构域<br>超二级结构<br>指由两个或多个相邻的二级结构单元以及连接部件组合，互作而形成的种类不多，内能下降，有规则的二级结构组合或二级结构串或簇，在蛋白质中充当三级部件。<br>组合类型： αα  βαβ  ββ  β曲折<br>    αα：一种α螺旋束，常由两股平行或反平行排列的右手螺旋段互相缠绕而成的左手蜷曲螺旋，称左手超螺旋。<br>    α螺旋沿轴倾斜，重复距离为0.51nm<br>    超螺旋螺距：14nm，直径2nm，两个α螺旋的轴距1nm<br>    其中一股α螺旋的链的非极性边缘与另一链的非极性边缘形成疏水核心，极性边缘位于超螺旋外侧，与溶剂互作，稳定结构。<br>βαβ：由两段β链和作为链接链的α螺旋组成的结构。最简单的βαβ称为βαβ单元。<br>β股间以氢键相连，α链反向平行交叉于β片一侧。Β片的疏水侧链面向α的疏水面，紧密相连。<br>常见的βαβ由三段平行β，两段α构成βαβαβ，称：Rossman折叠<br>ββ：反向平行β片通过短环或发卡链接，以β发卡结构最为简单<br>β曲折：由氨基酸序列上多个β股通过紧凑的β转角相连。<br>        含有与α螺旋相近的氢键<br>结构域<br>    概念：<br>        指多肽链在二级，超二级结构域基础上形成三级结构域的部分折叠区，是相对紧密的球体。<br>        也指功能域，功能域可由一个或多个结构域组成。<br>    结构域类型：<br>        全α类（α占优势）	α&#x2F;β类（αβ互相掺半）<br>全β类（β占优势）	α+β类（αβ分开聚集）<br>三级结构：由非共价力折叠具有特定走向的完整球状实体，且给出最小表面积体积比，使得与环境互作最低。<br>    三级结构与二级结构的联系：<br>    正规二级结构形成，可作为三级结构的结构元件存在。<br>    部分正规的二级结构连接并组合形成特定的三级结构。<br>    一般认为，二级结构主要维持三级结构的轮廓，与蛋白质活性相关性大的一般为转角或者环等。<br>    三级结构的形成：由肽链中仍可旋转的单键各部分（包括稳定的二级，超二级结构）继续互作，使得肽链内能进一步降低，分子更加稳定。<br>            也可定义为：蛋白质分子中所有肽链的所有肽键和氨基酸残基以及侧链R基的空间位置。<br>        稳定的三级结构包括：（氢键，范德华力，疏水作用，盐键，二硫键）<br>                            非共价的弱相互作用力<br>                            共价二硫键<br>                            部分金属元素<br>四级结构：由多个三级结构亚基通过非共价力彼此缔合<br>    亚基：具有三级结构的多肽链，称单体<br>    四级结构：由亚基以非共价力相互作用缔合在一起。<br>    寡聚蛋白：亚基数目少<br>    多聚体蛋白：多个亚基（同多聚蛋白，杂多聚蛋白）<br>    单位蛋白：由一个亚基形成，无四级结构<br>    原聚体（原体）：由两个或多个自身不对称的同一结构成分组成。<br>    四级缔合的驱动力：<br>与稳定的三级结构无本质区别。<br>亚基的二聚作用：伴随着有利的相互作用包括范德华力，氢键，离子键，疏水相互作用等，两个亚基作为实体运动时，一个亚基将失去三个自由度。二亚基缔合过程可有效埋藏原先暴露的表面积，有利于疏水相互作用，再加上亚基-亚基界面处任意一种极性相互作用，足以使得二亚基缔合时的稳定性。<br>    四级结构的对称性与旋转<br>晶体宏观对称元素	对应的对称动作<br>轴旋转—轴线	旋转<br>镜面—平面	反映<br>对称中心—点	倒反<br>旋转反轴	旋转倒反<br>蛋白质单体为手性分子，所以旋转轴是对称寡聚蛋白中几乎唯一存在的对称元素<br>定义能使物体复原的最小旋转角θ为 基角<br>n是物体绕轴旋转一周与原物体重合的次数。称为 重 或 次<br>有n&#x3D;2π&#x2F;θ，对应的旋转轴称为n-重旋转对称轴，简称：n-重轴<br>多数四级结构蛋白亚基的排列符合晶体学的点群对称原则，排列有一定几何形状的对称性结构。<br>多亚基蛋白中的点群对称多为环状对称。<br>寡聚蛋白另一种常见对称：二面体点群对称，立体点群对称，螺旋点群对称，平移点群对称等。<br>    亚基的互作方式：<br>亚基间紧密接触的界面：极性相互作用，疏水相互作用<br>    相互作用的表面有极性基团，疏水基团互补排列<br>缔合分类<br>不同亚基间的缔合	互作性质复杂，亚基间亲和力不同<br>相同亚基间缔合	同种的缔合	互作表面相同，形成封闭二聚体<br>    异种的缔合	互作表面不同，形成开放末端的结构，并可由异种缔合无限制聚合（微管等）<br>    四级结构的结构功能优越性<br>增强结构稳定性<br>提高遗传经济性和效率：编码一个将装配成同多聚蛋白质所需的DNA比编码一条相对分子质量相同的多肽链少<br>使催化基团汇聚在一起<br>有协同，别构等效应<br>e)	蛋白质的三维结构与球状蛋白<br>概述：蛋白质在给定条件下，存在的构象一般为热力学稳定构象，即Gibbs自由能最低构象。<br>    稳定性：维持一个天然构象的趋势或倾向，蛋白质的构象主要由弱相互作用稳定（包括：共价二硫键，非共价相互作用：离子相互作用，氢键，盐桥，疏水相互作用，范德华力）<br>球状蛋白：<br>    特征：<br>        大多数球状蛋白以螺旋和折叠构成分子核心<br>        球状蛋白的三维结构有明显的折叠层次<br>        球状蛋白分子是紧密的球状或椭球状实体<br>        疏水侧链埋在分子内部，亲水侧链暴露在分子表面<br>        表面有一个空穴，多为结合底物，效应物的活性位点<br>    球状蛋白的结构分类：<br>包括：全α蛋白质；全β蛋白质；α&#x2F;β蛋白质；α+β蛋白质；小的富含金属或二硫键的蛋白质等。<br>全α蛋白质：以α螺旋占优势的结构<br>反平行的螺旋束	珠蛋白模式<br>α螺旋上下反平行排列，相邻螺旋间以环相连，形成近似桶形的螺旋束。<br>常以四个螺旋成束，大部分呈轻微左手扭曲，螺旋疏水面朝内部亲水面朝溶剂，活性部位残基位于螺旋束一端，由不同螺旋的残基构成。<br>多数螺旋束的均匀的结构。	α螺旋反平行。<br>特点：<br> 含七段α螺旋，一级结构相邻的螺旋采取接近相互垂直的取向<br> 多数分子以血红素为辅基<br>全β蛋白质：大部分为β股的结构。<br>    由于单股β折叠中，C&#x3D;O与N-H无氢键连接，故全β蛋白质中相邻的股通过氢键连接形成β片（大部分反向平行，将疏水残基安排在一侧，亲水残基在另一侧）<br>    反平行β片的蛋白至少存在两个主链结构层：<br>两个都是β片层	———————————-<br>一个β片层加一个α片层	也称露面夹心，含3-15个β股的单层反平行片，，扭曲但不成桶，含一层α螺旋和回环，片的另一层暴露于溶剂。<br>具有桶装结构的蛋白质可以存在于亲水环境和疏水膜中（孔蛋白）<br>α&#x2F;β蛋白质：<br>    一类α螺旋和β折叠交替出现的蛋白质<br>    α&#x2F;β蛋白质大多可以与核苷酸及其衍生物结合，以及以糖为底物的各种酶。<br>    以平行或者混合型（含平行和少数反平行）β片为基础<br>    分类：<br>单绕行β桶	双绕平行β片<br>或称丙糖磷酸异构酶折叠模式	也称Rossman折叠模式，或核苷酸结合结构域。α&#x2F;β蛋白质家族或超家族可能是最复杂的。</p>
+<p>α+β蛋白质：<br>    一类β折叠和α折叠分别聚集于不同区域的蛋白质，仍以β折叠为主。<br>小的富含金属或二硫键的蛋白质<br>        小于100个残基的小蛋白或结构域不规则，只含有二级结构，但富含金属和&#x2F;或二硫键。<br>        金属形成的配体或二硫键对蛋白质构象起稳定作用。<br>f)	氨基酸序列，结构测定<br>一级结构的蛋白质测序<br>化学测序策略<br>1.	确定蛋白质分子中不同多肽链的数目<br>2.	拆分蛋白质分子的多肽链<br>3.	断裂多肽链的二硫键<br>4.	分析每一处多肽链的氨基酸组成<br>5.	鉴定N端，C端残基<br>6.	裂解多肽链形成较小的片段<br>7.	测定各个肽段的氨基酸序列<br>8.	重建完整的多肽链一级结构<br>9.	确定二硫桥的位置<br>测序常见方法：<br>g)	蛋白质的变性，折叠，结构预测<br>蛋白质的变性：指天然蛋白受物理化学等因素影响，生物活性丧失，溶解度下降，不对称性上升，以及其他物理化学性质改变。<br>        变性过程的现象：生物活性丧失，一些侧链基团暴露，生物化学性质改变，物化性质改变。<br>        变性机制：<br>1.	变性剂：尿素，盐酸胍等可与主链竞争氢键破坏二级结构，并增加非极性侧链在水中的溶解度。降低了三维结构的疏水相互作用。<br>去污剂（十二烷基硫酸钠 SDS）可破坏蛋白分子内部疏水相互作用，使非极性基团暴露在水中。降低非极性侧链从疏水内部到水介质的转移自由能。<br>2.	变性与复性：变性为协同过程。<br>复性指去除变性因素后蛋白质回复到天然构象的现象。<br>    蛋白质折叠：<br>        氨基酸序列决定蛋白质的三维结构，短程序列决定蛋白质的二级结构；长程序列决定蛋白质的三维结构。<br>        核糖核酸的变性与复性，有力证明了氨基酸序列决定蛋白质的三维结构。<br>        折叠热力学<br>折叠动力学：<br>1.多肽链的折叠不是通过随机搜索哦找到自由能最低的构象<br>2.用于研究多肽链折叠的方法：快速动力学发（停流法，温度跃迁法）荧光圆二色性监控。<br>3.多肽的折叠是分阶段进行的<br>4.体内蛋白质折叠有异构酶和伴侣蛋白参加。<br>新生蛋白正确配对的二硫键受【蛋白质二硫键异构酶（PDI）】催化，PDI与蛋白主链结合，优先催化含半胱氨酸的肽。<br>肽基脯氨酸异构酶：通过扭转肽键，使得C，N，O原子不再共平面，加速顺-反异构化。<br>分子伴侣：参与新生肽链的形成。通过抑制新生肽链的不恰当聚集，排除其与其他蛋白的不合理结合，协助多肽链的正确折叠。<br>    自身可以通过细胞提高温度或其他逆境而诱导产生（也称 热激蛋白）<br>蛋白质的结构预测：1.二级结构预测：chou-Fasman算法（α螺旋预测，β转角，折叠预测		2.折叠的计算机模拟<br>h)	蛋白质 肽的合成<br>肽的来源：动植物中提取；基因工程手段；化学合成<br>    人工合成肽的方法：控制合成法；聚合或共聚合法<br>    氨基保护基：三苯甲基 叔丁氧甲酰基 对甲苯磺酰基，混合酸酐法<br>    羧基的活化：酰氯法 叠氮法 混合酸酐法 活化酯法<br>    缩合剂：    DCC ；N，N’二环己基碳二亚胺-<br>固相肽合成：<br>是控制合成的大进展，使肽链在不溶性聚苯乙烯树脂小珠上进行<br>i)	蛋白质的生物学功能<br>1.	蛋白质的氨基酸序列与生物功能<br>1，	同源蛋白：在不同生物体内实行相同或相似功能的蛋白质<br>2，	不变残基：同源蛋白的氨基酸序列中有许多位置的氨基酸残基对所有已研究的物种来说，都相同<br>3，	可变残基：同源蛋白质钟某些氨基酸残基在不同物种间发生改变<br>2.	纤维状蛋白<br>指一类由多肽链呈长线或片层，外形呈纤维状或细棒状的蛋白<br>一般由单一类型的二级结构构成，三级结构简单<br>        共性：给结构以强度与柔性<br>              占据脊柱动物1&#x2F;2或以上<br>              具有可溶与不可溶两部分<br>α-角蛋白<br>        由外胚层细胞发育而来的皮肤及其衍生物（毛发，指甲）的结构蛋白。在强度方面良好。<br>        属于中间丝蛋白质家族，是α螺旋蛋白<br>      构成：亚基的氨基酸序列由富含螺旋的中央棒状结构域（311-314个残基）和两侧的非螺旋的N端和C端结构域构成；两股α角蛋白亚基螺旋平行取向，相互缠绕成超螺旋，增加结构强度。有相对简单的三级结构。以α螺旋为主体，并形成左手超螺旋。<br>      性能：角蛋白伸缩性好。湿热状态下可拉长两倍，氢键，二硫键被破坏，形成β构象。干冷时（角蛋白氨基酸R基大，不适合处于β构象）可自行恢复（依靠氢键和二硫键）。在湿热状态下，通过还原剂（含巯基化合物）可在β构象时，建立新的二硫键，干冷后会使蛋白蜷曲。<br>丝心蛋白<br>        存在于昆虫（蛛丝，蚕丝），由反向平行的β折叠堆积组成，通过每个β片种肽键的氢键和范德华力稳定构象。不可拉伸。<br>一级序列富含Gly，由Gly，Ala，Ser组成，每间隔一个残基出现一个Gly。<br>3.		胶原蛋白的三股螺旋<br>属于结构蛋白<br>特点：Pro，Gly含量高，含有不常见氨基酸：4-羟脯氨酸，3-羟脯氨酸，5-羟赖氨酸<br>结构：体内以胶原纤维存在，以原胶原为基本单位构成<br>        原胶原由三股α肽链缠绕而成的右手超螺旋，单股链为左手螺旋<br>4.	弹性蛋白<br>具有良好弹性，伸展性，含量丰富，使肺，血管，动脉，韧带等伸展性好<br>特点：仅含有一个基因，无法糖基化，不含有羟赖氨酸，不含Gly-Pro-y和Gly-x-Hyp重复序列，不可超螺旋<br>5.	血纤蛋白原<br>属于纤维状蛋白，含有三个球状结构域，被两个棒状结构域隔开。<br>由六条肽链，两两分成三个类型：Aα，Bβ，γ,由相同的两部分AαBβγ和A α΄Bβ’γ’组成对称结构。由一组二硫键交联。<br>在凝血酶IIa催化血纤蛋白原转化成血纤蛋白，在凝血因子XIIIa（血纤蛋白稳定因子）的作用下交联形成不溶性的血纤蛋白凝块，阻止出血。<br>6.	膜蛋白<br>分类：周边膜蛋白（外在膜蛋白）提高温度或离子强度即可分离<br>          膜内在蛋白（整合膜蛋白）<br>          脂锚定蛋白<br>周边膜蛋白：一类水溶性蛋白质，不与膜的疏水核心接触。靠离子键或其他较弱键结合。<br>膜内在蛋白：<br>结构上可分{为胞质外结构域，跨膜结构域，胞质内结构域}<br>类型上可分为{单跨膜肽段膜蛋白，七次跨膜肽段膜蛋白，β桶型膜蛋白—孔蛋白}<br>与膜的结合方式：<br>    1跨膜结构域与膜的疏水核心相互作用，最主要的结合方式<br>    2跨膜结构域两端携带正电荷氨基酸，与磷脂极性头部互作<br>    3跨膜蛋白通过自身的胞质侧半胱氨酸残基共价结合到脂肪酸分子，脂肪酸分子插入脂双层，加强结合力。<br>结构域与膜的作用方式：<br>    1跨膜结构域含20个氨基酸残基，形成α螺旋，外侧疏水侧链以范德华力与脂膜的脂肪酸链互作，形成单次跨膜蛋白（血型糖蛋白A）；<br>    含多个跨膜α区，称多次跨膜蛋白，α螺旋方向与膜成角度，长度不一，角度不一（G蛋白偶联信号通路的表面受体）<br>    2跨膜结构域主要由β折叠组成，由10-12个氨基酸构成，如孔蛋白<br>    3同时具有极性和非极性的α螺旋，形成多个特异性跨膜通道，外侧非极性链与膜互作，内部极性链形成通道（带3蛋白）<br>    水孔蛋白：<br>一类具有六个α螺旋的蛋白家族，常以四聚体的膜蛋白行使转运水，甘油等功能<br>            脂锚定蛋白：<br>也称兼在蛋白，既可以锚定在脂膜的胞质侧，也可以锚定在基质侧，一般其结合可逆且受调节。<br>            锚定的方式：<br>                    酰胺连接的豆蔻酰基锚钩<br>                    硫酯连接的脂肪酰基锚钩<br>                    硫醚连接的异戊二烯基锚钩<br>                    糖基磷脂酰肌醇锚钩<br>7.	肌红蛋白：（可溶性蛋白）<br>功能<br>        为哺乳动物中贮存，分送氧分的蛋白，主要存在于贮存氧的肌肉细胞中。<br>结构与辅基:<br>        由一条多肽链和血红素辅基组成，包含153个氨基酸。除去血红素辅基的肌红蛋白称为珠蛋白，与血红蛋白的亚基（α-珠链，β珠链有明显同源）<br>        由八段长短不一的直的α螺旋组成，包含80%的氨基酸，最长的包含23个残基，最短的包含7个残基。<br>        八段螺旋组装成两层，构成肌红蛋白的但结构域。<br>      血红素辅基：<br>血红素的组成：{原卟啉IX,Fe（II）}两者络合,形成铁原卟啉，即血红素。<br>    原卟啉IX：由4个吡咯环组成，通过甲叉桥连接形成四吡咯环系统（卟吩）并由4个甲基，2个乙烯基和2个丙酸基与之相连。<br>        卟吩作为卟啉的母体，外周的氢一个或多个被取代，形成卟啉。<br>        卟啉中心的铁原子常以八面体配位，含6个配位键，其中4个与卟啉环面的N原子相连，另外两个沿垂直于卟啉环面的轴分布在环面上下。通过铁原子的氧化态可分为：{亚铁血红素，高铁血红素}<br>        配位的N原子（供电子）有助于防止血红素亚铁转化为高铁。<br>亚铁态铁离子可与O2可逆结合，高铁态铁离子不结合O2。<br>        游离的血红素分子，使Fe有两个开放的配位键（垂直于卟啉面），一个O2可与两个游离的血红素分子同时反应。<br>        当血红素分子与蛋白质结合后，由于血红素被深埋在蛋白质中，开放的配位键被限制，其中一个配位键被His的侧链N原子占据，另一个配位键与O2结合。同时，Fe电子性质改变，血液颜色发生改变。<br>肌红蛋白与O2互作<br>                在肌肉组织中，血红蛋白释放氧气，通过质膜膜进入肌肉细胞，在质膜表面与肌红蛋白结合，形成氧合肌红蛋白，氧合肌红蛋白在细胞溶胶中扩散到线粒体。当线粒体中氧气浓度下降，氧合肌红蛋白释放氧气，变为去氧肌红蛋白，回到质膜处。<br>                O2在肌肉的释放结合过程：<br>1.	肌肉组织中，血红蛋白释放的氧气通过质膜进入肌细胞<br>2.	在质膜内表面，氧气与肌红蛋白结合形成氧合肌红蛋白。<br>3.	氧合肌红蛋白在细胞溶胶中扩散到线粒体<br>4.	线粒体氧气浓度下降时，氧合肌红蛋白释放氧气<br>5.	转变为去氧肌红蛋白返回质膜<br>6.	回到1，循环<br>肌红蛋白的氧结合曲线：等轴（直角）双曲线<br>肌红蛋白与珠蛋白家族<br>    珠蛋白：该家族成员有相似的一级结构和三级结构。存在于各类真核生物和细菌中。大多数行使转运，贮氧等功能。<br>    单体（一个珠蛋白）的肌红蛋白：促进肌肉中氧的扩散<br>    单体的神经珠蛋白：在神经元中大量表达，协助保护大脑避免低氧和局部缺血的损害。<br>    细胞珠蛋白：分布广，功能不明。<br>8.	血红蛋白<br>在血液中O2运载由红细胞中的血红蛋白结合并转运。<br>红细胞：呈小的双凹圆盘状，由成血细胞的前体干细胞形成。在成熟中，干细胞产生能大量形成血红蛋白的子代细胞，后失去其细胞器，寿命仅为120天。<br>血红蛋白（Hb）结构：<br>Hb与肌红蛋白在构象上相似，HbA含两种类型的珠蛋白，其中α和β的相似度不高，但三维结构相似，且与肌红蛋白相似。<br>Hb为四聚体，由四个多肽亚基组成，每个亚基缔合一个血红素。<br>亚基的种类和组合方式随人的生长阶段不同而改变<br>成人主要为HbA<br>发育阶段	名称	α样链	β样链	亚基组成<br>胚胎	-	ζ	ε	ζ2ε2<br>胎儿	HbF	α	γ	α2.γ2<br>出生至死亡	HbA	α	β	α2β2<br>出生至死亡	HbA2	α	δ	α2δ2<br>                血红蛋白的四级结构：<br>                四个亚基占据相当于四面体的四个顶点，分子呈C2点群对称，<br>                四个血红素分子分别位于每个多肽链的E，F螺旋之间的裂隙中，并暴露于分子表面。<br>                四个氧结合部位保持一定距离，最近的两个Fe离子距2.5nm<br>            结合氧时血红蛋白的构象变化：<br>1.	Hb的四级构象：<br>氧合血红蛋白与去氧血红蛋白在四级结构上显著不同，主要体现在亚基结合互作的方式不同：<br>血红蛋白不与氧结合	α1β1与α2β2接触，称装配接触。<br>血红蛋白上的血红素与氧结合	α1β2与α2β1接触，称滑动装配。</p>
+<ol start="2">
+<li><pre><code>Hb的去氧，氧合构象：（血红蛋白与氧气的结合与pH和CO2有较大影响）
+</code></pre>
+共有T态，R态；两者都可与氧气结合。<br>                   R态：对氧亲和力高，且O2的结合可使R态更稳定<br>                   T态：缺氧时T态更稳定，是去氧血红蛋白的优势构象<ol start="3">
+<li><pre><code>T—&gt;R变构的关键：血红素Fe的微小移动，引发构象重调。
+</code></pre>
+氧气与血红蛋白的协同结合<br>协同性的构象改变取决于一个蛋白质不同部分的结构稳定性的变化。别构蛋白的结合部位一般由邻接于相对不稳定的肽段的稳定肽段组成。<br>协同性结合机制的模型<br>1.MWC模型（齐变模型）<br>假设：一个协同性结合的蛋白质分子各亚基功能在功能上相同<br>  一个蛋白质分子中所有亚基都以同样的构象形态存在<br>  一种构象转变为另外一种构象，所有亚基都同时发生转变(不允许不同构象同时存在<br>  两种构象处于平衡。<br>              2.KNF模型（序列模型）<br>假设：配体和多结合部位蛋白质结合，能通过诱导契合引起单个亚基构象改变。<br>  一个亚基的改变能使第二个亚基的构象改变更难或更容易。<br>    血红蛋白与H+和CO2的转运<br>    血红蛋白还负责将H+和CO2从组织到肺和肾并排出体外。<br>在 碳酸酐酶 的催化下，CO2和H2O 产生H+和HCO3-。<br>    Bohr效应：在外周组织中pH相对较低，CO2浓度相对较高，血红蛋白对O2的亲和力随H+和CO2的结合而降低；在肺部毛细血管中，随CO2排除，血液pH上升，血红蛋白对氧的亲和力上升。<br>    2，3-二磷酸甘油酸（BPG）与血红蛋白<br>    BPG是血红蛋白的一个重要别构抑制剂。无BPG时，血红蛋白分子更容易转变为R态。虽然BPG与O2由各自的结合位点，但O2与GBP在血红蛋白的结合是互斥的。<br>    胎儿中的血红蛋白HbF对氧的亲和力更高（对BPG亲和力低），有利于在母体血液流经胎儿时，胎盘可获取氧气。<ol start="9">
+<li><pre><code>免疫球蛋白与免疫系统
+</code></pre>
+ 免疫系统：<br>组成：<br>体液免疫：针对细菌感染，胞外病毒以及外来蛋白等<br>细胞免疫：破坏病毒感染的细胞，寄生物与外来的移植组织<ol start="10">
+<li><pre><code>肌球蛋白丝，肌动蛋白
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cywilyopP',
+conf: 'prod_7cbd406dc356f59bfec086c44707a653'
+});
+</script>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
